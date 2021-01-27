@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 function About() {
     return (
         <div>
+            <Navbar />
             <h3>about</h3>
             <Link to='/Home'>Home</Link>
             <p>

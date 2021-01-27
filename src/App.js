@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { Route, Link } from 'react-router-dom';
 //PAGES
 import Home from './pages/Home';
@@ -10,7 +10,7 @@ import Navbar from './components/Navbar'
 function App() {
   return (
     <div className="App">
-          <Navbar />
+         
           <Route exact path="/Home" component={Home} />
           <Route exact path="/About" component={About} />
           <Route exact path="/Portfolio" component={Portfolio} />

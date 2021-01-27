@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 function Home() {
     return (
         <div>
+            <Navbar />
             <h1>Home</h1>
-            <Link to='/About'>Link to about page</Link>
-            <p>Home
+            <p>
 
-Portfolio
-About Us
-Contact
+
 
 Project Paramour
 

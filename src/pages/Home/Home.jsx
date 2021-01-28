@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar';
 import styled from 'styled-components';
 import { Button } from '@material-ui/core';
+import Footer from '../../components/Footer';
 
 
-
-import HeroBgImageDesktop from '../assets/images/home/desktop/image-hero-paramour.jpg';
-import HeroBgImageMobile from '../assets/images/home/mobile/image-hero-paramour.jpg';
-import SmallTeamMobile from '../assets/images/home/mobile/image-small-team.jpg';
-import DelSolMobile from '../assets/images/portfolio/mobile/image-del-sol.jpg';
-import TowerMobile from '../assets/images/portfolio/mobile/image-228b.jpg';
-import PrototypeMobile from '../assets/images/portfolio/mobile/image-prototype.jpg';
-import NavLogo from '../assets/images/logo.svg';
+import HeroBgImageDesktop from '../../assets/images/home/desktop/image-hero-paramour.jpg';
+import HeroBgImageMobile from '../../assets/images/home/mobile/image-hero-paramour.jpg';
+import SmallTeamMobile from '../../assets/images/home/mobile/image-small-team.jpg';
+import DelSolMobile from '../../assets/images/portfolio/mobile/image-del-sol.jpg';
+import TowerMobile from '../../assets/images/portfolio/mobile/image-228b.jpg';
+import PrototypeMobile from '../../assets/images/portfolio/mobile/image-prototype.jpg';
+import NavLogo from '../../assets/images/logo.svg';
 
 const HeroContainer = styled.div `
     
@@ -76,19 +76,7 @@ const FeaturedH3 = styled.h3 `
 const FeaturedButton = styled.div `
 
 `;
-const FooterNavbarContainer = styled.div `
 
-`;
-const FooterLogo = styled.img `
-
-`;
-
-const FooterNavMenu = styled.ul `
-    display: flex;
-`;
-const FooterNavItems = styled.li `
-    list-style: none;
-`;
 
 function Home() {
     return (
@@ -161,24 +149,7 @@ function Home() {
 
        
 
-        <FooterNavbarContainer>
-            <FooterLogo src={NavLogo}/>
-            <FooterNavMenu>
-                <FooterNavItems>
-                    <Link to="/">Home</Link>
-                </FooterNavItems>
-                <FooterNavItems>
-                    <Link to="/Portfolio">Portfolio</Link>
-                </FooterNavItems>
-                <FooterNavItems>
-                    <Link to="/About">About Us</Link>
-                </FooterNavItems>
-                <FooterNavItems>
-                    <Link to="/Contact">Contact</Link>
-                </FooterNavItems>
-            </FooterNavMenu>
-            <Button onClick={() => { alert('clicked') }}>See Our Portfolio</Button>
-        </FooterNavbarContainer>
+        <Footer />
             <p>
 
 

@@ -1,7 +1,7 @@
 import './App.scss';
 import { Route, Link, Switch, HashRouter } from 'react-router-dom';
 //PAGES
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';

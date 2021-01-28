@@ -3,6 +3,7 @@ import HeroBgImageDesktop from '../../assets/images/home/desktop/image-hero-para
 import HeroBgImageMobile from '../../assets/images/home/mobile/image-hero-paramour.jpg';
 import styled from 'styled-components';
 import { Button } from '@material-ui/core';
+import '../../index.scss';
 
 const HeroContainer = styled.div `
     
@@ -43,7 +44,7 @@ function Hero() {
         <>
             <HeroContainer>
             <HeroBgDesktop src={HeroBgImageDesktop} />
-            <HeroBgMobile src={HeroBgImageMobile} />
+            <HeroBgMobile className="img" src={HeroBgImageMobile} />
             <HeroTextContainer>
             <HeroH1>Project Paramour</HeroH1>
             <HeroP>Project made for an art museum near Southwest London. Project Paramour is 

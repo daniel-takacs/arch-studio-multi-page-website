@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;700&display=swap');
+
 //COLORS
 
 $very-dark-blue: #1B1D23;
@@ -7,12 +9,15 @@ $light-grey: #C8CCD8;
 $very-light-grey: #EEEFF4;
 $red: #DF5656;
 
+
 //
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+
 }
 .App {
     max-width: 1440px;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import NavLogo from '../assets/images/logo.svg';
-
+import MenuIcon from '@material-ui/icons/Menu';
 
 const NavbarContainer = styled.div `
     display: flex;
@@ -36,6 +36,7 @@ function Navbar() {
                     <Link to="/Contact">Contact</Link>
                 </NavItems>
             </NavMenu>
+            <MenuIcon />
         </NavbarContainer>
     )
 }

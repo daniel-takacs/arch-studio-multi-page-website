@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 function Portfolio() {
     return (
         <div>
-            <Navbar />
+            
             <p>
             Portfolio
 

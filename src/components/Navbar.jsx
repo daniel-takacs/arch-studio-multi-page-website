@@ -24,7 +24,7 @@ function Navbar() {
             <NavLogoDesktop src={NavLogo}/>
             <NavMenu>
                 <NavItems>
-                    <Link to="/Home">Home</Link>
+                    <Link to="/">Home</Link>
                 </NavItems>
                 <NavItems>
                     <Link to="/Portfolio">Portfolio</Link>

@@ -1,12 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import styled from 'styled-components';
+import HeroBgImageDesktop from '../assets/images/home/desktop/image-hero-paramour.jpg';
+import HeroBgImageMobile from '../assets/images/home/mobile/image-hero-paramour.jpg';
 
+const HeroContainer = styled.div `
+    
+`
+const HeroBgDesktop = styled.img `
+    display: none;
+`
+const HeroBgMobile = styled.img `
+
+`
 function Home() {
     return (
-        <div>
-            <Navbar />
-            <h1>Home</h1>
+        <>
+        <HeroContainer>
+            <HeroBgDesktop src={HeroBgImageDesktop} />
+            <HeroBgMobile src={HeroBgImageMobile} />
+        </HeroContainer>    
             <p>
 
 
@@ -86,7 +100,7 @@ About Us
 Contact
 
 See Our Portfolio</p>
-        </div>
+        </>
     )
 }
 

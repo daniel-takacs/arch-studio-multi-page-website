@@ -6,9 +6,12 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const NavbarContainer = styled.div `
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
 `;
 const NavMenu = styled.ul `
-    display: flex;
+    display: none;
 `;
 const NavItems = styled.li `
     list-style: none;
@@ -16,7 +19,6 @@ const NavItems = styled.li `
 const NavLogoDesktop = styled.img `
     
 `
-
 
 function Navbar() {
     return (
@@ -36,7 +38,7 @@ function Navbar() {
                     <Link to="/Contact">Contact</Link>
                 </NavItems>
             </NavMenu>
-            <MenuIcon />
+            <MenuIcon style={{ fontSize: 40}} />
         </NavbarContainer>
     )
 }

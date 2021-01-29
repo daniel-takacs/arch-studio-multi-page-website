@@ -5,6 +5,12 @@ import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 const FooterNavbarContainer = styled.div `
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+`;
+const FooterLogoContainer = styled.div `
 
 `;
 const FooterLogo = styled.img `
@@ -12,20 +18,28 @@ const FooterLogo = styled.img `
 `;
 
 const FooterNavMenu = styled.ul `
-    display: flex;
-`;
+    text-align: center;
+    `;
 const FooterNavItems = styled.li `
     list-style: none;
-`;
+    `;
+
+const FooterLink = styled.a `
+    text-decoration: none;
+`
 
 function Footer() {
     return (
         <>
            <FooterNavbarContainer>
-            <FooterLogo src={NavLogo}/>
+               <FooterLogoContainer>
+                    <FooterLogo src={NavLogo}/>
+               </FooterLogoContainer>
             <FooterNavMenu>
                 <FooterNavItems>
+                    <FooterLink>
                     <Link to="/">Home</Link>
+                    </FooterLink>
                 </FooterNavItems>
                 <FooterNavItems>
                     <Link to="/Portfolio">Portfolio</Link>

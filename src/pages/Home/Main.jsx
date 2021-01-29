@@ -6,7 +6,8 @@ import PrototypeMobile from '../../assets/images/portfolio/mobile/image-prototyp
 import NavLogo from '../../assets/images/logo.svg';
 import styled from 'styled-components';
 import { Button } from '@material-ui/core';
-import '../../index.scss'
+import '../../index.scss';
+import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
 const MainContainer = styled.div `
   padding: 0 32px;
@@ -32,29 +33,49 @@ const MainButton = styled.div `
 `;
 
 const FeaturedContainer = styled.div `
-
+  margin: 100px 0;
 `;
 const FeaturedH2 = styled.h2 `
-
+  margin: 40px 0;
+  font-size: 2rem;
 `;
 const FeaturedImages = styled.div `
-
 `;
 const FeaturedImageContainer = styled.div `
-
+  position: relative;
 `;
 
 const FeaturedImage = styled.img `
 
 `;
 const FeaturedTextContainer = styled.div `
-
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  color: #fff;
 `;
 const FeaturedH3 = styled.h3 `
 
 `;
 const FeaturedButton = styled.div `
+  margin-top: 10px;
+`;
 
+const FeaturedBottomButtonWrapper = styled.div `
+    
+`;
+const FeaturedBottomButton = styled.button`
+    background-color: #1B1D23;
+    color: #fff;
+    padding: 20px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    
 `;
 function Main() {
     return (
@@ -112,7 +133,9 @@ function Main() {
                     </FeaturedImageContainer>
                     
                 </FeaturedImages>
-                <Button onClick={() => { alert('clicked') }}>See All</Button>
+                <FeaturedBottomButtonWrapper>
+                <FeaturedBottomButton onClick={() => { alert('clicked') }}>See All<ArrowForwardOutlinedIcon /></FeaturedBottomButton>
+                </FeaturedBottomButtonWrapper>
             </FeaturedContainer>
 
         </MainContainer>

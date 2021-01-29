@@ -20,6 +20,7 @@ const FooterLogoContainer = styled.div `
     padding: 35px 25px;
     position: absolute;
     top: -55px;
+    cursor: pointer;
 `;
 const FooterLogo = styled.img `
     height: 25px;
@@ -65,7 +66,7 @@ function Footer() {
         <>
            <FooterNavbarContainer>
                <FooterLogoContainer>
-                   <FooterLogo src={NavLogo}/>
+                   <FooterLogo to='/' src={NavLogo}/>
                </FooterLogoContainer>
             <FooterNavMenu>
                 <FooterNavItems>

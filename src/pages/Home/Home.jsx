@@ -8,14 +8,9 @@ import Hero from './Hero';
 import Main from './Main';
 
 
-
-
-
 const Text = styled.p `
     display: none;
 `
-
-
 
 function Home() {
     return (
@@ -23,12 +18,6 @@ function Home() {
             <Hero />
             <Main />
             <Text>
-
-
-
-
-
-
 
 See Our Portfolio
 
@@ -61,19 +50,6 @@ See Our Portfolio
 04
 
 Welcome
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 See all

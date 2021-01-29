@@ -26,12 +26,14 @@ const HeroBgMobile = styled.img `
 const HeroH1 = styled.h1 `
     font-size: 3.3rem;
     letter-spacing: -1.2px;
-    
+    font-weight: 700;
     color: #fff;
+    font-family: 'Spartan', sans-serif;
 `;
 const HeroP = styled.p `
     color: #fff;
     line-height: 25px;
+    
     
 `;
 const HeroTextContainer = styled.div `

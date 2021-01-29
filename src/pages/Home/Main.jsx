@@ -6,24 +6,26 @@ import PrototypeMobile from '../../assets/images/portfolio/mobile/image-prototyp
 import NavLogo from '../../assets/images/logo.svg';
 import styled from 'styled-components';
 import { Button } from '@material-ui/core';
+import '../../index.scss'
 
 const MainContainer = styled.div `
-
+  padding: 0 32px;
 `;
-const HeroH2 = styled.h2 `
-
-`;
-const MainP = styled.p `
-
-`;
-const MainImgContainer = styled.div `
-
-`;
-const MainImg = styled.img `
-
+const WelcomeTextContent = styled.div `
+  
+  margin: 72px 0;
 `;
 const MainH2 = styled.h2 `
 
+`;
+const MainP = styled.p `
+  padding-top: 29px;
+`;
+const MainImgContainer = styled.div `
+  display: none;
+`;
+const MainImg = styled.img `
+  
 `;
 const MainButton = styled.div `
 
@@ -58,23 +60,24 @@ function Main() {
     return (
         <>
             <MainContainer>
-            <MainH2>Welcome to Arch Studio</MainH2>
-            <MainP>We have a unique network and skillset to help bring your projects to life. Our 
+              <WelcomeTextContent>
+                <MainH2>Welcome to Arch Studio</MainH2>
+                <MainP>We have a unique network and skillset to help bring your projects to life. Our 
                     small team of highly skilled individuals combined with our large network put us 
                     in a strong position to deliver exceptional results.
-            </MainP>
-            <MainP>
+                </MainP>
+                <MainP>
                     Over the past 10 years, we have worked on all kinds of projects. From stations 
                     to high-rise buildings, we create spaces that inspire and delight.
-            </MainP>
-            <MainP>
+                </MainP>
+                <MainP>
                      We work closely with our clients so that we understand the intricacies of each 
                     project. This allows us to work in harmony the surrounding area to create truly 
                     stunning projects that will stand the test of time.
-            </MainP>
-
+                </MainP>
+              </WelcomeTextContent>
             <MainImgContainer>
-                <MainImg  src={SmallTeamMobile}/>
+                <MainImg src={SmallTeamMobile}/>
                 <MainH2>Small team, big ideas</MainH2>
                 <MainButton>
                     <Button>About Us</Button>
@@ -85,7 +88,7 @@ function Main() {
                 <FeaturedH2>Featured</FeaturedH2>
                 <FeaturedImages>
                     <FeaturedImageContainer>
-                      <FeaturedImage src={DelSolMobile}/>
+                      <FeaturedImage className="imgfilter" src={DelSolMobile}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>Project De Sol</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    
@@ -93,7 +96,7 @@ function Main() {
                     </FeaturedImageContainer>
 
                     <FeaturedImageContainer>
-                      <FeaturedImage src={TowerMobile}/>
+                      <FeaturedImage className="imgfilter" src={TowerMobile}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>228B Tower</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    
@@ -101,7 +104,7 @@ function Main() {
                     </FeaturedImageContainer>
 
                     <FeaturedImageContainer>
-                      <FeaturedImage src={PrototypeMobile}/>
+                      <FeaturedImage className="imgfilter" src={PrototypeMobile}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>Le Prototype</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    

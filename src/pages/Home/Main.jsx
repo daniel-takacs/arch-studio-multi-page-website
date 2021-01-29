@@ -11,6 +11,7 @@ import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
 const MainContainer = styled.div `
   padding: 0 32px;
+  margin-bottom: 180px;
 `;
 const WelcomeTextContent = styled.div `
   

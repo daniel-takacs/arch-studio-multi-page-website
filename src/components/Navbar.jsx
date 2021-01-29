@@ -12,9 +12,11 @@ const NavbarContainer = styled.div `
 `;
 const NavMenu = styled.ul `
     display: none;
+    list-style-type: none;
+    
 `;
 const NavItems = styled.li `
-    list-style: none;
+
 `;
 const NavLogoDesktop = styled.img `
     

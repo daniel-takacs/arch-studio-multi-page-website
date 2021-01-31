@@ -9,17 +9,31 @@ const NavbarContainer = styled.div `
     justify-content: space-between;
     align-items: center;
     padding: 32px;
+
+    @media screen and (min-width: 376px) {
+    padding: 32px 97.5px;
+}
 `;
 const NavMenu = styled.ul `
-    display: ;
+    display: none;
     list-style-type: none;
+
+    @media screen and (min-width: 376px) {
+    display: flex;
+    
+}
     
 `;
 const NavItems = styled.li `
-
+    padding: 0 10px;
 `;
 const NavLogoDesktop = styled.img `
     
+`
+const HamburgerIcon = styled.div`
+      @media screen and (min-width: 376px) {
+    display: none;
+}
 `
 
 function Navbar() {
@@ -27,9 +41,6 @@ function Navbar() {
         <NavbarContainer>
             <NavLogoDesktop src={NavLogo}/>
             <NavMenu>
-                <NavItems>
-                    <Link to="/">Home</Link>
-                </NavItems>
                 <NavItems>
                     <Link to="/Portfolio">Portfolio</Link>
                 </NavItems>
@@ -40,7 +51,7 @@ function Navbar() {
                     <Link to="/Contact">Contact</Link>
                 </NavItems>
             </NavMenu>
-            <MenuIcon style={{ fontSize: 40}} />
+            <HamburgerIcon><MenuIcon style={{ fontSize: 40}} /></HamburgerIcon>
         </NavbarContainer>
     )
 }

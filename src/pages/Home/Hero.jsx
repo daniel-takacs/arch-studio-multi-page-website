@@ -1,28 +1,46 @@
 import React from 'react';
 import HeroBgImageDesktop from '../../assets/images/home/desktop/image-hero-paramour.jpg';
 import HeroBgImageMobile from '../../assets/images/home/mobile/image-hero-paramour.jpg';
+import HeroBgImageTablet from '../../assets/images/home/tablet/image-hero-paramour.jpg';
 import styled from 'styled-components';
 //import { Button } from '@material-ui/core';
 import '../../index.scss';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
 const HeroContainer = styled.div `
+     @media screen and (min-width: 376px) {
     
-`;
-const HeroBgDesktop = styled.img `
-    display: none;
-@media screen and (min-width: 768px) {
-    display: block;
 }
 `;
-
 const HeroBgMobile = styled.img `
     height: 560px;
     background-size: cover;
     position: relative;
     overflow: hidden;
-    
+    @media screen and (min-width: 376px) {
+    display: none;
+}
 `;
+
+const HeroBgTablet = styled.img `
+    display: none;
+    @media screen and (min-width: 376px) {
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (min-width: 769px) {
+    display: none;
+}
+
+`
+const HeroBgDesktop = styled.img `
+    display: none;
+@media screen and (min-width: 769px) {
+    display: block;
+    margin: 0 auto;
+}
+`;
+
 const HeroH1 = styled.h1 `
     font-size: 3.3rem;
     letter-spacing: -1.2px;
@@ -63,8 +81,9 @@ function Hero() {
     return (
         <>
             <HeroContainer>
-                <HeroBgDesktop src={HeroBgImageDesktop} />
+                <HeroBgDesktop className="imgfilter" src={HeroBgImageDesktop} />
                 <HeroBgMobile className="imgfilter" src={HeroBgImageMobile} />
+                <HeroBgTablet className="imgfilter" src={HeroBgImageTablet} />
                 <HeroTextContainer>
                         <HeroH1>Project Paramour</HeroH1>
                         <HeroP>Project made for an art museum near Southwest London. Project Paramour is 

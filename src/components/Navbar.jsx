@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
 import NavLogo from '../assets/images/logo.svg';
 import MenuIcon from '@material-ui/icons/Menu';
+import { Link as LinkS } from 'react-scroll';
 
 const NavbarContainer = styled.div `
     display: flex;
@@ -11,15 +12,17 @@ const NavbarContainer = styled.div `
     padding: 32px;
 
     @media screen and (min-width: 376px) {
-    padding: 32px 97.5px;
+    padding: 50px 97.5px;
+    justify-content: start;
 }
 `;
 const NavMenu = styled.ul `
     display: none;
-    list-style-type: none;
+    list-style: none;
 
     @media screen and (min-width: 376px) {
     display: flex;
+    margin-left: 55px;
     
 }
     
@@ -35,6 +38,15 @@ const HamburgerIcon = styled.div`
     display: none;
 }
 `
+const NavLinkTop = styled(LinkS) `
+    text-decoration: none;
+    color: #7D828F;
+    font-weight:700;
+    @media screen and (min-width: 376px) {
+    margin-left:10px;
+    
+}
+`
 
 function Navbar() {
     return (
@@ -42,13 +54,13 @@ function Navbar() {
             <NavLogoDesktop src={NavLogo}/>
             <NavMenu>
                 <NavItems>
-                    <Link to="/Portfolio">Portfolio</Link>
+                    <NavLinkTop to="/Portfolio">Portfolio</NavLinkTop>
                 </NavItems>
                 <NavItems>
-                    <Link to="/About">About Us</Link>
+                    <NavLinkTop to="/About">About Us</NavLinkTop>
                 </NavItems>
                 <NavItems>
-                    <Link to="/Contact">Contact</Link>
+                    <NavLinkTop to="/Contact">Contact</NavLinkTop>
                 </NavItems>
             </NavMenu>
             <HamburgerIcon><MenuIcon style={{ fontSize: 40}} /></HamburgerIcon>

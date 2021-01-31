@@ -9,7 +9,7 @@ import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
 const HeroContainer = styled.div `
      @media screen and (min-width: 376px) {
-    
+        margin-bottom: 150px;
 }
 `;
 const HeroBgMobile = styled.img `

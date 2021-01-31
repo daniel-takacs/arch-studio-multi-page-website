@@ -11,7 +11,7 @@ const NavbarContainer = styled.div `
     padding: 32px;
 `;
 const NavMenu = styled.ul `
-    display: none;
+    display: ;
     list-style-type: none;
     
 `;

@@ -74,7 +74,7 @@ const Button = styled.button`
     border: none;
     display: flex;
     align-items: center;
-   
+    cursor: pointer;
 `;
 
 function Hero() {

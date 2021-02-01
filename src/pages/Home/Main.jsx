@@ -64,6 +64,7 @@ const MainButton = styled.div `
     width: 100%;
     display:flex;
     justify-content:center;
+    cursor: pointer;
 `;
 
 const FeaturedContainer = styled.div `
@@ -121,12 +122,14 @@ const FeaturedButtonTop = styled.div`
     width: 30%;
     display:flex;
     justify-content:center;
+    cursor: pointer;
 `
 const FeaturedH3 = styled.h3 `
 
 `;
 const FeaturedButton = styled.div `
   margin-top: 10px;
+  cursor: pointer;
 `;
 
 const FeaturedBottomButtonWrapper = styled.div `
@@ -143,7 +146,7 @@ const FeaturedBottomButton = styled.button`
     width: 100%;
     display:flex;
     justify-content:center;
-    
+    cursor: pointer;
 `;
 function Main() {
     return (

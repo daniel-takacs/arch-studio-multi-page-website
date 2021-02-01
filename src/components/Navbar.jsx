@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import NavLogo from '../assets/images/logo.svg';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Link as LinkS } from 'react-scroll';
+import { Link as LinkS } from 'react-router-dom';
 
 const NavbarContainer = styled.div `
     display: flex;
@@ -31,36 +31,36 @@ const NavItems = styled.li `
     padding: 0 10px;
 `;
 const NavLogoDesktop = styled.img `
-    
+    cursor: pointer;
 `
 const HamburgerIcon = styled.div`
       @media screen and (min-width: 376px) {
     display: none;
 }
 `
-const NavLinkTop = styled(LinkS) `
+const NavLinks = styled(LinkS) `
     text-decoration: none;
     color: #7D828F;
     font-weight:700;
     @media screen and (min-width: 376px) {
     margin-left:10px;
-    
+    cursor: pointer;
 }
 `
 
 function Navbar() {
     return (
         <NavbarContainer>
-            <NavLogoDesktop src={NavLogo}/>
+            <NavLogoDesktop to="/" src={NavLogo}/>
             <NavMenu>
                 <NavItems>
-                    <NavLinkTop to="/Portfolio">Portfolio</NavLinkTop>
+                    <NavLinks to="/Portfolio">Portfolio</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinkTop to="/About">About Us</NavLinkTop>
+                    <NavLinks to="/About">About Us</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinkTop to="/Contact">Contact</NavLinkTop>
+                    <NavLinks to="/Contact">Contact</NavLinks>
                 </NavItems>
             </NavMenu>
             <HamburgerIcon><MenuIcon style={{ fontSize: 40}} /></HamburgerIcon>

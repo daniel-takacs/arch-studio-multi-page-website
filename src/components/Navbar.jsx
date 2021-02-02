@@ -12,7 +12,7 @@ const NavbarContainer = styled.div `
     padding: 32px;
 
     @media screen and (min-width: 376px) {
-    padding: 50px 97.5px;
+    padding: 50px 0;
     justify-content: start;
 }
 `;

@@ -4,21 +4,16 @@ import Navbar from '../../components/Navbar';
 import styled from 'styled-components';
 
 import { PTab228b, PTabdelsol, PTabedelweiss, PTabeebox, PTabfederal, PTabhypers, PTabnetcry,
-PTabparamour, PTabprototype, PTabseraph, PTabsxiv, PTabtrinity, 
-PMobile228b, PMobiledelsol, PMobileedelweiss, PMobileeebox, PMobilefederal, PMobilehypers, PMobilenetcry,
-PMobileparamour, PMobileprototype, PMobileseraph, PMobilesxiv, PMobiletrinity,
+         PTabparamour, PTabprototype, PTabseraph, PTabsxiv, PTabtrinity, PMobile228b, PMobiledelsol, 
+         PMobileedelweiss, PMobileeebox, PMobilefederal, PMobilehypers, PMobilenetcry,PMobileparamour, 
+         PMobileprototype, PMobileseraph, PMobilesxiv, PMobiletrinity,PDesk228b, PDeskdelsol, PDeskedelweiss, 
+         PDeskeebox, PDeskfederal, PDeskhypers, PDesknetcry,
+         PDeskparamour, PDeskprototype, PDeskseraph, PDesksxiv, PDesktrinity } from '../../assets/images/index';
 
-PDesk228b, PDeskdelsol, PDeskedelweiss, PDeskeebox, PDeskfederal, PDeskhypers, PDesknetcry,
-PDeskparamour, PDeskprototype, PDeskseraph, PDesksxiv, PDesktrinity } from '../../assets/images/index';
-
-//import PortfolioTabletImg12 from '../../assets/images/portfolio/tablet/image-trinity.jpg';
 
 const PortfolioContainer = styled.div `
- padding: 0 32px;
  margin: 50px auto;
- @media screen and (min-width: 376px) {
-     padding: 0 97.5px;
- }
+
 `
              
 const Portfolio = styled.div `

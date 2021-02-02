@@ -2,7 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import AboutIntroImg from '../../assets/images/about/mobile/image-hero.jpg';
-import { AboutContainer, AboutIntro, AboutImg, AboutText, AboutIntroH2,
+import AboutTabIntroImg from '../../assets/images/about/tablet/image-hero.jpg';
+import AboutDeskIntroImg from '../../assets/images/about/desktop/image-hero.jpg';
+
+import { AboutContainer, AboutIntro, AboutImgContainer, AboutImg, AboutText, AboutIntroH2,
         AboutIntroP, AboutMainSection, AboutMainText, AboutMainP, AboutMainH2,
         AboutLeaders, AboutLeaderH2, AboutLeader, AboutLeaderImg, AboutLeaderH4, AboutLeaderP,
         AboutSocial, AboutSocialIcon  } from './AboutElements';
@@ -17,7 +20,11 @@ import IconTwitter from '../../assets/images/icons/icon-twitter.svg';
 function About() {
     return (
         <div>
-            <AboutImg src={AboutIntroImg}/>
+            <AboutImgContainer> 
+                <AboutImg className="imgfilter" src={AboutIntroImg}/>
+                <AboutImg className="imgfilter" src={AboutTabIntroImg}/>
+                <AboutImg className="imgfilter" src={AboutDeskIntroImg}/>
+            </AboutImgContainer>
             <AboutContainer>
                 <AboutIntro>
                     <AboutText>

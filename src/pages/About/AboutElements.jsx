@@ -45,7 +45,7 @@ export const AboutImg = styled.img `
 `
 export const AboutIntro = styled.div `
     margin: 100px 0;
-        @media screen and (min-width: 376px) {
+        @media screen and (min-width: 730px) {
             position: absolute;
             bottom: 190px;
             padding: 100px 50px 300px; 
@@ -58,7 +58,7 @@ export const AboutIntro = styled.div `
 export const AboutText = styled.div `
     width: 472px;
     position: relative;
-    @media screen and (min-width: 376px) {
+    @media screen and (min-width: 730px) {
         &:before {
             content: 'About';
             position: absolute;
@@ -90,19 +90,37 @@ export const AboutMainText = styled.div `
 `
 export const AboutMainH2 = styled.h2 `
     font-size: 2.5rem;
+    @media screen and (min-width: 376px) {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        }
 `
 export const AboutMainP = styled.p `
-
+    @media screen and (min-width: 376px) {
+        margin-bottom: 20px;
+        }
 `
 export const AboutLeaders = styled.div `
-
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 376px) {
+        flex-direction: row;
+        flex-wrap:wrap;
+        }
 `
 export const AboutLeaderH2 = styled.h2 `
     font-size: 2.5rem;
     margin-bottom: 50px;
+    @media screen and (min-width: 376px) {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        }
 `
 export const AboutLeader = styled.div `
-
+    @media screen and (min-width: 376px) {
+        padding: 15px;
+        width: 50%;
+        }
 `
 export const AboutLeaderImg = styled.img `
     width: 100%;

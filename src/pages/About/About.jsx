@@ -54,8 +54,47 @@ function About() {
                         </AboutMainP>   
                     </AboutMainText>    
                 </AboutMainSection>   
-                <AboutLeaders>
                     <AboutLeaderH2>The Leaders</AboutLeaderH2>
+                <AboutLeaders>
+                    <AboutLeader>
+                        <AboutLeaderImg src={AboutJake} />
+                        <AboutLeaderH4>
+                        Jake Richards
+                        </AboutLeaderH4>
+                        <AboutLeaderP>
+                        Chief Architect
+                        </AboutLeaderP>
+                        <AboutSocial>
+                            <AboutSocialIcon src={IconLinkedin} />
+                            <AboutSocialIcon src={IconTwitter} />
+                        </AboutSocial>
+                    </AboutLeader>
+                    <AboutLeader>
+                        <AboutLeaderImg src={AboutJake} />
+                        <AboutLeaderH4>
+                        Jake Richards
+                        </AboutLeaderH4>
+                        <AboutLeaderP>
+                        Chief Architect
+                        </AboutLeaderP>
+                        <AboutSocial>
+                            <AboutSocialIcon src={IconLinkedin} />
+                            <AboutSocialIcon src={IconTwitter} />
+                        </AboutSocial>
+                    </AboutLeader>
+                    <AboutLeader>
+                        <AboutLeaderImg src={AboutJake} />
+                        <AboutLeaderH4>
+                        Jake Richards
+                        </AboutLeaderH4>
+                        <AboutLeaderP>
+                        Chief Architect
+                        </AboutLeaderP>
+                        <AboutSocial>
+                            <AboutSocialIcon src={IconLinkedin} />
+                            <AboutSocialIcon src={IconTwitter} />
+                        </AboutSocial>
+                    </AboutLeader>
                     <AboutLeader>
                         <AboutLeaderImg src={AboutJake} />
                         <AboutLeaderH4>

@@ -13,6 +13,9 @@ const FooterNavbarContainer = styled.div `
     align-items: center;
     background-color: #EEEFF4;
     position: relative;
+    @media screen and (min-width: 376px) {
+        flex-direction:row;
+        }
 `;
 const FooterLogoContainer = styled.div `
     color: red;
@@ -29,11 +32,20 @@ const FooterLogo = styled.img `
 const FooterNavMenu = styled.ul `
     text-align: center;
     margin-top: 70px;
+    @media screen and (min-width: 376px) {
+        display: flex;
+        flex-direction:row;
+        margin-top: 0;
+        }
+    
     `;
 const FooterNavItems = styled.li `
     list-style: none;
     color: #7D828F;
     padding: 15px 0;
+    @media screen and (min-width: 376px) {
+        padding: 0 15px;
+        }
     `;
 
 const NavLink = styled(LinkS)`

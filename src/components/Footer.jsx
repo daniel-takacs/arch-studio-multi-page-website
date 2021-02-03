@@ -1,5 +1,5 @@
 import React from 'react';
-import NavLogo from '../assets/images/logo.svg';
+import NavLogo from '../assets/images/footer-logo.svg';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 import {FooterNavbarContainer, FooterLogoContainer, FooterLogo, 
         FooterNavMenu, FooterNavItems, NavLink, FooterButtonWrapper, 
@@ -9,8 +9,8 @@ function Footer() {
     return (
         <>
            <FooterNavbarContainer>
-               <FooterLogoContainer>
-                   <FooterLogo to='/' src={NavLogo}/>
+               <FooterLogoContainer className="footerlogo-container">
+                   <FooterLogo className="footerlogo" to='/' src={NavLogo}/>
                </FooterLogoContainer>
             <FooterNavMenu>
                 <FooterNavItems>

@@ -10,7 +10,9 @@ export const FooterNavbarContainer = styled.div `
     position: relative;
     @media screen and (min-width: 376px) {
         flex-direction:row;
-        max-width: 1200px;
+        max-width: 1440px;
+        justify-content: space-between;
+        
         }
 `;
 export const FooterLogoContainer = styled.div `
@@ -72,3 +74,4 @@ export const Button = styled.button`
     align-items: center;
     cursor: pointer;
 `;
+

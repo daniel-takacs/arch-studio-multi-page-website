@@ -10,9 +10,9 @@ import { AboutContainer, AboutIntro, AboutImgContainer, AboutImg, AboutText, Abo
         AboutLeaders, AboutLeaderH2, AboutLeader, AboutLeaderImg, AboutLeaderH4, AboutLeaderP,
         AboutSocial, AboutSocialIcon  } from './AboutElements';
 import AboutJake from '../../assets/images/about/desktop/avatar-jake.jpg';
-//import AboutThompson from '../../assets/images/about/desktop/avatar-thompson.jpg';
-//import AboutJackson from '../../assets/images/about/desktop/avatar-jackson.jpg';
-//import AboutMaria from '../../assets/images/about/desktop/avatar-maria.jpg';
+import AboutThompson from '../../assets/images/about/desktop/avatar-thompson.jpg';
+import AboutJackson from '../../assets/images/about/desktop/avatar-jackson.jpg';
+import AboutMaria from '../../assets/images/about/desktop/avatar-maria.jpg';
 import IconLinkedin from '../../assets/images/icons/icon-linkedin.svg';
 import IconTwitter from '../../assets/images/icons/icon-twitter.svg';
 
@@ -70,12 +70,12 @@ function About() {
                         </AboutSocial>
                     </AboutLeader>
                     <AboutLeader>
-                        <AboutLeaderImg src={AboutJake} />
+                        <AboutLeaderImg src={AboutThompson} />
                         <AboutLeaderH4>
-                        Jake Richards
+                        Thompson Smith
                         </AboutLeaderH4>
                         <AboutLeaderP>
-                        Chief Architect
+                        Head of Finance
                         </AboutLeaderP>
                         <AboutSocial>
                             <AboutSocialIcon src={IconLinkedin} />
@@ -83,12 +83,12 @@ function About() {
                         </AboutSocial>
                     </AboutLeader>
                     <AboutLeader>
-                        <AboutLeaderImg src={AboutJake} />
+                        <AboutLeaderImg src={AboutJackson} />
                         <AboutLeaderH4>
-                        Jake Richards
+                        Jackson Rourke
                         </AboutLeaderH4>
                         <AboutLeaderP>
-                        Chief Architect
+                        Lead Designer
                         </AboutLeaderP>
                         <AboutSocial>
                             <AboutSocialIcon src={IconLinkedin} />
@@ -96,12 +96,12 @@ function About() {
                         </AboutSocial>
                     </AboutLeader>
                     <AboutLeader>
-                        <AboutLeaderImg src={AboutJake} />
+                        <AboutLeaderImg src={AboutMaria} />
                         <AboutLeaderH4>
-                        Jake Richards
+                        Maria Simpson
                         </AboutLeaderH4>
                         <AboutLeaderP>
-                        Chief Architect
+                        Senior Architect
                         </AboutLeaderP>
                         <AboutSocial>
                             <AboutSocialIcon src={IconLinkedin} />
@@ -109,36 +109,7 @@ function About() {
                         </AboutSocial>
                     </AboutLeader>
                 </AboutLeaders>
-            </AboutContainer>
-            <p>
-        
-            
-
-           
-
-            
-
-          
-
-            The Leaders
-
-            
-            
-
-            Thompson Smith
-            Head of Finance
-
-            Jackson Rourke
-            Lead Designer
-
-            Maria Simpson
-            Senior Architect
-
-            Portfolio
-            About Us
-            Contact
-
-            See Our Portfolio</p>   
+            </AboutContainer> 
         </div>
     )
 }

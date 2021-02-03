@@ -9,6 +9,10 @@ export const AboutContainer = styled.div `
 `
 export const AboutImgContainer = styled.div `
     position: relative;
+    @media screen and (min-width: 376px) {
+        margin-bottom: 150px;
+        padding: 0 97.5px;
+}
    
 `
 export const AboutImg = styled.img `

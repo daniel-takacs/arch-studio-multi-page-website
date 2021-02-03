@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const AboutContainer = styled.div `
     padding: 0 32px;
     margin-bottom: 50px;
+        @media screen and (min-width: 376px) {
+            padding: 0 97.5px;
+        }
 `
 export const AboutImgContainer = styled.div `
     position: relative;

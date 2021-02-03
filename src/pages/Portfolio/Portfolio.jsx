@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
-import styled from 'styled-components';
+
 
 import { PTab228b, PTabdelsol, PTabedelweiss, PTabeebox, PTabfederal, PTabhypers, PTabnetcry,
          PTabparamour, PTabprototype, PTabseraph, PTabsxiv, PTabtrinity, PMobile228b, PMobiledelsol, 
@@ -10,61 +10,9 @@ import { PTab228b, PTabdelsol, PTabedelweiss, PTabeebox, PTabfederal, PTabhypers
          PDeskeebox, PDeskfederal, PDeskhypers, PDesknetcry,
          PDeskparamour, PDeskprototype, PDeskseraph, PDesksxiv, PDesktrinity } from '../../assets/images/index';
 
-
-const PortfolioContainer = styled.div `
- margin: 50px auto;
-
-`
-             
-const Portfolio = styled.div `
-    position: relative;
-    margin-bottom: 20px;
-`
-const PortfolioImage = styled.img `
-        width: 100%;
-        &:nth-child(2) {
-            display:none;
-        }
-        &:nth-child(3) {
-            display:none;
-        }
-     @media screen and (min-width: 376px) {
-        &:first-child {
-            display:none;
-    }
-        &:nth-child(2) {
-                display:block;
-        }
-        &:nth-child(3) {
-            display:none;
-        }
+import { PortfolioContainer, Portfolio, PortfolioH3, PortfolioImage, PortfolioText,
+        PortfolioP } from './PortfolioElements';
         
-  }
-    @media screen and (min-width: 769px) {
-        &:first-child {
-            display:none;
-        }
-        &:nth-child(2) {
-                display:none;
-        }
-        &:nth-child(3) {
-            display:block;
-        }
-    }
-`;
-const PortfolioText = styled.div `
-    position: absolute;
-    bottom: 25px;
-    left: 20px;
-    color: #fff;
-`
-const PortfolioH3 = styled.h3 `
-
-`
-const PortfolioP = styled.p `
-
-`
-
 function PortfolioPage() {
     return (
         <>

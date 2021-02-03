@@ -20,7 +20,7 @@ function App() {
           <Route path="/Portfolio" component={Portfolio} />
           <Route path="/Contact" component={Contact} />
         </Switch>
-         <Footer />
+         <Footer className="footer"/>
         </HashRouter>
     </div>
   );

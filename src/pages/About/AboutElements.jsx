@@ -7,7 +7,7 @@ export const AboutContainer = styled.div `
             padding: 0 97.5px;
         }
 `
-export const AboutImgContainer = styled.div `
+export const AboutHeroImgContainer = styled.div `
     position: relative;
     @media screen and (min-width: 376px) {
         margin-bottom: 150px;
@@ -15,7 +15,7 @@ export const AboutImgContainer = styled.div `
 }
    
 `
-export const AboutImg = styled.img `
+export const AboutHeroImg = styled.img `
     width: 100%;
     
         &:first-child {
@@ -50,7 +50,7 @@ export const AboutImg = styled.img `
         }
     }
 `
-export const AboutIntro = styled.div `
+export const AboutIntroContainer = styled.div `
     margin: 100px 0;
         @media screen and (min-width: 730px) {
             position: absolute;
@@ -65,6 +65,9 @@ export const AboutIntro = styled.div `
 export const AboutText = styled.div `
     width: 472px;
     position: relative;
+    @media screen and (min-width: 376px) {
+        padding-top: 70px;
+    }
     @media screen and (min-width: 730px) {
         &:before {
             content: 'About';
@@ -82,6 +85,14 @@ export const AboutIntroH2 = styled.h2 `
     margin-bottom: 20px;
     @media screen and (min-width: 376px) {
         font-size: 3rem;
+        &:before {
+            content: '';
+            width: 65px;
+            height: 2px;
+            background-color: #C8CCD8;
+            position: absolute;
+            top: -10px;
+            left: 0;
         }
 
 `

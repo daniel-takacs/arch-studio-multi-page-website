@@ -5,7 +5,7 @@ import AboutIntroImg from '../../assets/images/about/mobile/image-hero.jpg';
 import AboutTabIntroImg from '../../assets/images/about/tablet/image-hero.jpg';
 import AboutDeskIntroImg from '../../assets/images/about/desktop/image-hero.jpg';
 
-import { AboutContainer, AboutIntro, AboutImgContainer, AboutImg, AboutText, AboutIntroH2,
+import { AboutContainer, AboutIntroContainer, AboutHeroImgContainer, AboutHeroImg, AboutText, AboutIntroH2,
         AboutIntroP, AboutMainSection, AboutMainText, AboutMainP, AboutMainH2,
         AboutLeaders, AboutLeaderH2, AboutLeader, AboutLeaderImg, AboutLeaderH4, AboutLeaderP,
         AboutSocial, AboutSocialIcon  } from './AboutElements';
@@ -20,13 +20,13 @@ import IconTwitter from '../../assets/images/icons/icon-twitter.svg';
 function About() {
     return (
         <div>
-            <AboutImgContainer> 
-                <AboutImg className="imgfilter" src={AboutIntroImg}/>
-                <AboutImg className="imgfilter" src={AboutTabIntroImg}/>
-                <AboutImg className="imgfilter" src={AboutDeskIntroImg}/>
-            </AboutImgContainer>
+            <AboutHeroImgContainer> 
+                <AboutHeroImg className="imgfilter" src={AboutIntroImg}/>
+                <AboutHeroImg className="imgfilter" src={AboutTabIntroImg}/>
+                <AboutHeroImg className="imgfilter" src={AboutDeskIntroImg}/>
+            </AboutHeroImgContainer>
             <AboutContainer>
-                <AboutIntro>
+                <AboutIntroContainer>
                     <AboutText>
                         <AboutIntroH2>
                             Your team of professionals
@@ -36,7 +36,7 @@ function About() {
                         relationship our projects have with their surroundings.
                         </AboutIntroP>
                     </AboutText>
-                </AboutIntro>
+                </AboutIntroContainer>
                 <AboutMainSection>
                     <AboutMainText>
                         <AboutMainH2>Our Heritage</AboutMainH2>

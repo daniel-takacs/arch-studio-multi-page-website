@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import { ContactContainer, ContactHeroImgContainer, ContactHeroImg,
             ContactIntroContainer, ContactText, ContactP, ContactH2, ContactDetailsContainer,
-        ContactDetails, DetailsH2, DetailsH5, DetailsP, DetailsButton, 
-    ContactMapContainer, ContactMapImg, ContactFormContainer, ContactFormH2} from './ContactElements';
+        ContactDetails, DetailsH2, DetailsH4, DetailsP, DetailsButton, 
+    ContactMapContainer, ContactMapImg, ContactFormContainer, ContactFormWrapper, ContactFormH2, Button} from './ContactElements';
 import ContactImgMobile from '../../assets/images/contact/mobile/image-hero.jpg';
 import ContactImgTablet from '../../assets/images/contact/tablet/image-hero.jpg';
 import ContactImgDesktop from '../../assets/images/contact/desktop/image-hero.jpg';
 import ContactMapImage from '../../assets/images/contact/mobile/image-map.png';
 import ContactForm from '../../components/ContactForm';
+import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
+
 
 function Contact() {
     return (
@@ -32,18 +34,22 @@ function Contact() {
                 <ContactDetailsContainer>
                     <DetailsH2>Contact Details</DetailsH2>
                         <ContactDetails>
-                            <DetailsH5>Main Office</DetailsH5>
+                            <DetailsH4>Main Office</DetailsH4>
                             <DetailsP>Mail:	archone@mail.com</DetailsP>
                             <DetailsP>Address: 1892 Chenoweth Drive TN</DetailsP>
                             <DetailsP>Phone: 123-456-3451</DetailsP>
-                            <DetailsButton>View on map</DetailsButton>
+                            <DetailsButton>
+                                <Button onClick={() => { alert('clicked') }}>View on Map<ArrowForwardOutlinedIcon /></Button>
+                            </DetailsButton>
                         </ContactDetails>
                     <ContactDetails>
-                        <DetailsH5>Office II</DetailsH5>
+                        <DetailsH4>Office II</DetailsH4>
                         <DetailsP>Mail: archtwo@mail.com</DetailsP>
                         <DetailsP>Address: 3399 Wines Lane TX</DetailsP>
                         <DetailsP>Phone: 832-123-4321</DetailsP>
-                        <DetailsButton>View on map</DetailsButton>
+                        <DetailsButton>
+                                <Button onClick={() => { alert('clicked') }}>View on Map<ArrowForwardOutlinedIcon /></Button>
+                        </DetailsButton>
                     </ContactDetails>   
                 </ContactDetailsContainer>
                 <ContactMapContainer>
@@ -51,7 +57,9 @@ function Contact() {
                 </ContactMapContainer>
                 <ContactFormContainer>
                     <ContactFormH2>Connect with us</ContactFormH2>
-                    <ContactForm />
+                    <ContactFormWrapper>
+                        <ContactForm />
+                    </ContactFormWrapper>
                 </ContactFormContainer>
             </ContactContainer>
         </>

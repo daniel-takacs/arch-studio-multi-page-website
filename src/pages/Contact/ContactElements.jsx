@@ -65,6 +65,7 @@ margin: 100px 0;
 export const ContactText = styled.div `
     @media screen and (min-width: 376px) {
         padding-top: 70px;
+        padding-right: 25px;
     }
     position: relative;
     @media screen and (min-width: 730px) {
@@ -101,7 +102,7 @@ export const ContactP = styled.p `
     line-height: 1.5rem;
 `
 export const ContactDetailsContainer = styled.div `
-    margin-bottom: 40px;
+    margin: 100px 0;
 `
 export const ContactDetails = styled.div `
     line-height: 2rem;
@@ -109,11 +110,22 @@ export const ContactDetails = styled.div `
 export const DetailsH2 = styled.h2 `
  font-size: 2.5rem;
  margin-bottom: 40px;
+ position: relative;
+    &:before {
+            content: '';
+            width: 65px;
+            height: 2px;
+            background-color: #C8CCD8;
+            position: absolute;
+            top: -80px;
+            left: 0;
+        }
+ 
     @media screen and (min-width: 376px) {
         font-size: 3rem;
         }
 `
-export const DetailsH5  = styled.h5 `
+export const DetailsH4  = styled.h4 `
 
 `
 export const DetailsP = styled.p `
@@ -121,21 +133,32 @@ export const DetailsP = styled.p `
         margin-bottom: 20px;
         }
 `
-export const DetailsButton = styled.button `
-
+export const DetailsButton = styled.div `
+    display: flex;
+    align-items: center;
+`
+export const Button = styled.button `
+    background-color: transparent;
+    padding: 20px 0 20px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
 `
 export const ContactMapContainer = styled.div `
 
 `
 export const ContactMapImg = styled.img `
     max-width: 100%;
-    @media screen and (min-width: 376px) {
-        
-        }
 `
 export const ContactFormContainer = styled.div `
-
+    margin-top: 50px;
 ` 
 export const ContactFormH2 = styled.h2 `
 
+`
+export const ContactFormWrapper = styled.div `
+    margin-bottom: 100px;
 `

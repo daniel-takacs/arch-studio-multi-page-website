@@ -63,9 +63,9 @@ export const AboutIntroContainer = styled.div `
 
 `
 export const AboutText = styled.div `
-    width: 472px;
     position: relative;
     @media screen and (min-width: 376px) {
+        width: 472px;
         padding-top: 70px;
     }
     @media screen and (min-width: 730px) {
@@ -94,7 +94,7 @@ export const AboutIntroH2 = styled.h2 `
             top: -10px;
             left: 0;
         }
-
+    }
 `
 export const AboutIntroP = styled.p `
     line-height: 1.5rem;
@@ -108,19 +108,29 @@ export const AboutMainText = styled.div `
 `
 export const AboutMainH2 = styled.h2 `
     font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    &:before {
+            content: '';
+            width: 65px;
+            height: 2px;
+            background-color: #C8CCD8;
+            position: absolute;
+            top: -80px;
+            left: 0;
+        }
     @media screen and (min-width: 376px) {
         font-size: 3rem;
         margin-bottom: 40px;
         }
 `
 export const AboutMainP = styled.p `
-    @media screen and (min-width: 376px) {
         margin-bottom: 20px;
-        }
 `
 export const AboutLeaders = styled.div `
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
     @media screen and (min-width: 376px) {
         flex-direction: row;
         flex-wrap:wrap;
@@ -135,6 +145,7 @@ export const AboutLeaderH2 = styled.h2 `
         }
 `
 export const AboutLeader = styled.div `
+    margin-bottom: 30px;
     @media screen and (min-width: 376px) {
         padding: 15px;
         width: 50%;
@@ -155,5 +166,6 @@ export const AboutSocial = styled.div `
    
 `
 export const AboutSocialIcon = styled.img `
-    padding-right: 35px;
+    padding-right: 25px;
+    height: 32px;
 `

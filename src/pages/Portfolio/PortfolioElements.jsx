@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const PortfolioContainer = styled.div `
-    margin: 50px auto;
+    padding: 0 32px;
+    margin: 50px auto 100px;
         @media screen and (min-width: 376px) {
             padding: 0 97.5px;
         }

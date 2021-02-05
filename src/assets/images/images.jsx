@@ -43,9 +43,9 @@ import PDesktrinity from './portfolio/desktop/image-trinity.jpg';
 // MAIN JSX //
 import WelcomeImage from './home/desktop/image-welcome.jpg'
 
-import SmallTeamMobile from './home/tablet/image-small-team.jpg';
+import SmallTeamMobile from './home/mobile/image-small-team.jpg';
 import SmallTeamTablet from './home/tablet/image-small-team.jpg';
-import SmallTeamDesktop from './home/tablet/image-small-team.jpg';
+import SmallTeamDesktop from './home/desktop/image-small-team.jpg';
 
 
 

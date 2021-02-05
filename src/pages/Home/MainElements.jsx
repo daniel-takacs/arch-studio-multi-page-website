@@ -112,21 +112,64 @@ export const FeaturedH2 = styled.h2 `
   }
 `;
 export const FeaturedImages = styled.div `
+ @media screen and (min-width: 769px) {
+      display:flex;
+    }
 `;
 export const FeaturedImageContainer = styled.div `
   position: relative;
+  @media screen and (min-width: 769px) {
+        &:after {
+            position: absolute;
+            font-size: 10rem;
+            font-weight: 700;
+            top:10px;
+            right: 0;
+            content: '1';
+            color: rgba(255,255,255,0.2);
+        }
+        &:nth-child(2) {
+               padding: 0 10px;
+        }
+       
+    }
+
 `;
 
 export const FeaturedImage = styled.img `
     width: 100%;
-    &:second-child {
-      display:none;
+    &:nth-child(2) {
+            display:none;
+        }
+        &:nth-child(3) {
+            display:none;
+        }
+     @media screen and (min-width: 376px) {
+        &:first-child {
+            display:none;
     }
-   @media screen and (min-width: 376px) {
-    &:first-child {
-    display:none;
+        &:nth-child(2) {
+                display:block;
+        }
+        &:nth-child(3) {
+            display:none;
+        }
+        
   }
-  }
+    @media screen and (min-width: 769px) {
+        
+        &:first-child {
+            display:none;
+        }
+        &:nth-child(2) {
+                display:none;
+        }
+        &:nth-child(3) {
+            display:block;
+            
+        }
+    }
+    
 `;
 export const FeaturedTextContainer = styled.div `
   position: absolute;
@@ -167,7 +210,9 @@ export const FeaturedButton = styled.div `
 `;
 
 export const FeaturedBottomButtonWrapper = styled.div `
-    
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
 `;
 export const FeaturedBottomButton = styled.button`
     background-color: #1B1D23;

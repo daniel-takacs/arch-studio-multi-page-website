@@ -64,7 +64,7 @@ function Main() {
                     <FeaturedImageContainer>
                       <FeaturedImage className="imgfilter" src={DelSolMobile}/>
                       <FeaturedImage className="imgfilter" src={DelSolTablet}/>
-                      <FeaturedImage className="imgfilter" src={DelSolDesktop}/>
+                      <FeaturedImage className="imgfilter no-filter" src={DelSolDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>Project De Sol</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    
@@ -74,7 +74,7 @@ function Main() {
                     <FeaturedImageContainer>
                       <FeaturedImage className="imgfilter" src={TowerMobile}/>
                       <FeaturedImage className="imgfilter" src={TowerTablet}/>
-                      <FeaturedImage className="imgfilter" src={TowerDesktop}/>
+                      <FeaturedImage className="imgfilter no-filter" src={TowerDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>228B Tower</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    

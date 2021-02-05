@@ -1,6 +1,30 @@
-.active {
+.close-icon {
     display: none;
 }
-.hamburger {
+.hamburger.active .close-icon {
+    display: block;
+}
+.hamburger.active .hamburger-icon {
+    display: none;
+}
+@media screen and (max-width: 376px) {
 
+    .nav-menu {
+    position: fixed;
+    top: -100%;
+    background-color: #EEEFF4;
+    z-index: 1000;
+}
+}
+.nav-menu.active {
+    display: block;
+    top: 104px;
+    right: 0;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.nav-list {
+    padding: 20px;
 }

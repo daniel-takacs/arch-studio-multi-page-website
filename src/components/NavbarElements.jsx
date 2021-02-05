@@ -14,7 +14,6 @@ export const NavbarContainer = styled.div `
 }
 `;
 export const NavMenu = styled.ul `
-    display: none;
     list-style: none;
 
     @media screen and (min-width: 376px) {

@@ -20,20 +20,20 @@ function Navbar() {
     return (
         <NavbarContainer>
             <NavLogoDesktop to="/" src={NavLogo}/>
-            <NavMenu>
-                <NavItems>
+            <NavMenu className={sidebar ? "nav-menu active" : "nav-menu"}>
+                <NavItems className="nav-list" >
                     <NavLinks to="/Portfolio">Portfolio</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks to="/About">About Us</NavLinks>
+                    <NavLinks  to="/About">About Us</NavLinks>
                 </NavItems>
                 <NavItems>
                     <NavLinks to="/Contact">Contact</NavLinks>
                 </NavItems>
             </NavMenu>
             <HamburgerIconWrapper className={sidebar ? "hamburger active" : "hamburger"}>
-                <MenuIcon onClick={clickHandler} src={HambIconImg}/>
-                <CloseIcon src={CloseIconImg}/>
+                <MenuIcon className="hamburger-icon"onClick={clickHandler} src={HambIconImg}/>
+                <CloseIcon className="close-icon" onClick={clickHandler} src={CloseIconImg}/>
             </HamburgerIconWrapper>
         </NavbarContainer>
     )

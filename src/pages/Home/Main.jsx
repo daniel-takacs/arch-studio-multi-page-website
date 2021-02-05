@@ -14,7 +14,7 @@ import { MainContainer, WelcomeTextContent, MainH2, MainP, MainImgContainer,
 import { SmallTeamMobile, SmallTeamTablet, SmallTeamDesktop, DelSolMobile, TowerMobile, 
   PrototypeMobile, DelSolTablet, PrototypeTablet,TowerTablet, DelSolDesktop, PrototypeDesktop
   ,TowerDesktop} 
-  from '../../assets/images/index';
+  from '../../assets/images/images';
 
 
 function Main() {

@@ -9,7 +9,7 @@ import { PTab228b, PTabdelsol, PTabedelweiss, PTabeebox, PTabfederal, PTabhypers
          PMobileprototype, PMobileseraph, PMobilesxiv, PMobiletrinity,PDesk228b, PDeskdelsol, PDeskedelweiss, 
          PDeskeebox, PDeskfederal, PDeskhypers, PDesknetcry,
          PDeskparamour, PDeskprototype, PDeskseraph, PDesksxiv, PDesktrinity } 
-         from '../../assets/images/index';
+         from '../../assets/images/images';
 
 import { PortfolioContainer, Portfolio, PortfolioH3, PortfolioImage, PortfolioText,
         PortfolioP } from './PortfolioElements';

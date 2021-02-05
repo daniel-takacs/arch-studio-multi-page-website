@@ -12,6 +12,31 @@ const HeroContainer = styled.div `
         margin-bottom: 150px;
         padding: 0 97.5px;
         position: relative;
+        &:after {
+            position: absolute;
+            content: 'Home';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 48px;
+            left: -25px;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 104px;
+            height: 1px;
+            background-color: #C8CCD8;
+            top: -115px;
+            left: -25px;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
 }
 `;
 const HeroBgImg = styled.img `

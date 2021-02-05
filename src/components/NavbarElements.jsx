@@ -7,19 +7,16 @@ export const NavbarContainer = styled.div `
     justify-content: space-between;
     align-items: center;
     padding: 32px;
-
-    @media screen and (min-width: 376px) {
-    padding: 50px 97.5px;
-    justify-content: start;
+        @media screen and (min-width: 376px) {
+        padding: 50px 97.5px;
+        justify-content: start;
 }
 `;
 export const NavMenu = styled.ul `
     list-style: none;
-
-    @media screen and (min-width: 376px) {
-    display: flex;
-    margin-left: 55px;
-    
+        @media screen and (min-width: 376px) {
+        display: flex;
+        margin-left: 55px;
 }
     
 `;

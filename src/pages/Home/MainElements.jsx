@@ -10,10 +10,26 @@ export const MainContainer = styled.div `
 }
 
 `;
+export const WelcomeTextContentWrapper = styled.div `
+   
+    @media screen and (min-width: 769px) {
+        display: flex;
+        margin-bottom: 150px;
+    }
+`
 export const WelcomeTextContent = styled.div `
   
   margin: 72px 0;
 `;
+export const WelcomeImgContainer = styled.div `
+    display: none;
+        @media screen and (min-width: 769px) {
+            display: block;
+    }
+`
+export const WelcomeMainImg = styled.img `
+
+`
 export const MainH2 = styled.h2 `
   font-size: 3.2rem;
 `;

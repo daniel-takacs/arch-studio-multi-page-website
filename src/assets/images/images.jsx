@@ -41,6 +41,7 @@ import PDesktrinity from './portfolio/desktop/image-trinity.jpg';
 
 
 // MAIN JSX //
+import WelcomeImage from './home/desktop/image-welcome.jpg'
 
 import SmallTeamMobile from './home/tablet/image-small-team.jpg';
 import SmallTeamTablet from './home/tablet/image-small-team.jpg';
@@ -103,6 +104,8 @@ export { PDesksxiv };
 export { PDesktrinity };
 
 // EXPORT MAIN JSX //
+
+export {WelcomeImage};
 
 export {SmallTeamMobile};
 export {SmallTeamTablet};

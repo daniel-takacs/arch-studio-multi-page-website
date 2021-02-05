@@ -1,3 +1,5 @@
+// PORTFOLIO JSX //
+
 import PMobile228b from './portfolio/mobile/image-228b.jpg';
 import PMobiledelsol from './portfolio/mobile/image-del-sol.jpg';
 import PMobileedelweiss from './portfolio/mobile/image-edelweiss.jpg';
@@ -37,6 +39,30 @@ import PDeskseraph from './portfolio/desktop/image-seraph.jpg';
 import PDesksxiv from './portfolio/desktop/image-sxiv.jpg';
 import PDesktrinity from './portfolio/desktop/image-trinity.jpg';
 
+
+// MAIN JSX //
+
+import SmallTeamMobile from './home/tablet/image-small-team.jpg';
+import SmallTeamTablet from './home/tablet/image-small-team.jpg';
+import SmallTeamDesktop from './home/tablet/image-small-team.jpg';
+
+
+
+import DelSolMobile from './portfolio/mobile/image-del-sol.jpg';
+import TowerMobile from './portfolio/mobile/image-228b.jpg';
+import PrototypeMobile from './portfolio/mobile/image-prototype.jpg';
+
+import DelSolTablet from './portfolio/tablet/image-del-sol.jpg';
+import PrototypeTablet from './portfolio/tablet/image-prototype.jpg';
+import TowerTablet from './portfolio/tablet/image-228b.jpg';
+
+import DelSolDesktop from './portfolio/desktop/image-del-sol.jpg';
+import PrototypeDesktop from './portfolio/desktop/image-prototype.jpg';
+import TowerDesktop from './portfolio/desktop/image-228b.jpg';
+
+
+// EXPORT PORTFOLIO JSX//
+
 export { PMobile228b };
 export { PMobiledelsol};
 export { PMobileedelweiss };
@@ -75,3 +101,20 @@ export { PDeskprototype };
 export { PDeskseraph };
 export { PDesksxiv };
 export { PDesktrinity };
+
+// EXPORT MAIN JSX //
+
+export {SmallTeamMobile};
+export {SmallTeamTablet};
+export {SmallTeamDesktop};
+
+export {DelSolMobile};
+export {TowerMobile };
+export {PrototypeMobile};
+export {DelSolTablet};
+export {PrototypeTablet };
+export {TowerTablet };
+export {DelSolDesktop};
+export {PrototypeDesktop};
+export {TowerDesktop};
+

@@ -8,7 +8,8 @@ import { PTab228b, PTabdelsol, PTabedelweiss, PTabeebox, PTabfederal, PTabhypers
          PMobileedelweiss, PMobileeebox, PMobilefederal, PMobilehypers, PMobilenetcry,PMobileparamour, 
          PMobileprototype, PMobileseraph, PMobilesxiv, PMobiletrinity,PDesk228b, PDeskdelsol, PDeskedelweiss, 
          PDeskeebox, PDeskfederal, PDeskhypers, PDesknetcry,
-         PDeskparamour, PDeskprototype, PDeskseraph, PDesksxiv, PDesktrinity } from '../../assets/images/index';
+         PDeskparamour, PDeskprototype, PDeskseraph, PDesksxiv, PDesktrinity } 
+         from '../../assets/images/index';
 
 import { PortfolioContainer, Portfolio, PortfolioH3, PortfolioImage, PortfolioText,
         PortfolioP } from './PortfolioElements';

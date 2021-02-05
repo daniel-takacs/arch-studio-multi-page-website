@@ -1,153 +1,22 @@
 import React from 'react';
-import SmallTeamMobile from '../../assets/images/home/tablet/image-small-team.jpg';
-import DelSolMobile from '../../assets/images/portfolio/mobile/image-del-sol.jpg';
-import TowerMobile from '../../assets/images/portfolio/mobile/image-228b.jpg';
-import PrototypeMobile from '../../assets/images/portfolio/mobile/image-prototype.jpg';
-import DelSolTablet from '../../assets/images/portfolio/tablet/image-del-sol.jpg';
-import PrototypeTablet from '../../assets/images/portfolio/tablet/image-prototype.jpg';
-import TowerTablet from '../../assets/images/portfolio/tablet/image-228b.jpg';
 
 import NavLogo from '../../assets/images/logo.svg';
-import styled from 'styled-components';
 import { Button } from '@material-ui/core';
 import '../../index.scss';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
-const MainContainer = styled.div `
+import { MainContainer, WelcomeTextContent, MainH2, MainP, MainImgContainer, 
+        MainImg, SmallTeamText, MainButtonWrapper, MainButton, FeaturedContainer,
+        FeaturedImageContainer, FeaturedImages, FeaturedImage, FeaturedTextContainer,
+        FeaturedH3, FeaturedBottomButtonWrapper, FeaturedButton, FeaturedButtonTop,
+      FeaturedH2, FeaturedTop, FeaturedBottomButton} from './MainElements';
 
-  padding: 0 32px;
-  margin-bottom: 180px;
-  @media screen and (min-width: 376px) {
-    padding: 0 97.5px;
-}
-`;
-const WelcomeTextContent = styled.div `
-  
-  margin: 72px 0;
-`;
-const MainH2 = styled.h2 `
-  font-size: 3.2rem;
-`;
-const MainP = styled.p `
-  padding-top: 29px;
-`;
-const MainImgContainer = styled.div `
-  display: none;
-  @media screen and (min-width: 376px) {
-    display: block;
-    position: relative;  
-}
-`;
-const MainImg = styled.img `
-  width: 100%;
-  margin: 0 auto;
-  
-`;
-const SmallTeamText = styled.div `
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-80%, -50%);
-`
-const MainButtonWrapper = styled.div`
+import { SmallTeamMobile, SmallTeamTablet, SmallTeamDesktop, DelSolMobile, TowerMobile, 
+  PrototypeMobile, DelSolTablet, PrototypeTablet,TowerTablet, DelSolDesktop, PrototypeDesktop
+  ,TowerDesktop} 
+  from '../../assets/images/index';
 
-`
-const MainButton = styled.div `
-  background-color: #1B1D23;
-    color: #fff;
-    padding: 20px;
-    outline: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    display:flex;
-    justify-content:center;
-    cursor: pointer;
-`;
 
-const FeaturedContainer = styled.div `
-  margin: 100px 0;
-`;
-const FeaturedH2 = styled.h2 `
-  margin: 40px 0;
-  font-size: 2rem;
-  @media screen and (min-width: 376px) {
-    font-size: 3.2rem;
-  }
-`;
-const FeaturedImages = styled.div `
-`;
-const FeaturedImageContainer = styled.div `
-  position: relative;
-`;
-
-const FeaturedImage = styled.img `
-    width: 100%;
-    &:second-child {
-      display:none;
-    }
-   @media screen and (min-width: 376px) {
-    &:first-child {
-    display:none;
-  }
-  }
-`;
-const FeaturedTextContainer = styled.div `
-  position: absolute;
-  bottom: 25px;
-  left: 20px;
-  color: #fff;
-`;
-const FeaturedTop = styled.div `
-  display: none;
- @media screen and (min-width: 376px) {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  }
-  
-`
-const FeaturedButtonTop = styled.div`
-    background-color: #1B1D23;
-    color: #fff;
-    padding: 20px;
-    outline: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    width: 30%;
-    display:flex;
-    justify-content:center;
-    cursor: pointer;
-`
-const FeaturedH3 = styled.h3 `
-
-`;
-const FeaturedButton = styled.div `
-  margin-top: 10px;
-  cursor: pointer;
-`;
-
-const FeaturedBottomButtonWrapper = styled.div `
-    
-`;
-const FeaturedBottomButton = styled.button`
-    background-color: #1B1D23;
-    color: #fff;
-    padding: 20px;
-    outline: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    display:flex;
-    justify-content:center;
-    cursor: pointer;
-`;
 function Main() {
     return (
         <>
@@ -170,6 +39,8 @@ function Main() {
               </WelcomeTextContent>
             <MainImgContainer>
                 <MainImg className="imgfilter" src={SmallTeamMobile}/>
+                <MainImg className="imgfilter" src={SmallTeamTablet}/>
+                <MainImg className="imgfilter" src={SmallTeamDesktop}/>
                 <SmallTeamText>
                   <MainH2>Small team, big ideas</MainH2>
                   <MainButtonWrapper>
@@ -188,6 +59,7 @@ function Main() {
                     <FeaturedImageContainer>
                       <FeaturedImage className="imgfilter" src={DelSolMobile}/>
                       <FeaturedImage className="imgfilter" src={DelSolTablet}/>
+                      <FeaturedImage className="imgfilter" src={DelSolDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>Project De Sol</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    
@@ -197,6 +69,7 @@ function Main() {
                     <FeaturedImageContainer>
                       <FeaturedImage className="imgfilter" src={TowerMobile}/>
                       <FeaturedImage className="imgfilter" src={TowerTablet}/>
+                      <FeaturedImage className="imgfilter" src={TowerDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>228B Tower</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    
@@ -206,6 +79,7 @@ function Main() {
                     <FeaturedImageContainer>
                       <FeaturedImage className="imgfilter" src={PrototypeMobile}/>
                       <FeaturedImage className="imgfilter" src={PrototypeTablet}/>
+                      <FeaturedImage className="imgfilter" src={PrototypeDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>Le Prototype</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    

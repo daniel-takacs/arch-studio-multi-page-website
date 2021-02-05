@@ -11,35 +11,58 @@ const HeroContainer = styled.div `
      @media screen and (min-width: 376px) {
         margin-bottom: 150px;
         padding: 0 97.5px;
+        position: relative;
 }
 `;
-const HeroBgMobile = styled.img `
-    height: 560px;
+const HeroBgImg = styled.img `
+    width: 100%;
     background-size: cover;
-    position: relative;
+  
     overflow: hidden;
-    @media screen and (min-width: 376px) {
-    display: none;
-}
+        @media screen and (min-width: 376px) {
+        display: none;
+    }
+  margin: 0 auto;
+        &:nth-child(2) {
+            display:none;
+        }
+        &:nth-child(3) {
+            display:none;
+        }
+     @media screen and (min-width: 376px) {
+        &:first-child {
+            display:none;
+    }
+        &:nth-child(2) {
+                display:block;
+        }
+        &:nth-child(3) {
+            display:none;
+        }
+        
+  }
+    @media screen and (min-width: 769px) {
+        &:first-child {
+            display:none;
+        }
+        &:nth-child(2) {
+                display:none;
+        }
+        &:nth-child(3) {
+            display:block;
+        }
+    }
 `;
 
-const HeroBgTablet = styled.img `
-    display: none;
-    @media screen and (min-width: 376px) {
-    display: block;
-    margin: 0 auto;
-}
-@media screen and (min-width: 769px) {
-    display: none;
-}
-
-`
-const HeroBgDesktop = styled.img `
-    display: none;
-@media screen and (min-width: 769px) {
-    display: block;
-    margin: 0 auto;
-}
+const HeroTextContainer = styled.div `
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (min-width: 769px) {
+        width:50%;
+        padding-right: 100px;
+    }
 `;
 
 const HeroH1 = styled.h1 `
@@ -49,17 +72,10 @@ const HeroH1 = styled.h1 `
     color: #fff;
     font-family: 'Spartan', sans-serif;
 `;
+
 const HeroP = styled.p `
     color: #fff;
     line-height: 25px;
-    
-    
-`;
-const HeroTextContainer = styled.div `
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     
 `;
 const HeroButtonWrapper = styled.div `
@@ -82,9 +98,9 @@ function Hero() {
     return (
         <>
             <HeroContainer>
-                <HeroBgDesktop className="imgfilter" src={HeroBgImageDesktop} />
-                <HeroBgMobile className="imgfilter" src={HeroBgImageMobile} />
-                <HeroBgTablet className="imgfilter" src={HeroBgImageTablet} />
+                <HeroBgImg className="imgfilter" src={HeroBgImageMobile} />
+                <HeroBgImg className="imgfilter" src={HeroBgImageTablet} />
+                <HeroBgImg className="imgfilter" src={HeroBgImageDesktop} />
                 <HeroTextContainer>
                         <HeroH1>Project Paramour</HeroH1>
                         <HeroP>Project made for an art museum near Southwest London. Project Paramour is 

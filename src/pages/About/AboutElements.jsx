@@ -5,23 +5,28 @@ import { device } from '../../device';
 export const AboutContainer = styled.div `
     padding: 0 32px;
     margin-bottom: 50px;
-        @media ${device.mobileM} {
+        @media ${device.tablet} {
             padding: 0 97.5px;
+            margin: 0 auto; 
+            max-width: 1110px;
         }
 `
 export const AboutHeroImgContainer = styled.div `
     position: relative;
-    @media ${device.mobileM} {
+    @media ${device.tablet} {
+        margin: 0 auto; 
+        max-width: 1110px;
         margin-bottom: 150px;
         padding: 0 97.5px;
 }
    
 `
 export const AboutHeroImg = styled.img `
-    width: 100%;
+    
     
         &:first-child {
             clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 83%, 86% 83%, 91% 83%, 91% 100%, 0 100%, 100% 100%, 100% 0%);
+            width: 100%;
         }
         &:nth-child(2) {
             display: none;
@@ -35,6 +40,7 @@ export const AboutHeroImg = styled.img `
         }
         &:nth-child(2) {
             display: block;
+            width: 100%;
         }
         &:nth-child(3) {
             display: none;
@@ -49,6 +55,7 @@ export const AboutHeroImg = styled.img `
         }
         &:nth-child(3) {
             display: block;
+            max-width: 100%;
         }
     }
 `
@@ -67,7 +74,7 @@ export const AboutIntroContainer = styled.div `
 export const AboutText = styled.div `
     position: relative;
     @media ${device.mobileM} {
-        width: 472px;
+    
         padding-top: 70px;
     }
     @media ${device.tablet} {

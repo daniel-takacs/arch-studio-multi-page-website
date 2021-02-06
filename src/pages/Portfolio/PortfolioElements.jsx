@@ -4,14 +4,19 @@ import { device } from '../../device';
 export const PortfolioContainer = styled.div `
     padding: 0 32px;
     margin: 50px auto 100px;
-        @media ${device.mobileM} {
-            padding: 0 97.5px;
+        @media ${device.tablet} {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto; 
+            max-width: 1110px;
         }
 `
              
 export const Portfolio = styled.div `
     position: relative;
     margin-bottom: 20px;
+   
 `
 export const PortfolioImage = styled.img `
         width: 100%;
@@ -42,6 +47,8 @@ export const PortfolioImage = styled.img `
         }
         &:nth-child(3) {
             display:block;
+           
+            padding: 0 10px 0 10px;
         }
     }
 `;

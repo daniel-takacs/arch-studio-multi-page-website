@@ -3,12 +3,13 @@ import { device } from '../../device';
 
 
 export const MainContainer = styled.div `
-
-  padding: 0 32px;
-  margin-bottom: 180px;
-  @media ${device.mobileM} {
-    padding: 0 97.5px;
-}
+    padding: 0 32px;
+    margin-bottom: 180px;
+      @media ${device.tablet} {
+        margin: 0 auto; 
+        max-width: 1110px;
+        padding: 0 97.5px;
+    }
 
 `;
 export const WelcomeTextContentWrapper = styled.div `
@@ -34,7 +35,7 @@ export const WelcomeMainImg = styled.img `
 export const WelcomeH2 = styled.h2 `
   font-size: 3.2rem;
   position: relative;
-    @media ${device.mobileM} {
+    @media ${device.tablet} {
     &:before {
       content: 'Welcome';
       color: #EEEFF4;

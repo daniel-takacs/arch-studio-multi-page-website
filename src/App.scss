@@ -13,15 +13,15 @@
     margin: 0 auto;
     overflow-x: hidden;
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 375px) {
     .App {
         max-width: 1110px;
         
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .App {
-        max-width: 1110px;
+        max-width: 1440px;
         
     }
 }

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-router-dom';
+import { device } from '../device';
+
 
 export const FooterNavbarContainer = styled.div `
     display: flex;
@@ -8,9 +10,10 @@ export const FooterNavbarContainer = styled.div `
     align-items: center;
     background-color: #EEEFF4;
     position: relative;
-    @media screen and (min-width: 376px) {
+    @media ${device.tablet} {
         flex-direction:row;
-        max-width: 1440px;
+        margin: 0 auto; 
+        max-width: 1110px;
         justify-content: space-between;
         
         }
@@ -22,7 +25,7 @@ export const FooterLogoContainer = styled.div `
     position: absolute;
     top: -55px;
     cursor: pointer;
-    @media screen and (min-width: 376px) {
+    @media ${device.tablet} {
        position: sticky;
         }
 `;
@@ -34,7 +37,7 @@ export const FooterLogo = styled.img `
 export const FooterNavMenu = styled.ul `
     text-align: center;
     margin-top: 70px;
-    @media screen and (min-width: 376px) {
+    @media ${device.tablet} {
         display: flex;
         flex-direction:row;
         margin-top: 0;
@@ -45,7 +48,7 @@ export const FooterNavItems = styled.li `
     list-style: none;
     color: #7D828F;
     padding: 15px 0;
-    @media screen and (min-width: 376px) {
+    @media ${device.tablet} {
         padding: 0 15px;
         }
     `;

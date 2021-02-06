@@ -3,10 +3,12 @@ import { device } from '../../device';
 
 
 export const HeroContainer = styled.div `
-     @media ${device.mobileM} {
+    position: relative;
+     @media ${device.tablet} {
+        margin: 0 auto; 
+        max-width: 1110px;
         margin-bottom: 150px;
-        padding: 0 97.5px;
-        position: relative;
+        //padding: 0 97.5px;
         &:after {
             position: absolute;
             content: 'Home';
@@ -17,6 +19,7 @@ export const HeroContainer = styled.div `
             top: 40px;
             left: -25px;
             transform: rotate(90deg);
+            
         }
         &:before {
             position: absolute;
@@ -28,7 +31,11 @@ export const HeroContainer = styled.div `
             left: -25px;
             transform: rotate(90deg)
         }
-}
+    }
+    @media ${device.tablet} {
+        padding: 0 97.5px;
+
+    }
 `;
 export const HeroBgImg = styled.img `
     width: 100%;

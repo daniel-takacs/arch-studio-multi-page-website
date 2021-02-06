@@ -1,15 +1,17 @@
 import styled from 'styled-components';
+import { device } from '../../device';
+
 
 export const AboutContainer = styled.div `
     padding: 0 32px;
     margin-bottom: 50px;
-        @media screen and (min-width: 376px) {
+        @media ${device.mobileM} {
             padding: 0 97.5px;
         }
 `
 export const AboutHeroImgContainer = styled.div `
     position: relative;
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         margin-bottom: 150px;
         padding: 0 97.5px;
 }
@@ -27,7 +29,7 @@ export const AboutHeroImg = styled.img `
         &:nth-child(3) {
             display: none;
         }
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         &:first-child {
             display:none;
         }
@@ -38,7 +40,7 @@ export const AboutHeroImg = styled.img `
             display: none;
         }
     }
-    @media screen and (min-width: 769px) {
+    @media ${device.tablet} {
         &:first-child {
         display:none;
         }
@@ -52,7 +54,7 @@ export const AboutHeroImg = styled.img `
 `
 export const AboutIntroContainer = styled.div `
     margin: 100px 0;
-        @media screen and (min-width: 730px) {
+        @media ${device.tablet} {
             position: absolute;
             bottom: 190px;
             padding: 100px 50px 300px; 
@@ -64,11 +66,11 @@ export const AboutIntroContainer = styled.div `
 `
 export const AboutText = styled.div `
     position: relative;
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         width: 472px;
         padding-top: 70px;
     }
-    @media screen and (min-width: 730px) {
+    @media ${device.tablet} {
         &:before {
             content: 'About';
             position: absolute;
@@ -83,7 +85,7 @@ export const AboutText = styled.div `
 export const AboutIntroH2 = styled.h2 `
     font-size: 2.5rem;
     margin-bottom: 20px;
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         font-size: 3rem;
         &:before {
             content: '';
@@ -119,7 +121,7 @@ export const AboutMainH2 = styled.h2 `
             top: -80px;
             left: 0;
         }
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         font-size: 3rem;
         margin-bottom: 40px;
         }
@@ -131,7 +133,7 @@ export const AboutLeaders = styled.div `
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         flex-direction: row;
         flex-wrap:wrap;
         }
@@ -139,14 +141,14 @@ export const AboutLeaders = styled.div `
 export const AboutLeaderH2 = styled.h2 `
     font-size: 2.5rem;
     margin-bottom: 50px;
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         font-size: 3rem;
         margin-bottom: 40px;
         }
 `
 export const AboutLeader = styled.div `
     margin-bottom: 30px;
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         padding: 15px;
         width: 50%;
         }

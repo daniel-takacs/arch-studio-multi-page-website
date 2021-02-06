@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { device } from '../../device';
 
 export const PortfolioContainer = styled.div `
     padding: 0 32px;
     margin: 50px auto 100px;
-        @media screen and (min-width: 376px) {
+        @media ${device.mobileM} {
             padding: 0 97.5px;
         }
 `
@@ -20,7 +21,7 @@ export const PortfolioImage = styled.img `
         &:nth-child(3) {
             display:none;
         }
-     @media screen and (min-width: 376px) {
+     @media ${device.mobileM} {
         &:first-child {
             display:none;
     }
@@ -32,7 +33,7 @@ export const PortfolioImage = styled.img `
         }
         
   }
-    @media screen and (min-width: 769px) {
+    @media ${device.tablet} {
         &:first-child {
             display:none;
         }

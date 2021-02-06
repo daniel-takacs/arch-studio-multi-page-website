@@ -1,18 +1,19 @@
 import styled from 'styled-components';
+import { device } from '../../device';
 
 
 export const MainContainer = styled.div `
 
   padding: 0 32px;
   margin-bottom: 180px;
-  @media screen and (min-width: 376px) {
+  @media ${device.mobileM} {
     padding: 0 97.5px;
 }
 
 `;
 export const WelcomeTextContentWrapper = styled.div `
    
-    @media screen and (min-width: 769px) {
+    @media ${device.tablet} {
         display: flex;
         margin-bottom: 150px;
     }
@@ -23,22 +24,37 @@ export const WelcomeTextContent = styled.div `
 `;
 export const WelcomeImgContainer = styled.div `
     display: none;
-        @media screen and (min-width: 769px) {
+        @media ${device.tablet} {
             display: block;
     }
 `
 export const WelcomeMainImg = styled.img `
 
 `
-export const MainH2 = styled.h2 `
+export const WelcomeH2 = styled.h2 `
   font-size: 3.2rem;
+  position: relative;
+    @media ${device.mobileM} {
+    &:before {
+      content: 'Welcome';
+      color: #EEEFF4;
+      font-size: 8rem;
+      position: absolute;
+      top: -150px;
+      left: 60px;
+      z-index: 10;
+    }
+    }
 `;
+export const MainH2 = styled.h2 `
+   font-size: 3.2rem;
+`
 export const MainP = styled.p `
   padding-top: 29px;
 `;
 export const MainImgContainer = styled.div `
   display: none;
-  @media screen and (min-width: 376px) {
+  @media ${device.mobileM} {
     display: block;
     position: relative;  
 }
@@ -52,7 +68,7 @@ export const MainImg = styled.img `
         &:nth-child(3) {
             display:none;
         }
-     @media screen and (min-width: 376px) {
+     @media ${device.mobileM} {
         &:first-child {
             display:none;
     }
@@ -64,7 +80,7 @@ export const MainImg = styled.img `
         }
         
   }
-    @media screen and (min-width: 769px) {
+    @media ${device.tablet} {
         &:first-child {
             display:none;
         }
@@ -99,6 +115,9 @@ export const MainButton = styled.div `
     display:flex;
     justify-content:center;
     cursor: pointer;
+    @media ${device.mobileM} {
+      width: 40%;
+    }
 `;
 
 export const FeaturedContainer = styled.div `
@@ -107,18 +126,18 @@ export const FeaturedContainer = styled.div `
 export const FeaturedH2 = styled.h2 `
   margin: 40px 0;
   font-size: 2rem;
-  @media screen and (min-width: 376px) {
+  @media ${device.mobileM} {
     font-size: 3.2rem;
   }
 `;
 export const FeaturedImages = styled.div `
- @media screen and (min-width: 769px) {
+ @media ${device.tablet} {
       display:flex;
     }
 `;
 export const FeaturedImageContainer = styled.div `
   position: relative;
-  @media screen and (min-width: 769px) {
+  @media ${device.tablet} {
         &:after {
             position: absolute;
             font-size: 10rem;
@@ -144,7 +163,7 @@ export const FeaturedImage = styled.img `
         &:nth-child(3) {
             display:none;
         }
-     @media screen and (min-width: 376px) {
+     @media ${device.mobileM} {
         &:first-child {
             display:none;
     }
@@ -156,7 +175,7 @@ export const FeaturedImage = styled.img `
         }
         
   }
-    @media screen and (min-width: 769px) {
+    @media ${device.tablet} {
         
         &:first-child {
             display:none;
@@ -179,7 +198,7 @@ export const FeaturedTextContainer = styled.div `
 `;
 export const FeaturedTop = styled.div `
   display: none;
- @media screen and (min-width: 376px) {
+ @media ${device.mobileM} {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -210,7 +229,7 @@ export const FeaturedButton = styled.div `
 `;
 
 export const FeaturedBottomButtonWrapper = styled.div `
-    @media screen and (min-width: 769px) {
+    @media ${device.tablet} {
         display: none;
     }
 `;

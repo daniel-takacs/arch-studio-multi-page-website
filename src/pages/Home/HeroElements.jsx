@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { device } from '../../device';
+
 
 export const HeroContainer = styled.div `
-     @media screen and (min-width: 376px) {
+     @media ${device.mobileM} {
         margin-bottom: 150px;
         padding: 0 97.5px;
         position: relative;
@@ -33,7 +35,7 @@ export const HeroBgImg = styled.img `
     background-size: cover;
   
     overflow: hidden;
-        @media screen and (min-width: 376px) {
+        @media ${device.mobileM} {
         display: none;
     }
   margin: 0 auto;
@@ -43,7 +45,7 @@ export const HeroBgImg = styled.img `
         &:nth-child(3) {
             display:none;
         }
-     @media screen and (min-width: 376px) {
+     @media ${device.mobileM} {
         &:first-child {
             display:none;
     }
@@ -55,7 +57,7 @@ export const HeroBgImg = styled.img `
         }
         
   }
-    @media screen and (min-width: 769px) {
+    @media ${device.tablet} {
         &:first-child {
             display:none;
         }
@@ -73,10 +75,10 @@ export const HeroTextContainer = styled.div `
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @media screen and (min-width: 769px) {
-        width:50%;
-        padding-right: 100px;
-    }
+        @media ${device.tablet} {
+            width:50%;
+            padding-right: 100px;
+        }
 `;
 
 export const HeroH1 = styled.h1 `
@@ -110,7 +112,7 @@ export const Button = styled.button`
 export const ButtonGroupWrapper = styled.div `
     display: none;
 
-    @media screen and (min-width: 769px) {
+    @media ${device.tablet} {
         position: absolute;
         bottom: 0;
         left: 53px;

@@ -1,15 +1,17 @@
 import styled from 'styled-components';
+import { device } from '../../device';
+
 
 export const ContactContainer = styled.div `
     padding: 0 32px;
     margin-bottom: 50px;
-        @media screen and (min-width: 376px) {
+        @media ${device.mobileM} {
             padding: 0 97.5px;
         }
 `
 export const ContactHeroImgContainer = styled.div `
   position: relative;
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         margin-bottom: 150px;
         padding: 0 97.5px;
 }
@@ -27,7 +29,7 @@ width: 100%;
     &:nth-child(3) {
         display: none;
     }
-@media screen and (min-width: 376px) {
+@media ${device.mobileM} {
 
     &:first-child {
         display:none;
@@ -39,7 +41,7 @@ width: 100%;
         display: none;
     }
 }
-@media screen and (min-width: 769px) {
+@media ${device.tablet} {
     &:first-child {
     display:none;
     }
@@ -53,7 +55,7 @@ width: 100%;
 `
 export const ContactIntroContainer = styled.div `
 margin: 100px 0;
-    @media screen and (min-width: 730px) {
+    @media ${device.tablet} {
         position: absolute;
         bottom: 190px;
         padding: 100px 50px 300px; 
@@ -63,12 +65,12 @@ margin: 100px 0;
 }
 `
 export const ContactText = styled.div `
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         padding-top: 70px;
         padding-right: 25px;
     }
     position: relative;
-    @media screen and (min-width: 730px) {
+    @media ${device.tablet} {
         &:before {
             content: 'Contact';
             position: absolute;
@@ -84,7 +86,7 @@ export const ContactText = styled.div `
 export const ContactH2 = styled.h2`
 font-size: 2.5rem;
     margin-bottom: 20px;
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         font-size: 3rem;
         &:before {
             content: '';
@@ -121,7 +123,7 @@ export const DetailsH2 = styled.h2 `
             left: 0;
         }
  
-    @media screen and (min-width: 376px) {
+    @media ${device.mobileM} {
         font-size: 3rem;
         }
 `
@@ -129,7 +131,7 @@ export const DetailsH4  = styled.h4 `
 
 `
 export const DetailsP = styled.p `
- @media screen and (min-width: 376px) {
+ @media ${device.mobileM} {
         margin-bottom: 20px;
         }
 `

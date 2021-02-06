@@ -13,6 +13,9 @@ export const NavbarContainer = styled.div `
             padding: 50px 97.5px;
             justify-content: start;
 }
+@media ${device.laptopL} {
+        padding: 32px 0;
+    }
 `;
 export const NavMenu = styled.ul `
     list-style: none;

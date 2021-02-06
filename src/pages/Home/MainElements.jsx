@@ -10,6 +10,9 @@ export const MainContainer = styled.div `
         max-width: 1110px;
         padding: 0 97.5px;
     }
+    @media ${device.laptopL} {
+        padding: 0;
+    }
 
 `;
 export const WelcomeTextContentWrapper = styled.div `

@@ -8,6 +8,7 @@ export const HeroContainer = styled.div `
         margin: 0 auto; 
         max-width: 1110px;
         margin-bottom: 150px;
+        padding: 0 97.5px;
         //padding: 0 97.5px;
         &:after {
             position: absolute;
@@ -32,9 +33,8 @@ export const HeroContainer = styled.div `
             transform: rotate(90deg)
         }
     }
-    @media ${device.tablet} {
-        padding: 0 97.5px;
-
+    @media ${device.laptopL} {
+        padding: 0;
     }
 `;
 export const HeroBgImg = styled.img `

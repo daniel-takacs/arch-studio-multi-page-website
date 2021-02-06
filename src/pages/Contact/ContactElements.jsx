@@ -10,6 +10,9 @@ export const ContactContainer = styled.div `
             max-width: 1110px;
             padding: 0 97.5px;
         }
+        @media ${device.laptopL} {
+        padding: 0;
+    }
 `
 export const ContactHeroImgContainer = styled.div `
     position: relative;
@@ -18,6 +21,9 @@ export const ContactHeroImgContainer = styled.div `
             max-width: 1110px;
             margin-bottom: 150px;
             padding: 0 97.5px;
+    }
+    @media ${device.laptopL} {
+        padding: 0;
     }
    
 `

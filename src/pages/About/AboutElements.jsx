@@ -3,22 +3,24 @@ import { device } from '../../device';
 
 
 export const AboutContainer = styled.div `
-    padding: 0 32px;
     margin-bottom: 50px;
-        @media ${device.tablet} {
+    @media ${device.tablet} {
+            
             padding: 0 97.5px;
             margin: 0 auto; 
             max-width: 1110px;
         }
+        @media ${device.laptopL} {
+        padding: 0;
+    }
+`
+
+export const AboutMainContainer = styled.div `
+    padding: 0 32px;
 `
 export const AboutHeroImgContainer = styled.div `
     position: relative;
-    @media ${device.tablet} {
-        margin: 0 auto; 
-        max-width: 1110px;
-        margin-bottom: 150px;
-        padding: 0 97.5px;
-}
+
    
 `
 export const AboutHeroImg = styled.img `
@@ -63,38 +65,45 @@ export const AboutIntroContainer = styled.div `
     margin: 100px 0;
         @media ${device.tablet} {
             position: absolute;
-            bottom: 190px;
-            padding: 100px 50px 300px; 
+            width: 70%;
+            bottom: 0;
+            right: 0;
+            padding: 100px 50px 160px;
             margin: 0px 20px -30px;
             background-color: white;
-            height: 300px;
+            
     }
-
+        @media ${device.laptopL} {
+            position: absolute;
+            width: 40%;
+            bottom: 60px;
+            right: 250px;
+            padding: 200px 150px 30px;
+            margin: 0px 20px -30px;
+            background-color: white;
+           
+        }
 `
 export const AboutText = styled.div `
-    position: relative;
+    
     @media ${device.mobileM} {
     
         padding-top: 70px;
     }
-    @media ${device.tablet} {
-        &:before {
-            content: 'About';
-            position: absolute;
-            top: -180px;
-            right: 0;
-            font-size: 8rem;
-            color:#EEEFF4;
-            font-weight: 700;
-        }
-        }
+   
 `
 export const AboutIntroH2 = styled.h2 `
     font-size: 2.5rem;
     margin-bottom: 20px;
     @media ${device.mobileM} {
         font-size: 3rem;
-        &:before {
+        
+    }
+   
+
+    @media ${device.tablet} {
+        position: relative;
+        /*&:before {
             content: '';
             width: 65px;
             height: 2px;
@@ -102,11 +111,37 @@ export const AboutIntroH2 = styled.h2 `
             position: absolute;
             top: -10px;
             left: 0;
+        }*/
+        &:before {
+            content: 'About';
+            position: absolute;
+            top: -250px;
+            left: 0;
+            font-size: 8rem;
+            color:#EEEFF4;
+            font-weight: 700;
         }
-    }
+        
+        }
+        @media ${device.laptopL} {
+            position: relative;
+            &:before {
+            content: 'About';
+            position: absolute;
+            top: -350px;
+            left: -175px;
+            font-size: 11rem;
+            color:#EEEFF4;
+            font-weight: 700;
+        }
+        }
+    
 `
 export const AboutIntroP = styled.p `
     line-height: 1.5rem;
+    @media ${device.laptopL} {
+        width:140%;
+    }
 `
 
 export const AboutMainSection = styled.div `

@@ -10,6 +10,7 @@ export const PortfolioContainer = styled.div `
             flex-wrap: wrap;
             margin: 0 auto; 
             max-width: 1110px;
+            justify-content:center;
         }
 `
              

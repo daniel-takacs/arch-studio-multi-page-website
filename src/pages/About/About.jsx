@@ -5,7 +5,7 @@ import AboutIntroImg from '../../assets/images/about/mobile/image-hero.jpg';
 import AboutTabIntroImg from '../../assets/images/about/tablet/image-hero.jpg';
 import AboutDeskIntroImg from '../../assets/images/about/desktop/image-hero.jpg';
 
-import { AboutContainer, AboutIntroContainer, AboutHeroImgContainer, AboutHeroImg, AboutText, AboutIntroH2,
+import { AboutContainer, AboutIntroContainer, AboutMainContainer, AboutHeroImgContainer, AboutHeroImg, AboutText, AboutIntroH2,
         AboutIntroP, AboutMainSection, AboutMainText, AboutMainP, AboutMainH2,
         AboutLeaders, AboutLeaderH2, AboutLeader, AboutLeaderImg, AboutLeaderH4, AboutLeaderP,
         AboutSocial, AboutSocialIcon  } from './AboutElements';
@@ -20,12 +20,13 @@ import IconTwitter from '../../assets/images/icons/icon-twitter.svg';
 function About() {
     return (
         <div>
-            <AboutHeroImgContainer> 
-                <AboutHeroImg className="imgfilter" src={AboutIntroImg}/>
-                <AboutHeroImg className="imgfilter" src={AboutTabIntroImg}/>
-                <AboutHeroImg className="imgfilter" src={AboutDeskIntroImg}/>
-            </AboutHeroImgContainer>
             <AboutContainer>
+                <AboutHeroImgContainer> 
+                    <AboutHeroImg className="imgfilter" src={AboutIntroImg}/>
+                    <AboutHeroImg className="imgfilter" src={AboutTabIntroImg}/>
+                    <AboutHeroImg className="imgfilter" src={AboutDeskIntroImg}/>
+                </AboutHeroImgContainer>
+            <AboutMainContainer>    
                 <AboutIntroContainer>
                     <AboutText>
                         <AboutIntroH2>
@@ -109,6 +110,7 @@ function About() {
                         </AboutSocial>
                     </AboutLeader>
                 </AboutLeaders>
+                </AboutMainContainer>
             </AboutContainer> 
         </div>
     )

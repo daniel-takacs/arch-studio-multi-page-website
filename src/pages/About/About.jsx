@@ -6,7 +6,7 @@ import AboutTabIntroImg from '../../assets/images/about/tablet/image-hero.jpg';
 import AboutDeskIntroImg from '../../assets/images/about/desktop/image-hero.jpg';
 
 import { AboutContainer, AboutIntroContainer, AboutMainContainer, AboutHeroImgContainer, AboutHeroImg, AboutText, AboutIntroH2,
-        AboutIntroP, AboutMainSection, AboutMainText, AboutMainP, AboutMainH2,
+        AboutIntroP, AboutMainSection, AboutMainText, AboutMainImgContainer, AboutMainImg, AboutMainP, AboutMainH2,
         AboutLeaders, AboutLeaderH2, AboutLeader, AboutLeaderImg, AboutLeaderH4, AboutLeaderP,
         AboutSocial, AboutSocialIcon  } from './AboutElements';
 import AboutJake from '../../assets/images/about/desktop/avatar-jake.jpg';
@@ -15,6 +15,7 @@ import AboutJackson from '../../assets/images/about/desktop/avatar-jackson.jpg';
 import AboutMaria from '../../assets/images/about/desktop/avatar-maria.jpg';
 import IconLinkedin from '../../assets/images/icons/icon-linkedin.svg';
 import IconTwitter from '../../assets/images/icons/icon-twitter.svg';
+import OurHerImg from '../../assets/images/about/desktop/image-heritage.jpg'
 
 
 function About() {
@@ -53,10 +54,13 @@ function About() {
                         <AboutMainP>
                         Our small team of world-class professionals provides input on every project.
                         </AboutMainP>   
-                    </AboutMainText>    
+                    </AboutMainText>  
+                        <AboutMainImgContainer>
+                            <AboutMainImg src={OurHerImg} />
+                        </AboutMainImgContainer>  
                 </AboutMainSection>   
-                    <AboutLeaderH2>The Leaders</AboutLeaderH2>
                 <AboutLeaders>
+                    <AboutLeaderH2>The Leaders</AboutLeaderH2>
                     <AboutLeader>
                         <AboutLeaderImg src={AboutJake} />
                         <AboutLeaderH4>

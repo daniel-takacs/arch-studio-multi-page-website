@@ -56,6 +56,9 @@ export const AboutHeroImg = styled.img `
 `
 export const AboutMainContainer = styled.div `
     padding: 0 32px;
+        @media ${device.laptopL} {
+            padding:0;
+        }
 `
 
 export const AboutIntroContainer = styled.div `
@@ -140,10 +143,26 @@ export const AboutIntroP = styled.p `
 `
 
 export const AboutMainSection = styled.div `
-    margin: 100px 0;
+    margin: 200px 0;
+        @media ${device.laptopL} {
+            display: flex;
+            justify-content: space-between;
+        }
+`
+export const AboutMainImgContainer = styled.div `
+    display:none;
+        @media ${device.laptopL} {
+            display:block;
+        }
+`
+export const AboutMainImg = styled.img `
+
 `
 export const AboutMainText = styled.div `
     margin-top: 200px;
+    @media ${device.laptopL} {
+            width: 40%;
+        }
 `
 export const AboutMainH2 = styled.h2 `
     font-size: 2.5rem;
@@ -170,9 +189,12 @@ export const AboutLeaders = styled.div `
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
-    @media ${device.mobileM} {
-        flex-direction: row;
-        flex-wrap:wrap;
+        @media ${device.tablet} {
+            
+        
+        }
+        @media ${device.laptopL} {
+            justify-content: flex-end;
         }
 `
 export const AboutLeaderH2 = styled.h2 `
@@ -187,12 +209,19 @@ export const AboutLeader = styled.div `
     margin-bottom: 30px;
     @media ${device.mobileM} {
         padding: 15px;
-        width: 50%;
+     
+        }
+        @media ${device.tablet} {
+         
+        
         }
 `
 export const AboutLeaderImg = styled.img `
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 25px;
+    @media ${device.laptopL} {
+        
+    }
 `
 export const AboutLeaderH4 = styled.h4 `
     font-size: 1.2rem;

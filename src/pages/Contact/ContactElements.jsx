@@ -54,6 +54,9 @@ export const ContactHeroImg = styled.img `
 `
 export const ContactMainContainer = styled.div `
     padding: 0 32px;
+     @media ${device.laptopL} {
+         padding:0;
+     }
 `
 
 export const ContactIntroContainer = styled.div `
@@ -138,9 +141,22 @@ export const ContactIntroP = styled.p `
 `
 export const ContactDetailsContainer = styled.div `
     margin: 200px 0;
+        @media ${device.laptopL} {
+            display: flex;
+            justify-content: space-around;
+        }
+`
+export const ContactDetailsContent = styled.div `
+
 `
 export const ContactDetails = styled.div `
     line-height: 2rem;
+        @media ${device.tablet} {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
 `
 export const DetailsH2 = styled.h2 `
  font-size: 2.5rem;
@@ -171,6 +187,14 @@ export const DetailsP = styled.p `
 export const DetailsButton = styled.div `
     display: flex;
     align-items: center;
+    
+    @media ${device.laptopL} {
+            align-self: flex-end;
+            justify-content:center;
+            
+        }
+    
+    
 `
 export const Button = styled.button `
     background-color: transparent;
@@ -187,12 +211,58 @@ export const ContactMapContainer = styled.div `
 `
 export const ContactMapImg = styled.img `
     max-width: 100%;
+        &:first-child {
+            width: 100%;
+        }
+        &:nth-child(2) {
+            display: none;
+        }
+        &:nth-child(3) {
+            display: none;
+        }
+    @media ${device.mobileM} {
+        &:first-child {
+            display:none;
+        }
+        &:nth-child(2) {
+            display: block;
+            width: 100%;
+        }
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+    @media ${device.tablet} {
+        &:first-child {
+        display:none;
+        }
+        &:nth-child(2) {
+            display: none;
+        }
+        &:nth-child(3) {
+            display: block;
+            max-width: 100%;
+        }
+    }
 `
 export const ContactFormContainer = styled.div `
-    margin-top: 50px;
+    margin: 100px 0;
+        @media ${device.laptopL} {
+            display:flex;
+            justify-content: space-between;
+        }
 ` 
 export const ContactFormH2 = styled.h2 `
+     font-size: 2.5rem;
+    margin-bottom: 40px;
+ @media ${device.laptopL} {
+            width: 20%;
 
+        }
+ 
+    @media ${device.mobileM} {
+        font-size: 3rem;
+        }
 `
 export const ContactFormWrapper = styled.div `
     margin-bottom: 100px;

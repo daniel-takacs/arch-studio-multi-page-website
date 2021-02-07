@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import { ContactContainer, ContactHeroImgContainer, ContactHeroImg, ContactMainContainer,
             ContactIntroContainer, ContactText, ContactIntroH2, ContactIntroP,  ContactDetailsContainer,
-        ContactDetails, DetailsH2, DetailsH4, DetailsP, DetailsButton, 
+        ContactDetails, ContactDetailsContent, DetailsH2, DetailsH4, DetailsP, DetailsButton, 
     ContactMapContainer, ContactMapImg, ContactFormContainer, ContactFormWrapper, ContactFormH2, Button} from './ContactElements';
 import ContactImgMobile from '../../assets/images/contact/mobile/image-hero.jpg';
 import ContactImgTablet from '../../assets/images/contact/tablet/image-hero.jpg';
 import ContactImgDesktop from '../../assets/images/contact/desktop/image-hero.jpg';
 import ContactMapImage from '../../assets/images/contact/mobile/image-map.png';
+import ContactMapImageTablet from '../../assets/images/contact/tablet/image-map.png';
+import ContactMapImageDesktop from '../../assets/images/contact/desktop/image-map.png';
+
 import ContactForm from '../../components/ContactForm';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
@@ -34,27 +37,33 @@ function Contact() {
                 </ContactIntroContainer>
                 <ContactDetailsContainer>
                     <DetailsH2>Contact Details</DetailsH2>
-                        <ContactDetails>
+                    <ContactDetails>
+                        <ContactDetailsContent>
                             <DetailsH4>Main Office</DetailsH4>
                             <DetailsP>Mail:	archone@mail.com</DetailsP>
                             <DetailsP>Address: 1892 Chenoweth Drive TN</DetailsP>
                             <DetailsP>Phone: 123-456-3451</DetailsP>
-                            <DetailsButton>
-                                <Button onClick={() => { alert('clicked') }}>View on Map<ArrowForwardOutlinedIcon /></Button>
-                            </DetailsButton>
-                        </ContactDetails>
+                        </ContactDetailsContent>
+                        <DetailsButton>
+                            <Button onClick={() => { alert('clicked') }}>View on Map<ArrowForwardOutlinedIcon /></Button>
+                        </DetailsButton>
+                    </ContactDetails>
                     <ContactDetails>
-                        <DetailsH4>Office II</DetailsH4>
-                        <DetailsP>Mail: archtwo@mail.com</DetailsP>
-                        <DetailsP>Address: 3399 Wines Lane TX</DetailsP>
-                        <DetailsP>Phone: 832-123-4321</DetailsP>
+                        <ContactDetailsContent>
+                            <DetailsH4>Office II</DetailsH4>
+                            <DetailsP>Mail: archtwo@mail.com</DetailsP>
+                            <DetailsP>Address: 3399 Wines Lane TX</DetailsP>
+                            <DetailsP>Phone: 832-123-4321</DetailsP>
+                        </ContactDetailsContent>
                         <DetailsButton>
                                 <Button onClick={() => { alert('clicked') }}>View on Map<ArrowForwardOutlinedIcon /></Button>
                         </DetailsButton>
                     </ContactDetails>   
                 </ContactDetailsContainer>
                 <ContactMapContainer>
-                    <ContactMapImg className="imgfilter" src={ContactMapImage} />
+                    <ContactMapImg  src={ContactMapImage} />
+                    <ContactMapImg  src={ContactMapImageTablet} />
+                    <ContactMapImg  src={ContactMapImageDesktop} />
                 </ContactMapContainer>
                 <ContactFormContainer>
                     <ContactFormH2>Connect with us</ContactFormH2>

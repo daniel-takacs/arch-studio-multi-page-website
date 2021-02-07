@@ -17,6 +17,13 @@ export const FooterNavbarContainer = styled.div `
             padding: 0px 97.5px;
             justify-content: space-between;
         }
+        @media ${device.laptopL} {
+            flex-direction:row;
+            margin: 0 auto; 
+            max-width: 1110px;
+            padding: 0;
+            justify-content: space-between;
+        }
        
      
 `;
@@ -27,8 +34,11 @@ export const FooterLogoContainer = styled.div `
     top: -55px;
     cursor: pointer;
         @media ${device.tablet} {
-        position: sticky;
-            }
+            position: sticky;
+        }
+        @media ${device.laptopL} {
+            padding: 55px 45px;
+        }
 `;
 export const FooterLogo = styled.img `
     height: 25px;
@@ -38,19 +48,26 @@ export const FooterLogo = styled.img `
 export const FooterNavMenu = styled.ul `
     text-align: center;
     margin-top: 70px;
-    @media ${device.tablet} {
-        display: flex;
-        flex-direction:row;
-        margin-top: 0;
+        @media ${device.tablet} {
+            display: flex;
+            flex-direction:row;
+            margin-top: 0;
+        }
+        @media ${device.laptopL} {
+            margin-right: 250px;
         }
     
     `;
 export const FooterNavItems = styled.li `
     list-style: none;
     color: #7D828F;
+    font-weight: 700;
     padding: 15px 0;
-    @media ${device.tablet} {
-        padding: 0 15px;
+        @media ${device.tablet} {
+            padding: 0 15px;
+        }
+        @media ${device.laptopL} {
+            
         }
     `;
 
@@ -70,6 +87,7 @@ export const FooterButtonWrapper = styled.div `
 
 export const Button = styled.button`
     background-color: #1B1D23;
+    font-weight: 700;
     color: #fff;
     padding: 20px;
     outline: none;

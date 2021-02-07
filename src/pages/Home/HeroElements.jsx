@@ -10,52 +10,10 @@ export const HeroContainer = styled.div `
         margin-bottom: 210px;
         padding: 0 97.5px;
         //padding: 0 97.5px;
-        &:after {
-            position: absolute;
-            content: 'Home';
-            font-size: 1rem;
-            color: #C8CCD8;
-            text-transform: uppercase;
-            letter-spacing: 10px;
-            top: 40px;
-            left: -5px;
-            transform: rotate(90deg);
-            
-        }
-        &:before {
-            position: absolute;
-            content: '';
-            width: 104px;
-            height: 1px;
-            background-color: #C8CCD8;
-            top: -98px;
-            left: -5px;
-            transform: rotate(90deg)
-        }
+     
     }
     @media ${device.laptopL} {
-        &:after {
-            position: absolute;
-            content: 'Home';
-            font-size: 1rem;
-            color: #C8CCD8;
-            text-transform: uppercase;
-            letter-spacing: 10px;
-            top: 37px;
-            left: -120px;
-            transform: rotate(90deg);
-            
-        }
-        &:before {
-            position: absolute;
-            content: '';
-            width: 104px;
-            height: 1px;
-            background-color: #C8CCD8;
-            top: -102px;
-            left: -122px;
-            transform: rotate(90deg)
-        }
+  
         padding: 0;
     }
 `;

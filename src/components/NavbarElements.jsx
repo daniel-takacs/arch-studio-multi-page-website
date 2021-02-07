@@ -7,13 +7,65 @@ export const NavbarContainer = styled.div `
     justify-content: space-between;
     align-items: center;
     padding: 32px;
+    position: relative;
         @media ${device.tablet} {
             margin: 0 auto; 
             max-width: 1110px;
             padding: 50px 97.5px;
             justify-content: start;
+
+            /*Sidebar*/
+
+            &:after {
+            position: absolute;
+            content: 'Home';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 180px;
+            left: -5px;
+            transform: rotate(90deg);
+            
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 104px;
+            height: 1px;
+            background-color: #C8CCD8;
+            top: 40px;
+            left: -5px;
+            transform: rotate(90deg)
+        }
             }
         @media ${device.laptopL} {
+            &:after {
+            position: absolute;
+            content: 'Home';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 190px;
+            left: -120px;
+            transform: rotate(90deg);
+            
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 104px;
+            height: 1px;
+            background-color: #C8CCD8;
+            top: 50px;
+            left: -122px;
+            transform: rotate(90deg)
+        }
+            /* Sidebar */
+
+
+
                 padding: 56px 0;
             }
 `;

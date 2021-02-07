@@ -4,6 +4,7 @@ import { device } from '../../device';
 export const PortfolioContainer = styled.div `
     padding: 0 32px;
     margin: 50px auto 100px;
+    position: relative;
         @media ${device.tablet} {
             padding: 0;
             display: flex;
@@ -11,7 +12,11 @@ export const PortfolioContainer = styled.div `
             margin: 0 auto; 
             max-width: 1110px;
             justify-content:center;
+            }
+            @media ${device.laptopL} {
+            padding: 0;
         }
+
 `
              
 export const Portfolio = styled.div `

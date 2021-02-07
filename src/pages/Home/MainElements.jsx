@@ -20,16 +20,22 @@ export const WelcomeTextContentWrapper = styled.div `
     @media ${device.tablet} {
         display: flex;
         margin-bottom: 150px;
+        justify-content: flex-end;
     }
 `
 export const WelcomeTextContent = styled.div `
-  
-  margin: 72px 0;
+    margin: 72px 0;
+      @media ${device.laptopL} {
+        width: 40%;
+        padding: 10px 10px 0 25px
+    }
+    
 `;
 export const WelcomeImgContainer = styled.div `
     display: none;
         @media ${device.tablet} {
             display: block;
+            
     }
 `
 export const WelcomeMainImg = styled.img `
@@ -42,49 +48,43 @@ export const WelcomeH2 = styled.h2 `
     &:before {
       content: 'Welcome';
       color: #EEEFF4;
-      font-size: 8rem;
+      font-size: 12.4rem;
       position: absolute;
-      top: -150px;
-      left: 60px;
+      top: -200px;
+      left: -364px;
       z-index: 10;
     }
     }
 `;
-export const MainH2 = styled.h2 `
-   font-size: 3.2rem;
-`
+
 export const MainP = styled.p `
   padding-top: 29px;
 `;
-export const MainImgContainer = styled.div `
+
+
+export const SmallTeamContainer = styled.div `
   display: none;
-  @media ${device.mobileM} {
-    display: block;
-    position: relative;  
-}
+    @media ${device.tablet} {
+      position: relative;  
+      display: block;
+    }
 `;
-export const MainImg = styled.img `
+export const SmallTeamImg = styled.img `
   width: 100%;
   margin: 0 auto;
-        &:nth-child(2) {
-            display:none;
-        }
-        &:nth-child(3) {
-            display:none;
-        }
-     @media ${device.mobileM} {
+   
+    @media ${device.tablet} {
         &:first-child {
             display:none;
-    }
+        }
         &:nth-child(2) {
                 display:block;
         }
         &:nth-child(3) {
             display:none;
         }
-        
-  }
-    @media ${device.tablet} {
+    }
+    @media ${device.laptopL} {
         &:first-child {
             display:none;
         }
@@ -94,16 +94,26 @@ export const MainImg = styled.img `
         &:nth-child(3) {
             display:block;
         }
-    }
+      }
 `;
   
 export const SmallTeamText = styled.div `
   color: #fff;
   position: absolute;
+  width: 60%;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-80%, -50%);
+    
 `
+export const SmallTeamH2 = styled.h2 `
+   font-size: 3rem;
+   margin-bottom: 15px;
+    @media ${device.laptopL} {
+        font-size: 4.2rem;
+    }
+`
+
 export const MainButtonWrapper = styled.div`
 
 `
@@ -137,6 +147,7 @@ export const FeaturedH2 = styled.h2 `
 export const FeaturedImages = styled.div `
  @media ${device.tablet} {
       display:flex;
+      justify-content: space-between;
     }
 `;
 export const FeaturedImageContainer = styled.div `
@@ -212,17 +223,21 @@ export const FeaturedTop = styled.div `
   
 `
 export const FeaturedButtonTop = styled.div`
-    background-color: #1B1D23;
-    color: #fff;
-    padding: 20px;
-    outline: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    width: 30%;
-    display:flex;
-    justify-content:center;
-    cursor: pointer;
+    display: none;
+      @media ${device.tablet} {
+        background-color: #1B1D23;
+        color: #fff;
+        padding: 20px;
+        outline: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        width: 30%;
+        display:flex;
+        justify-content:center;
+        cursor: pointer;
+  }
+    
 `
 export const FeaturedH3 = styled.h3 `
 

@@ -7,7 +7,7 @@ export const HeroContainer = styled.div `
      @media ${device.tablet} {
         margin: 0 auto; 
         max-width: 1110px;
-        margin-bottom: 150px;
+        margin-bottom: 210px;
         padding: 0 97.5px;
         //padding: 0 97.5px;
         &:after {
@@ -18,7 +18,7 @@ export const HeroContainer = styled.div `
             text-transform: uppercase;
             letter-spacing: 10px;
             top: 40px;
-            left: -25px;
+            left: -5px;
             transform: rotate(90deg);
             
         }
@@ -29,11 +29,33 @@ export const HeroContainer = styled.div `
             height: 1px;
             background-color: #C8CCD8;
             top: -98px;
-            left: -25px;
+            left: -5px;
             transform: rotate(90deg)
         }
     }
     @media ${device.laptopL} {
+        &:after {
+            position: absolute;
+            content: 'Home';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 37px;
+            left: -120px;
+            transform: rotate(90deg);
+            
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 104px;
+            height: 1px;
+            background-color: #C8CCD8;
+            top: -102px;
+            left: -122px;
+            transform: rotate(90deg)
+        }
         padding: 0;
     }
 `;
@@ -42,10 +64,8 @@ export const HeroBgImg = styled.img `
     background-size: cover;
   
     overflow: hidden;
-        @media ${device.mobileM} {
-        display: none;
-    }
-  margin: 0 auto;
+     
+    margin: 0 auto;
         &:nth-child(2) {
             display:none;
         }
@@ -69,11 +89,22 @@ export const HeroBgImg = styled.img `
             display:none;
         }
         &:nth-child(2) {
-                display:none;
+                display:block;
         }
         &:nth-child(3) {
-            display:block;
+            display:none;
         }
+    }
+    @media ${device.laptopL} {
+    &:first-child {
+        display:none;
+    }
+    &:nth-child(2) {
+            display:none;
+    }
+    &:nth-child(3) {
+        display:block;
+    }
     }
 `;
 
@@ -84,7 +115,7 @@ export const HeroTextContainer = styled.div `
     transform: translate(-50%, -50%);
         @media ${device.tablet} {
             width:50%;
-            padding-right: 100px;
+           
         }
 `;
 
@@ -94,12 +125,21 @@ export const HeroH1 = styled.h1 `
     font-weight: 700;
     color: #fff;
     font-family: 'Spartan', sans-serif;
+        @media ${device.mobileL} {
+            font-size: 4.5rem;
+    }
+        @media ${device.tablet} {
+            font-size: 4.8rem;
+    }
 `;
 
 export const HeroP = styled.p `
     color: #fff;
     line-height: 25px;
-    
+    @media ${device.laptopL} {
+             width: 80%;
+            }
+
 `;
 export const HeroButtonWrapper = styled.div `
     display: flex;
@@ -109,7 +149,7 @@ export const HeroButtonWrapper = styled.div `
 export const Button = styled.button`
     background-color: #1B1D23;
     color: #fff;
-    padding: 20px;
+    padding: 20px 30px;
     outline: none;
     border: none;
     display: flex;
@@ -119,17 +159,24 @@ export const Button = styled.button`
 export const ButtonGroupWrapper = styled.div `
     display: none;
 
-    @media ${device.tablet} {
+    /*@media ${device.tablet} {
         position: absolute;
         bottom: 0;
         left: 53px;
+        display: flex;
+    }*/
+    @media ${device.laptopL} {
+        position: absolute;
+        bottom: 0;
+        left: -65px;
         display: flex;
     }
 `
 export const ButtonGroup = styled.button`
     background-color: #fff;
     color: #7D828F;
-    padding: 20px;
+    font-weight: 700;
+    padding: 25px;
     outline: none;
     border: none;
     display: flex;
@@ -139,7 +186,7 @@ export const ButtonGroup = styled.button`
 export const ButtonGroupActive = styled.button`
     background-color: #1B1D23;
     color: #fff;
-    padding: 20px;
+    padding: 25px;
     outline: none;
     border: none;
     display: flex;

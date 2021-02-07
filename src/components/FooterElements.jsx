@@ -10,24 +10,25 @@ export const FooterNavbarContainer = styled.div `
     align-items: center;
     background-color: #EEEFF4;
     position: relative;
-    @media ${device.tablet} {
-        flex-direction:row;
-        margin: 0 auto; 
-        max-width: 1110px;
-        justify-content: space-between;
-        
+        @media ${device.tablet} {
+            flex-direction:row;
+            margin: 0 auto; 
+            max-width: 1110px;
+            padding: 0px 97.5px;
+            justify-content: space-between;
         }
+       
+     
 `;
 export const FooterLogoContainer = styled.div `
-    color: red;
     border: 1px solid #1B1D23;
     padding: 35px 25px;
     position: absolute;
     top: -55px;
     cursor: pointer;
-    @media ${device.tablet} {
-       position: sticky;
-        }
+        @media ${device.tablet} {
+        position: sticky;
+            }
 `;
 export const FooterLogo = styled.img `
     height: 25px;

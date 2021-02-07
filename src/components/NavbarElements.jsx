@@ -12,17 +12,17 @@ export const NavbarContainer = styled.div `
             max-width: 1110px;
             padding: 50px 97.5px;
             justify-content: start;
-}
-@media ${device.laptopL} {
-        padding: 32px 0;
-    }
+            }
+        @media ${device.laptopL} {
+                padding: 56px 0;
+            }
 `;
 export const NavMenu = styled.ul `
     list-style: none;
         @media ${device.tablet} {
-        display: flex;
-        margin-left: 55px;
-}
+            display: flex;
+            margin-left: 55px;
+        }
     
 `;
 export const NavItems = styled.li `
@@ -33,8 +33,8 @@ export const NavLogoDesktop = styled.img `
 `
 export const HamburgerIconWrapper = styled.div`
       @media ${device.tablet} {
-    display: none;
-}
+        display: none;
+        }
 `
 export const NavLinks = styled(LinkS) `
     text-decoration: none;
@@ -44,6 +44,9 @@ export const NavLinks = styled(LinkS) `
         @media ${device.mobileM} {
             margin-left:10px;
             cursor: pointer;
+        @media ${device.laptopL} {
+            font-size: 1rem;
+        }
 }
 `
 export const MenuIcon = styled.img `

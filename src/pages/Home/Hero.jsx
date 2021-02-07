@@ -26,10 +26,10 @@ function Hero() {
                 </HeroButtonWrapper>
                 </HeroTextContainer>
                 <ButtonGroupWrapper>
-                    <ButtonGroupActive>1</ButtonGroupActive>
-                    <ButtonGroup>2</ButtonGroup>
-                    <ButtonGroup>3</ButtonGroup>
-                    <ButtonGroup>4</ButtonGroup>
+                    <ButtonGroupActive>01</ButtonGroupActive>
+                    <ButtonGroup>02</ButtonGroup>
+                    <ButtonGroup>03</ButtonGroup>
+                    <ButtonGroup>04</ButtonGroup>
                 </ButtonGroupWrapper>
         </HeroContainer>
         </>

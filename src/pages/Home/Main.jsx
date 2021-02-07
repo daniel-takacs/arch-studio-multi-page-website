@@ -5,8 +5,8 @@ import { Button } from '@material-ui/core';
 import '../../index.scss';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
-import { MainContainer, WelcomeTextContent, MainH2, MainP, MainImgContainer, 
-        MainImg, SmallTeamText, MainButtonWrapper, MainButton, FeaturedContainer,
+import { MainContainer, WelcomeTextContent, SmallTeamH2, MainP, SmallTeamContainer, 
+        SmallTeamImg, SmallTeamText, MainButtonWrapper, MainButton, FeaturedContainer,
         FeaturedImageContainer, FeaturedImages, FeaturedImage, FeaturedTextContainer,
         FeaturedH3, FeaturedBottomButtonWrapper, FeaturedButton, FeaturedButtonTop,
       FeaturedH2, FeaturedTop, FeaturedBottomButton, WelcomeImgContainer, WelcomeTextContentWrapper, WelcomeMainImg, WelcomeH2 } from './MainElements';
@@ -42,17 +42,17 @@ function Main() {
                   <WelcomeMainImg className="imgfilter" src={WelcomeImage}/>
                 </WelcomeImgContainer>
               </WelcomeTextContentWrapper>
-            <MainImgContainer>
-                <MainImg className="imgfilter" src={SmallTeamMobile}/>
-                <MainImg className="imgfilter" src={SmallTeamTablet}/>
-                <MainImg className="imgfilter" src={SmallTeamDesktop}/>
+            <SmallTeamContainer>
+                <SmallTeamImg className="imgfilter" src={SmallTeamMobile}/>
+                <SmallTeamImg className="imgfilter" src={SmallTeamTablet}/>
+                <SmallTeamImg className="imgfilter" src={SmallTeamDesktop}/>
                 <SmallTeamText>
-                  <MainH2>Small team, big ideas</MainH2>
+                  <SmallTeamH2>Small team, big ideas</SmallTeamH2>
                   <MainButtonWrapper>
                       <MainButton onClick={() => { alert('clicked') }}>About Us<ArrowForwardOutlinedIcon /></MainButton>
                   </MainButtonWrapper>  
                 </SmallTeamText> 
-            </MainImgContainer>
+            </SmallTeamContainer>
 
             <FeaturedContainer>
                 <FeaturedTop>

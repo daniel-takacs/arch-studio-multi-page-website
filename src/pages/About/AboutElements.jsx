@@ -4,8 +4,7 @@ import { device } from '../../device';
 
 export const AboutContainer = styled.div `
     margin-bottom: 50px;
-    @media ${device.tablet} {
-            
+        @media ${device.tablet} {
             padding: 0 97.5px;
             margin: 0 auto; 
             max-width: 1110px;
@@ -14,18 +13,12 @@ export const AboutContainer = styled.div `
         padding: 0;
     }
 `
-
-export const AboutMainContainer = styled.div `
-    padding: 0 32px;
-`
 export const AboutHeroImgContainer = styled.div `
     position: relative;
-
-   
 `
+
+
 export const AboutHeroImg = styled.img `
-    
-    
         &:first-child {
             clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 83%, 86% 83%, 91% 83%, 91% 100%, 0 100%, 100% 100%, 100% 0%);
             width: 100%;
@@ -61,6 +54,10 @@ export const AboutHeroImg = styled.img `
         }
     }
 `
+export const AboutMainContainer = styled.div `
+    padding: 0 32px;
+`
+
 export const AboutIntroContainer = styled.div `
     margin: 100px 0;
         @media ${device.tablet} {
@@ -85,9 +82,7 @@ export const AboutIntroContainer = styled.div `
         }
 `
 export const AboutText = styled.div `
-    
     @media ${device.mobileM} {
-    
         padding-top: 70px;
     }
    

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
-import { ContactContainer, ContactHeroImgContainer, ContactHeroImg,
-            ContactIntroContainer, ContactText, ContactP, ContactH2, ContactDetailsContainer,
+import { ContactContainer, ContactHeroImgContainer, ContactHeroImg, ContactMainContainer,
+            ContactIntroContainer, ContactText, ContactIntroH2, ContactIntroP,  ContactDetailsContainer,
         ContactDetails, DetailsH2, DetailsH4, DetailsP, DetailsButton, 
     ContactMapContainer, ContactMapImg, ContactFormContainer, ContactFormWrapper, ContactFormH2, Button} from './ContactElements';
 import ContactImgMobile from '../../assets/images/contact/mobile/image-hero.jpg';
@@ -16,19 +16,20 @@ import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 function Contact() {
     return (
         <>
-            <ContactHeroImgContainer>
-                <ContactHeroImg className="imgfilter" src={ContactImgMobile} />
-                <ContactHeroImg className="imgfilter" src={ContactImgTablet} />
-                <ContactHeroImg className="imgfilter" src={ContactImgDesktop} />
-            </ContactHeroImgContainer>
             <ContactContainer>
+                <ContactHeroImgContainer>
+                    <ContactHeroImg className="imgfilter" src={ContactImgMobile} />
+                    <ContactHeroImg className="imgfilter" src={ContactImgTablet} />
+                    <ContactHeroImg className="imgfilter" src={ContactImgDesktop} />
+                </ContactHeroImgContainer>
+            <ContactMainContainer>
                 <ContactIntroContainer>
                     <ContactText>
-                        <ContactH2>Tell us about your project</ContactH2>
-                        <ContactP>We’d love to hear more about your project. Please, leave a message below or give 
+                        <ContactIntroH2>Tell us about your project</ContactIntroH2>
+                        <ContactIntroP>We’d love to hear more about your project. Please, leave a message below or give 
                         us a call. We have two offices, one in Texas and one in Tennessee. If you find 
                         yourself nearby, come say hello!
-                        </ContactP>
+                        </ContactIntroP>
                     </ContactText>
                 </ContactIntroContainer>
                 <ContactDetailsContainer>
@@ -61,6 +62,7 @@ function Contact() {
                         <ContactForm />
                     </ContactFormWrapper>
                 </ContactFormContainer>
+                </ContactMainContainer>
             </ContactContainer>
         </>
     )

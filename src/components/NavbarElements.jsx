@@ -14,7 +14,7 @@ export const NavbarContainer = styled.div `
             padding: 50px 97.5px;
             justify-content: start;
 
-            /*Sidebar*/
+            /*Sidetext*/
 
             &:after {
             position: absolute;
@@ -62,12 +62,8 @@ export const NavbarContainer = styled.div `
             left: -122px;
             transform: rotate(90deg)
         }
-            /* Sidebar */
-
-
-
-                padding: 56px 0;
-            }
+            padding: 56px 0;
+        }
 `;
 export const NavMenu = styled.ul `
     list-style: none;

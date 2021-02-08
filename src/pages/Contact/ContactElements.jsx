@@ -206,9 +206,6 @@ export const Button = styled.button `
     cursor: pointer;
     font-weight: 700;
 `
-export const ContactMapContainer = styled.div `
-
-`
 export const ContactMapImg = styled.img `
     max-width: 100%;
         &:first-child {

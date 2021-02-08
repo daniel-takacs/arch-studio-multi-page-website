@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 import { ContactContainer, ContactHeroImgContainer, ContactHeroImg, ContactMainContainer,
             ContactIntroContainer, ContactText, ContactIntroH2, ContactIntroP,  ContactDetailsContainer,
         ContactDetails, ContactDetailsContent, DetailsH2, DetailsH4, DetailsP, DetailsButton, 
-    ContactMapContainer, ContactMapImg, ContactFormContainer, ContactFormWrapper, ContactFormH2, Button} from './ContactElements';
+     ContactFormContainer, ContactFormWrapper, ContactFormH2, Button} from './ContactElements';
 import ContactImgMobile from '../../assets/images/contact/mobile/image-hero.jpg';
 import ContactImgTablet from '../../assets/images/contact/tablet/image-hero.jpg';
 import ContactImgDesktop from '../../assets/images/contact/desktop/image-hero.jpg';
@@ -14,6 +14,9 @@ import ContactMapImageDesktop from '../../assets/images/contact/desktop/image-ma
 
 import ContactForm from '../../components/ContactForm';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
+
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
 
 
 function Contact() {
@@ -60,11 +63,17 @@ function Contact() {
                         </DetailsButton>
                     </ContactDetails>   
                 </ContactDetailsContainer>
-                <ContactMapContainer>
-                    <ContactMapImg  src={ContactMapImage} />
-                    <ContactMapImg  src={ContactMapImageTablet} />
-                    <ContactMapImg  src={ContactMapImageDesktop} />
-                </ContactMapContainer>
+                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true} style= {{height: '60vh' }}>
+                    <TileLayer
+                        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={[51.505, -0.09]}>
+                        <Popup>
+                        A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                    </MapContainer>
                 <ContactFormContainer>
                     <ContactFormH2>Connect with us</ContactFormH2>
                     <ContactFormWrapper>

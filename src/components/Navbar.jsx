@@ -19,16 +19,16 @@ function Navbar() {
 
     return (
         <NavbarContainer>
-            <NavLogoDesktop to="/" src={NavLogo}/>
+            <NavLinks to="/"><NavLogoDesktop  src={NavLogo}/></NavLinks>
             <NavMenu className={sidebar ? "nav-menu active" : "nav-menu"}>
                 <NavItems className="nav-list" >
-                    <NavLinks to="/Portfolio">Portfolio</NavLinks>
+                    <NavLinks to="/Portfolio" onClick={clickHandler} >Portfolio</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks  to="/About">About Us</NavLinks>
+                    <NavLinks  to="/About" onClick={clickHandler} >About Us</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks to="/Contact">Contact</NavLinks>
+                    <NavLinks to="/Contact" onClick={clickHandler} >Contact</NavLinks>
                 </NavItems>
             </NavMenu>
             <HamburgerIconWrapper className={sidebar ? "hamburger active" : "hamburger"}>

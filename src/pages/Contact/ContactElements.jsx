@@ -95,7 +95,9 @@ export const ContactIntroH2 = styled.h2`
         font-size: 3rem;
         
     }
-   
+    @media ${device.laptopL} {
+        
+    }
 
     @media ${device.tablet} {
         position: relative;
@@ -136,7 +138,7 @@ export const ContactIntroH2 = styled.h2`
 export const ContactIntroP = styled.p `
       line-height: 1.5rem;
     @media ${device.laptopL} {
-        width:140%;
+        width:100%;
     }
 `
 export const ContactDetailsContainer = styled.div `

@@ -9,7 +9,6 @@ export const HeroContainer = styled.div `
         max-width: 1110px;
         margin-bottom: 210px;
         padding: 0 97.5px;
-        //padding: 0 97.5px;
      
     }
     @media ${device.laptopL} {

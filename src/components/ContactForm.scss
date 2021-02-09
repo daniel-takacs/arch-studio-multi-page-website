@@ -1,7 +1,9 @@
 form input, textarea {
     width: 100%;
     border: none;
+    outline:none;
     border-bottom: 2px solid #C8CCD8;
+    resize: none;
 }
 input, textarea {
     padding: 20px;

@@ -14,8 +14,7 @@ export const NavbarContainer = styled.div `
             padding: 50px 97.5px;
             justify-content: start;
 
-            /*Sidetext*/
-
+        
             &:after {
             position: absolute;
             content: 'Home';

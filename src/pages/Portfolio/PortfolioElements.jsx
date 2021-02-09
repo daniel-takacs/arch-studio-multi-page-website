@@ -10,11 +10,13 @@ export const PortfolioContainer = styled.div `
             display: flex;
             flex-wrap: wrap;
             margin: 0 auto; 
-            max-width: 1110px;
+            max-width: 800px;
             justify-content:center;
             }
             @media ${device.laptopL} {
+            max-width: 1110px;
             padding: 0;
+            
         }
 
 `

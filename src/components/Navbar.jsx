@@ -17,12 +17,14 @@ function Navbar() {
         setSidebar(!sidebar)
     }
 
+   
+
     return (
         <NavbarContainer>
             <NavLinks to="/"><NavLogoDesktop  src={NavLogo}/></NavLinks>
             <NavMenu className={sidebar ? "nav-menu active" : "nav-menu"}>
                 <NavItems className="nav-list" >
-                    <NavLinks to="/Portfolio" >Portfolio</NavLinks>
+                    <NavLinks  to="/Portfolio" >Portfolio</NavLinks>
                 </NavItems>
                 <NavItems>
                     <NavLinks  to="/About" >About Us</NavLinks>

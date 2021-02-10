@@ -5,7 +5,7 @@ import AboutIntroImg from '../../assets/images/about/mobile/image-hero.jpg';
 import AboutTabIntroImg from '../../assets/images/about/tablet/image-hero.jpg';
 import AboutDeskIntroImg from '../../assets/images/about/desktop/image-hero.jpg';
 
-import { AboutContainer, AboutIntroContainer, AboutMainContainer, AboutHeroImgContainer, AboutHeroImg, AboutText, AboutIntroH2,
+import { AboutContainer, AboutHeroContainer, AboutMainContainer, AboutHeroImgContainer, AboutHeroImg, AboutText, AboutIntroH2,
         AboutIntroP, AboutMainSection, AboutMainText, AboutMainImgContainer, AboutMainImg, AboutMainP, AboutMainH2,
         AboutLeaders, AboutLeaderH2, AboutLeader, AboutLeaderImg, AboutLeaderH4, AboutLeaderP,
         AboutSocial, AboutSocialIcon  } from './AboutElements';
@@ -22,13 +22,12 @@ function About() {
     return (
         <div>
             <AboutContainer>
-                <AboutHeroImgContainer> 
-                    <AboutHeroImg className="imgfilter" src={AboutIntroImg}/>
-                    <AboutHeroImg className="imgfilter" src={AboutTabIntroImg}/>
-                    <AboutHeroImg className="imgfilter" src={AboutDeskIntroImg}/>
-                </AboutHeroImgContainer>
-            <AboutMainContainer>    
-                <AboutIntroContainer>
+                <AboutHeroContainer>
+                    <AboutHeroImgContainer> 
+                        <AboutHeroImg className="imgfilter" src={AboutIntroImg}/>
+                        <AboutHeroImg className="imgfilter" src={AboutTabIntroImg}/>
+                        <AboutHeroImg className="imgfilter" src={AboutDeskIntroImg}/>
+                    </AboutHeroImgContainer>
                     <AboutText>
                         <AboutIntroH2>
                             Your team of professionals
@@ -38,7 +37,9 @@ function About() {
                         relationship our projects have with their surroundings.
                         </AboutIntroP>
                     </AboutText>
-                </AboutIntroContainer>
+                </AboutHeroContainer>
+            <AboutMainContainer>    
+               
                 <AboutMainSection>
                     <AboutMainText>
                         <AboutMainH2>Our Heritage</AboutMainH2>

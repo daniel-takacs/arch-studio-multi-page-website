@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 import { ContactContainer, ContactHeroImgContainer, ContactHeroImg, ContactMainContainer,
             ContactIntroContainer, ContactText, ContactIntroH2, ContactIntroP,  ContactDetailsContainer,
         ContactDetails, ContactDetailsContent, DetailsH2, DetailsH4, DetailsP, DetailsButton, 
-     ContactFormContainer, ContactFormWrapper, ContactFormH2, Button} from './ContactElements';
+     ContactFormContainer, ContactFormWrapper, ContactFormH2, Button, ContactHeroContainer} from './ContactElements';
 import ContactImgMobile from '../../assets/images/contact/mobile/image-hero.jpg';
 import ContactImgTablet from '../../assets/images/contact/tablet/image-hero.jpg';
 import ContactImgDesktop from '../../assets/images/contact/desktop/image-hero.jpg';
@@ -23,13 +23,13 @@ function Contact() {
     return (
         <>
             <ContactContainer>
-                <ContactHeroImgContainer>
+                <ContactHeroContainer>
+                    <ContactHeroImgContainer>
                     <ContactHeroImg className="imgfilter" src={ContactImgMobile} />
                     <ContactHeroImg className="imgfilter" src={ContactImgTablet} />
                     <ContactHeroImg className="imgfilter" src={ContactImgDesktop} />
-                </ContactHeroImgContainer>
-            <ContactMainContainer>
-                <ContactIntroContainer>
+                    </ContactHeroImgContainer>
+               
                     <ContactText>
                         <ContactIntroH2>Tell us about your project</ContactIntroH2>
                         <ContactIntroP>We’d love to hear more about your project. Please, leave a message below or give 
@@ -37,7 +37,9 @@ function Contact() {
                         yourself nearby, come say hello!
                         </ContactIntroP>
                     </ContactText>
-                </ContactIntroContainer>
+                
+                </ContactHeroContainer>
+                <ContactMainContainer>
                 <ContactDetailsContainer>
                     <DetailsH2>Contact Details</DetailsH2>
                     <ContactDetails>

@@ -7,10 +7,10 @@ import '../../index.scss';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
 import { HeroContainer, HeroBgImg, HeroTextContainer, HeroH1, HeroP, HeroButtonWrapper, Button, 
-        ButtonGroupWrapper, ButtonGroup, ButtonGroupActive } from './HeroElements'
+        ButtonGroupWrapper, ButtonGroup, ButtonGroupActive, NavLinks } from './HeroElements'
 
 
-function Hero() {
+function Hero02() {
 
     return (
         <>
@@ -28,14 +28,14 @@ function Hero() {
                 </HeroButtonWrapper>
                 </HeroTextContainer>
                 <ButtonGroupWrapper>
-                    <ButtonGroup>01</ButtonGroup>
-                    <ButtonGroupActive>02</ButtonGroupActive>
-                    <ButtonGroup>03</ButtonGroup>
-                    <ButtonGroup>04</ButtonGroup>
+                <NavLinks  to="/"><ButtonGroup>01</ButtonGroup></NavLinks>
+                    <NavLinks to="/Hero02" ><ButtonGroupActive to="/Hero02">02</ButtonGroupActive></NavLinks>
+                    <NavLinks to="/Hero03" ><ButtonGroup>03</ButtonGroup></NavLinks>
+                    <NavLinks to="/Hero04" ><ButtonGroup>04</ButtonGroup></NavLinks>
                 </ButtonGroupWrapper>
         </HeroContainer>
         </>
     )
 }
 
-export default Hero
+export default Hero02

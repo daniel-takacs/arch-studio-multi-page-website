@@ -15,9 +15,6 @@ function Home() {
     return (
         <>
             <Hero />
-            <Hero02 />
-            <Hero03 />
-            <Hero04 />
             <Main />
         </>
     )

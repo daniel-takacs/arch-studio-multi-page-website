@@ -3,7 +3,7 @@ import { device } from '../../device';
 import { Link as LinkS } from 'react-router-dom';
 
 export const NavLinks = styled(LinkS) `
-
+    text-decoration: none;
 `
 export const HeroContainer = styled.div `
     position: relative;
@@ -118,17 +118,10 @@ export const Button = styled.button`
 `;
 export const ButtonGroupWrapper = styled.div `
     display: none;
-
-    /*@media ${device.tablet} {
-        position: absolute;
-        bottom: 0;
-        left: 53px;
-        display: flex;
-    }*/
     @media ${device.laptopL} {
         position: absolute;
         bottom: 0;
-        left: -65px;
+        left: -66px;
         display: flex;
     }
 `

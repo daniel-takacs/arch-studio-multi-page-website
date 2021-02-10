@@ -9,6 +9,8 @@ import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 import { HeroContainer, HeroBgImg, HeroTextContainer, HeroH1, HeroP, HeroButtonWrapper, Button, 
         ButtonGroupWrapper, ButtonGroup, ButtonGroupActive, NavLinks } from './HeroElements'
 
+import Main from './Main';
+
 
 function Hero02() {
 
@@ -20,20 +22,22 @@ function Hero02() {
                 <HeroBgImg className="imgfilter" src={HeroBgImageDesktop} />
                 <HeroTextContainer>
                         <HeroH1>Seraph Station</HeroH1>
-                        <HeroP>Project made for an art museum near Southwest London. Project Paramour is 
-                                a statement of bold, modern architecture.
+                        <HeroP>The Seraph Station project challenged us to design a unique station that would 
+  transport people through time. The result is a fresh and futuristic model 
+  inspired by space stations.
                         </HeroP>
                 <HeroButtonWrapper>
                 <Button onClick={() => { alert('clicked') }}>See Our Portfolio<ArrowForwardOutlinedIcon /></Button>
                 </HeroButtonWrapper>
                 </HeroTextContainer>
                 <ButtonGroupWrapper>
-                <NavLinks  to="/"><ButtonGroup>01</ButtonGroup></NavLinks>
-                    <NavLinks to="/Hero02" ><ButtonGroupActive to="/Hero02">02</ButtonGroupActive></NavLinks>
+                    <NavLinks  to="/"><ButtonGroup>01</ButtonGroup></NavLinks>
+                    <NavLinks to="/Hero02" ><ButtonGroupActive>02</ButtonGroupActive></NavLinks>
                     <NavLinks to="/Hero03" ><ButtonGroup>03</ButtonGroup></NavLinks>
                     <NavLinks to="/Hero04" ><ButtonGroup>04</ButtonGroup></NavLinks>
                 </ButtonGroupWrapper>
         </HeroContainer>
+        <Main />
         </>
     )
 }

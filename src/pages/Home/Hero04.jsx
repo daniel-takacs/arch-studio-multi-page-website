@@ -8,6 +8,7 @@ import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
 import { HeroContainer, HeroBgImg, HeroTextContainer, HeroH1, HeroP, HeroButtonWrapper, Button, 
         ButtonGroupWrapper, ButtonGroup, ButtonGroupActive, NavLinks } from './HeroElements'
+import Main from './Main';
 
 
 function Hero04() {
@@ -19,9 +20,10 @@ function Hero04() {
                 <HeroBgImg className="imgfilter" src={HeroBgImageTablet} />
                 <HeroBgImg className="imgfilter" src={HeroBgImageDesktop} />
                 <HeroTextContainer>
-                        <HeroH1>Seraph Station</HeroH1>
-                        <HeroP>Project made for an art museum near Southwest London. Project Paramour is 
-                                a statement of bold, modern architecture.
+                        <HeroH1>Trinity Bank Tower</HeroH1>
+                        <HeroP> Trinity Bank challenged us to make a concept for a 84 story building located 
+  in the middle of a city with a high earthquake frequency. For this project we 
+  used curves to blend design and stability to meet our objectives.
                         </HeroP>
                 <HeroButtonWrapper>
                 <Button onClick={() => { alert('clicked') }}>See Our Portfolio<ArrowForwardOutlinedIcon /></Button>
@@ -29,11 +31,12 @@ function Hero04() {
                 </HeroTextContainer>
                 <ButtonGroupWrapper>
                     <NavLinks  to="/"><ButtonGroup>01</ButtonGroup></NavLinks>
-                    <NavLinks to="/Hero02" ><ButtonGroup to="/Hero02">02</ButtonGroup></NavLinks>
+                    <NavLinks to="/Hero02" ><ButtonGroup>02</ButtonGroup></NavLinks>
                     <NavLinks to="/Hero03" ><ButtonGroup>03</ButtonGroup></NavLinks>
                     <NavLinks to="/Hero04" ><ButtonGroupActive>04</ButtonGroupActive></NavLinks>
                 </ButtonGroupWrapper>
         </HeroContainer>
+        <Main />
         </>
     )
 }

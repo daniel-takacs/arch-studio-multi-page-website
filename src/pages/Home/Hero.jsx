@@ -28,10 +28,10 @@ function Hero() {
                 </HeroButtonWrapper>
                 </HeroTextContainer>
                 <ButtonGroupWrapper>
-                    <ButtonGroupActive>01</ButtonGroupActive>
-                    <NavLinks to="/Hero02"><ButtonGroup>02</ButtonGroup></NavLinks>
-                    <ButtonGroup>03</ButtonGroup>
-                    <ButtonGroup>04</ButtonGroup>
+                    <NavLinks to="/"><ButtonGroupActive>01</ButtonGroupActive></NavLinks>
+                    <NavLinks to="/Hero02" ><ButtonGroup>02</ButtonGroup></NavLinks>
+                    <NavLinks to="/Hero03" ><ButtonGroup>03</ButtonGroup></NavLinks>
+                    <NavLinks to="/Hero04" ><ButtonGroup>04</ButtonGroup></NavLinks>
                 </ButtonGroupWrapper>
         </HeroContainer>
         </>

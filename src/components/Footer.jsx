@@ -2,7 +2,7 @@ import React from 'react';
 import NavLogo from '../assets/images/footer-logo.svg';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 import {FooterNavbarContainer, FooterLogoContainer, FooterLogo, 
-        FooterNavMenu, FooterNavItems, NavLink, FooterButtonWrapper, 
+        FooterNavMenu, FooterNavItems, NavLinks, FooterButtonWrapper, 
         Button} from './FooterElements'
 
 function Footer() {
@@ -10,17 +10,17 @@ function Footer() {
         <>
            <FooterNavbarContainer>
                <FooterLogoContainer className="footerlogo-container">
-                   <FooterLogo className="footerlogo" to='/' src={NavLogo}/>
+                   <NavLinks to='/'><FooterLogo className="footerlogo" src={NavLogo}/></NavLinks>
                </FooterLogoContainer>
             <FooterNavMenu>
                 <FooterNavItems>
-                    <NavLink to="/Portfolio">Portfolio</NavLink>
+                    <NavLinks to="/Portfolio">Portfolio</NavLinks>
                 </FooterNavItems>
                 <FooterNavItems>
-                    <NavLink to="/About">About Us</NavLink>
+                    <NavLinks to="/About">About Us</NavLinks>
                 </FooterNavItems>
                 <FooterNavItems>
-                    <NavLink to="/Contact">Contact</NavLink>
+                    <NavLinks to="/Contact">Contact</NavLinks>
                 </FooterNavItems>
             </FooterNavMenu>
             <FooterButtonWrapper><Button onClick={() => { alert('clicked') }}>See Our Portfolio<ArrowForwardOutlinedIcon /></Button></FooterButtonWrapper>

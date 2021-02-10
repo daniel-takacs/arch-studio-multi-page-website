@@ -71,7 +71,7 @@ export const FooterNavItems = styled.li `
         }
     `;
 
-export const NavLink = styled(LinkS)`
+export const NavLinks = styled(LinkS)`
     text-decoration: none;
     color: #7D828F;
     

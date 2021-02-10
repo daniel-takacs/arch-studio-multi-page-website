@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import { device } from '../../device';
+import { Link as LinkS } from 'react-router-dom';
 
+export const NavLinks = styled(LinkS) `
 
+`
 export const HeroContainer = styled.div `
     position: relative;
      @media ${device.tablet} {

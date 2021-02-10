@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import Footer from '../../components/Footer';
 import Hero from './Hero';
+import Hero02 from './Hero02';
 import Main from './Main';
 
 function Home() {

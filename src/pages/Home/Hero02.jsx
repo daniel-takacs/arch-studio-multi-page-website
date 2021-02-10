@@ -1,13 +1,13 @@
 import React from 'react';
-import HeroBgImageDesktop from '../../assets/images/home/desktop/image-hero-paramour.jpg';
-import HeroBgImageMobile from '../../assets/images/home/mobile/image-hero-paramour.jpg';
-import HeroBgImageTablet from '../../assets/images/home/tablet/image-hero-paramour.jpg';
+import HeroBgImageDesktop from '../../assets/images/home/desktop/image-hero-seraph.jpg';
+import HeroBgImageMobile from '../../assets/images/home/mobile/image-hero-seraph.jpg';
+import HeroBgImageTablet from '../../assets/images/home/tablet/image-hero-seraph.jpg';
 //import { Button } from '@material-ui/core';
 import '../../index.scss';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 
 import { HeroContainer, HeroBgImg, HeroTextContainer, HeroH1, HeroP, HeroButtonWrapper, Button, 
-        ButtonGroupWrapper, ButtonGroup, ButtonGroupActive, NavLinks } from './HeroElements'
+        ButtonGroupWrapper, ButtonGroup, ButtonGroupActive } from './HeroElements'
 
 
 function Hero() {
@@ -19,7 +19,7 @@ function Hero() {
                 <HeroBgImg className="imgfilter" src={HeroBgImageTablet} />
                 <HeroBgImg className="imgfilter" src={HeroBgImageDesktop} />
                 <HeroTextContainer>
-                        <HeroH1>Project Paramour</HeroH1>
+                        <HeroH1>Seraph Station</HeroH1>
                         <HeroP>Project made for an art museum near Southwest London. Project Paramour is 
                                 a statement of bold, modern architecture.
                         </HeroP>
@@ -28,8 +28,8 @@ function Hero() {
                 </HeroButtonWrapper>
                 </HeroTextContainer>
                 <ButtonGroupWrapper>
-                    <ButtonGroupActive>01</ButtonGroupActive>
-                    <NavLinks><ButtonGroup>02</ButtonGroup></NavLinks>
+                    <ButtonGroup>01</ButtonGroup>
+                    <ButtonGroupActive>02</ButtonGroupActive>
                     <ButtonGroup>03</ButtonGroup>
                     <ButtonGroup>04</ButtonGroup>
                 </ButtonGroupWrapper>

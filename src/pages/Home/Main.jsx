@@ -4,6 +4,7 @@ import NavLogo from '../../assets/images/logo.svg';
 import { Button } from '@material-ui/core';
 import '../../index.scss';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
+import { NavLinks } from './HeroElements';
 
 import { MainContainer, WelcomeTextContent, SmallTeamH2, MainP, SmallTeamContainer, 
         SmallTeamImg, SmallTeamText, MainButtonWrapper, MainButton, FeaturedContainer,
@@ -49,7 +50,7 @@ function Main() {
                 <SmallTeamText>
                   <SmallTeamH2>Small team, big ideas</SmallTeamH2>
                   <MainButtonWrapper>
-                      <MainButton onClick={() => { alert('clicked') }}>About Us<ArrowForwardOutlinedIcon /></MainButton>
+                  <NavLinks to="/About"><MainButton>About Us<ArrowForwardOutlinedIcon /></MainButton></NavLinks>
                   </MainButtonWrapper>  
                 </SmallTeamText> 
             </SmallTeamContainer>

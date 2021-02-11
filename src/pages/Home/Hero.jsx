@@ -24,7 +24,7 @@ function Hero() {
                                 a statement of bold, modern architecture.
                         </HeroP>
                 <HeroButtonWrapper>
-                <Button onClick={() => { alert('clicked') }}>See Our Portfolio<ArrowForwardOutlinedIcon /></Button>
+                <NavLinks to="/Portfolio"><Button>See Our Portfolio<ArrowForwardOutlinedIcon /></Button></NavLinks>
                 </HeroButtonWrapper>
                 </HeroTextContainer>
                 <ButtonGroupWrapper>

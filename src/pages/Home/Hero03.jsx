@@ -25,7 +25,7 @@ function Hero03() {
   this with a striking look of brutal minimalism with modern touches.
                         </HeroP>
                 <HeroButtonWrapper>
-                <Button onClick={() => { alert('clicked') }}>See Our Portfolio<ArrowForwardOutlinedIcon /></Button>
+                <NavLinks to="/Portfolio"><Button>See Our Portfolio<ArrowForwardOutlinedIcon /></Button></NavLinks>
                 </HeroButtonWrapper>
                 </HeroTextContainer>
                 <ButtonGroupWrapper>

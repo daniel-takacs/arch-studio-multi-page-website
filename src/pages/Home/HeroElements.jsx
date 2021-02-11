@@ -115,6 +115,9 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     cursor: pointer;
+    &:hover {
+        background-color: #60636D;
+    }
 `;
 export const ButtonGroupWrapper = styled.div `
     display: none;

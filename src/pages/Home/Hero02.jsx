@@ -27,7 +27,7 @@ function Hero02() {
   inspired by space stations.
                         </HeroP>
                 <HeroButtonWrapper>
-                <Button onClick={() => { alert('clicked') }}>See Our Portfolio<ArrowForwardOutlinedIcon /></Button>
+                <NavLinks to="/Portfolio"><Button>See Our Portfolio<ArrowForwardOutlinedIcon /></Button></NavLinks>
                 </HeroButtonWrapper>
                 </HeroTextContainer>
                 <ButtonGroupWrapper>

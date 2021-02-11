@@ -129,6 +129,9 @@ export const MainButton = styled.div `
     display:flex;
     justify-content:center;
     cursor: pointer;
+    &:hover {
+        background-color: #60636D;
+    }
     @media ${device.mobileM} {
       width: 40%;
     }
@@ -236,6 +239,9 @@ export const FeaturedButtonTop = styled.div`
         display:flex;
         justify-content:center;
         cursor: pointer;
+        &:hover {
+        background-color: #60636D;
+    }
   }
     
 `
@@ -264,4 +270,7 @@ export const FeaturedBottomButton = styled.button`
     display:flex;
     justify-content:center;
     cursor: pointer;
+    &:hover {
+        background-color: #60636D;
+    }
 `;

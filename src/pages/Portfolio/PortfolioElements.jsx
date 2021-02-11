@@ -24,10 +24,15 @@ export const PortfolioContainer = styled.div `
 export const Portfolio = styled.div `
     position: relative;
     margin-bottom: 20px;
+    cursor: pointer;
    
 `
 export const PortfolioImage = styled.img `
         width: 100%;
+        &:hover {
+        opacity: 0.5;
+    }
+        
         &:nth-child(2) {
             display:none;
         }
@@ -57,6 +62,7 @@ export const PortfolioImage = styled.img `
             display:block;
            
             padding: 0 10px 0 10px;
+            
         }
     }
 `;

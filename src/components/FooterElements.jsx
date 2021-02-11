@@ -74,7 +74,9 @@ export const FooterNavItems = styled.li `
 export const NavLinks = styled(LinkS)`
     text-decoration: none;
     color: #7D828F;
-    
+    &:hover {
+        color:black;
+    }
 `
 export const FooterLink = styled.li `
 
@@ -95,5 +97,8 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     cursor: pointer;
+    &:hover {
+        background-color: #60636D;
+    }
 `;
 

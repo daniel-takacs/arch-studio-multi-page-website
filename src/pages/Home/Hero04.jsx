@@ -26,7 +26,7 @@ function Hero04() {
   used curves to blend design and stability to meet our objectives.
                         </HeroP>
                 <HeroButtonWrapper>
-                <Button onClick={() => { alert('clicked') }}>See Our Portfolio<ArrowForwardOutlinedIcon /></Button>
+                <NavLinks to="/Portfolio"><Button>See Our Portfolio<ArrowForwardOutlinedIcon /></Button></NavLinks>
                 </HeroButtonWrapper>
                 </HeroTextContainer>
                 <ButtonGroupWrapper>

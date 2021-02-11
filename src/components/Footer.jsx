@@ -23,7 +23,9 @@ function Footer() {
                     <NavLinks to="/Contact">Contact</NavLinks>
                 </FooterNavItems>
             </FooterNavMenu>
-            <FooterButtonWrapper><Button onClick={() => { alert('clicked') }}>See Our Portfolio<ArrowForwardOutlinedIcon /></Button></FooterButtonWrapper>
+            <FooterButtonWrapper>
+                <NavLinks to="/Portfolio"><Button>See Our Portfolio<ArrowForwardOutlinedIcon /></Button></NavLinks>
+            </FooterButtonWrapper>
         </FooterNavbarContainer> 
         </>
     )

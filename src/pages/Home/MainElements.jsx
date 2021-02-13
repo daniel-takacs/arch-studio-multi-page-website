@@ -156,6 +156,7 @@ export const FeaturedImages = styled.div `
 export const FeaturedImageContainer = styled.div `
   position: relative;
   @media ${device.tablet} {
+        &:nth-child(1) {
         &:after {
             position: absolute;
             font-size: 10rem;
@@ -165,8 +166,30 @@ export const FeaturedImageContainer = styled.div `
             content: '1';
             color: rgba(255,255,255,0.2);
         }
+        }
+
         &:nth-child(2) {
                padding: 0 10px;
+               &:after {
+            position: absolute;
+            font-size: 10rem;
+            font-weight: 700;
+            top:10px;
+            right: 10px;
+            content: '2';
+            color: rgba(255,255,255,0.2);
+        }
+        }
+        &:nth-child(3) {
+               padding: 0 10px;
+               &:after {
+            position: absolute;
+            font-size: 10rem;
+            font-weight: 700;
+            top:10px;
+            right: 10px;
+            content: '3';
+            color: rgba(255,255,255,0.2);
         }
        
     }

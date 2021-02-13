@@ -215,16 +215,21 @@ export const AboutLeader = styled.div `
      
         }
         @media ${device.tablet} {
-         
+            flex: 0 1 calc(25% - 30px);
         
         }
+        @media ${device.laptopL} {
+        position: relative;
+        opacity: 1;
+        
+    }
 `
 export const AboutLeaderImg = styled.img `
     max-width: 100%;
     margin-bottom: 25px;
-    @media ${device.laptopL} {
-        
-    }
+    &:hover {
+    opacity: 0.3;
+  }
 `
 export const AboutLeaderH4 = styled.h4 `
     font-size: 1.2rem;
@@ -234,9 +239,18 @@ export const AboutLeaderP = styled.p `
     margin-bottom: 10px;
 `
 export const AboutSocial = styled.div `
-   
+     @media ${device.laptopL} {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       opacity: 1;
+  transition: .5s ease;
+   }
 `
 export const AboutSocialIcon = styled.img `
     padding-right: 25px;
     height: 32px;
+   opacity: 0;
+
 `

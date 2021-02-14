@@ -138,6 +138,9 @@ export const ButtonGroup = styled.button`
     display: flex;
     align-items: center;
     cursor: pointer;
+    &:hover {
+        background-color: #C8CCD8;
+    }
 `;
 export const ButtonGroupActive = styled.button`
     background-color: #1B1D23;

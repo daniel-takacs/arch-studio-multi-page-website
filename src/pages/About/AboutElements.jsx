@@ -188,15 +188,16 @@ export const AboutMainH2 = styled.h2 `
 export const AboutMainP = styled.p `
         margin-bottom: 20px;
 `
-export const AboutLeaders = styled.div `
+export const AboutLeadersContainer = styled.div `
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
         @media ${device.tablet} {
-            
+        flex-direction: column;
         
         }
         @media ${device.laptopL} {
+            display: flex;
             justify-content: flex-end;
         }
 `
@@ -215,7 +216,7 @@ export const AboutLeader = styled.div `
      
         }
         @media ${device.tablet} {
-            flex: 0 1 calc(25% - 30px);
+            
         
         }
         @media ${device.laptopL} {
@@ -224,12 +225,15 @@ export const AboutLeader = styled.div `
         
     }
 `
+export const AboutLeaders = styled.div`
+    @media ${device.laptopL} {
+        display: flex;
+    }
+`
 export const AboutLeaderImg = styled.img `
     max-width: 100%;
     margin-bottom: 25px;
-    &:hover {
-    opacity: 0.3;
-  }
+    
 `
 export const AboutLeaderH4 = styled.h4 `
     font-size: 1.2rem;
@@ -241,7 +245,7 @@ export const AboutLeaderP = styled.p `
 export const AboutSocial = styled.div `
      @media ${device.laptopL} {
        position: absolute;
-       top: 50%;
+       top: 40%;
        left: 50%;
        transform: translate(-50%, -50%);
        opacity: 1;
@@ -251,6 +255,7 @@ export const AboutSocial = styled.div `
 export const AboutSocialIcon = styled.img `
     padding-right: 25px;
     height: 32px;
-   opacity: 0;
-
+    
+    
+ 
 `

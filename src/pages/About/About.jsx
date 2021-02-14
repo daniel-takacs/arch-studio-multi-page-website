@@ -7,7 +7,7 @@ import AboutDeskIntroImg from '../../assets/images/about/desktop/image-hero.jpg'
 
 import { AboutContainer, AboutHeroContainer, AboutMainContainer, AboutHeroImgContainer, AboutHeroImg, AboutText, AboutIntroH2,
         AboutIntroP, AboutMainSection, AboutMainText, AboutMainImgContainer, AboutMainImg, AboutMainP, AboutMainH2,
-        AboutLeaders, AboutLeaderH2, AboutLeader, AboutLeaderImg, AboutLeaderH4, AboutLeaderP,
+        AboutLeadersContainer, AboutLeaderH2, AboutLeader, AboutLeaders, AboutLeaderImg, AboutLeaderH4, AboutLeaderP,
         AboutSocial, AboutSocialIcon  } from './AboutElements';
 import AboutJake from '../../assets/images/about/desktop/avatar-jake.jpg';
 import AboutThompson from '../../assets/images/about/desktop/avatar-thompson.jpg';
@@ -60,8 +60,9 @@ function About() {
                             <AboutMainImg src={OurHerImg} />
                         </AboutMainImgContainer>  
                 </AboutMainSection>   
-                <AboutLeaders>
+                <AboutLeadersContainer>
                     <AboutLeaderH2>The Leaders</AboutLeaderH2>
+                    <AboutLeaders>
                     <AboutLeader>
                         <AboutLeaderImg src={AboutJake} />
                         <AboutLeaderH4>
@@ -114,7 +115,8 @@ function About() {
                             <AboutSocialIcon src={IconTwitter} />
                         </AboutSocial>
                     </AboutLeader>
-                </AboutLeaders>
+                    </AboutLeaders>
+                </AboutLeadersContainer>
                 </AboutMainContainer>
             </AboutContainer> 
         </div>

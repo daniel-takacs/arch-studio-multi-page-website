@@ -16,7 +16,7 @@ export const PortfolioContainer = styled.div `
             @media ${device.laptopL} {
             max-width: 1110px;
             padding: 0;
-            
+            margin-bottom: 100px;
         }
 
 `

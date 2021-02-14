@@ -33,7 +33,7 @@ export const WelcomeTextContent = styled.div `
 `;
 export const WelcomeImgContainer = styled.div `
     display: none;
-        @media ${device.tablet} {
+        @media ${device.laptopL} {
             display: block;
             
     }
@@ -42,9 +42,19 @@ export const WelcomeMainImg = styled.img `
 
 `
 export const WelcomeH2 = styled.h2 `
-  font-size: 3.2rem;
+  font-size: 3rem;
   position: relative;
-    @media ${device.tablet} {
+  @media ${device.tablet} {
+    &:before {
+      content: 'Welcome';
+      color: #EEEFF4;
+      font-size: 8.4rem;
+      position: absolute;
+      top: -200px;
+      left: -34px;
+      z-index: 10;
+    }
+    @media ${device.laptopL} {
     &:before {
       content: 'Welcome';
       color: #EEEFF4;
@@ -155,6 +165,7 @@ export const FeaturedImages = styled.div `
 `;
 export const FeaturedImageContainer = styled.div `
   position: relative;
+  margin-bottom: 15px;
   @media ${device.tablet} {
         &:nth-child(1) {
         &:after {
@@ -193,7 +204,7 @@ export const FeaturedImageContainer = styled.div `
         }
        
     }
-
+  }
 `;
 
 export const FeaturedImage = styled.img `

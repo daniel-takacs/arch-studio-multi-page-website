@@ -2,12 +2,11 @@ import React from 'react';
 import HeroBgImageDesktop from '../../assets/images/home/desktop/image-hero-paramour.jpg';
 import HeroBgImageMobile from '../../assets/images/home/mobile/image-hero-paramour.jpg';
 import HeroBgImageTablet from '../../assets/images/home/tablet/image-hero-paramour.jpg';
-//import { Button } from '@material-ui/core';
 import '../../index.scss';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
-
-import { HeroContainer, HeroBgImg, HeroTextContainer, HeroH1, HeroP, HeroButtonWrapper, Button, 
-        ButtonGroupWrapper, ButtonGroup, ButtonGroupActive, NavLinks } from './HeroElements'
+import { HeroContainer, HeroBgImg, HeroTextContainer, HeroH1, HeroP, HeroButtonWrapper,
+        ButtonGroupWrapper, ButtonGroup, ButtonGroupActive, NavLinks } from './HeroElements';
+import { Button } from '../../components/Buttons';
 
 
 function Hero() {

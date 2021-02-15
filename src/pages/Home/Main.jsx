@@ -1,13 +1,10 @@
 import React from 'react';
-
-import NavLogo from '../../assets/images/logo.svg';
-import { Button } from '@material-ui/core';
 import '../../index.scss';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 import { NavLinks } from './HeroElements';
 
 import { MainContainer, WelcomeTextContent, SmallTeamH2, MainP, SmallTeamContainer, 
-        SmallTeamImg, SmallTeamText, MainButtonWrapper, MainButton, FeaturedContainer,
+        SmallTeamImg, SmallTeamText, MainButtonWrapper, FeaturedContainer,
         FeaturedImageContainer, FeaturedImages, FeaturedImage, FeaturedTextContainer,
         FeaturedH3, FeaturedBottomButtonWrapper, FeaturedButton, FeaturedButtonTop,
       FeaturedH2, FeaturedTop, FeaturedBottomButton, WelcomeImgContainer, WelcomeTextContentWrapper, WelcomeMainImg, WelcomeH2 } from './MainElements';
@@ -16,6 +13,7 @@ import { SmallTeamMobile, SmallTeamTablet, SmallTeamDesktop, DelSolMobile, Tower
   PrototypeMobile, DelSolTablet, PrototypeTablet,TowerTablet, DelSolDesktop, PrototypeDesktop
   ,TowerDesktop , WelcomeImage} 
   from '../../assets/images/images';
+  import { Button } from '../../components/Buttons';
 
 
 function Main() {
@@ -50,7 +48,7 @@ function Main() {
                 <SmallTeamText>
                   <SmallTeamH2>Small team, big ideas</SmallTeamH2>
                   <MainButtonWrapper>
-                  <NavLinks to="/About"><MainButton>About Us<ArrowForwardOutlinedIcon /></MainButton></NavLinks>
+                  <NavLinks to="/About"><Button>About Us<ArrowForwardOutlinedIcon /></Button></NavLinks>
                   </MainButtonWrapper>  
                 </SmallTeamText> 
             </SmallTeamContainer>

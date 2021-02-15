@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../device';
 import { Link as LinkS } from 'react-router-dom';
 
+
 export const NavLinks = styled(LinkS) `
     text-decoration: none;
 `
@@ -106,19 +107,7 @@ export const HeroButtonWrapper = styled.div `
     align-items: center;
     padding: 40px 0;
 `;
-export const Button = styled.button`
-    background-color: #1B1D23;
-    color: #fff;
-    padding: 20px 30px;
-    outline: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    &:hover {
-        background-color: #60636D;
-    }
-`;
+
 export const ButtonGroupWrapper = styled.div `
     display: none;
     @media ${device.laptopL} {

@@ -54,6 +54,7 @@ export const WelcomeH2 = styled.h2 `
       left: -34px;
       z-index: 10;
     }
+  }
     @media ${device.laptopL} {
     &:before {
       content: 'Welcome';
@@ -63,7 +64,7 @@ export const WelcomeH2 = styled.h2 `
       top: -200px;
       left: -364px;
       z-index: 10;
-    }
+      }
     }
 `;
 

@@ -63,7 +63,7 @@ function Main() {
                     <FeaturedImageContainer>
                       <FeaturedImage src={DelSolMobile}/>
                       <FeaturedImage src={DelSolTablet}/>
-                      <FeaturedImage src={DelSolDesktop}/>
+                      <FeaturedImage className="imgfilter" src={DelSolDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>Project De Sol</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    
@@ -73,7 +73,7 @@ function Main() {
                     <FeaturedImageContainer>
                       <FeaturedImage src={TowerMobile}/>
                       <FeaturedImage src={TowerTablet}/>
-                      <FeaturedImage src={TowerDesktop}/>
+                      <FeaturedImage className="imgfilter" src={TowerDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>228B Tower</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    
@@ -83,7 +83,7 @@ function Main() {
                     <FeaturedImageContainer>
                       <FeaturedImage src={PrototypeMobile}/>
                       <FeaturedImage src={PrototypeTablet}/>
-                      <FeaturedImage src={PrototypeDesktop}/>
+                      <FeaturedImage className="imgfilter" src={PrototypeDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>Le Prototype</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    

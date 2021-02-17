@@ -167,6 +167,7 @@ export const FeaturedImages = styled.div `
 export const FeaturedImageContainer = styled.div `
   position: relative;
   margin-bottom: 15px;
+  cursor: pointer;
   @media ${device.tablet} {
         &:nth-child(1) {
         &:after {
@@ -210,6 +211,7 @@ export const FeaturedImageContainer = styled.div `
 
 export const FeaturedImage = styled.img `
     width: 100%;
+    
     &:nth-child(2) {
             display:none;
         }

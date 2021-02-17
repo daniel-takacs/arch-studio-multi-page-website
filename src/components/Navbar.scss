@@ -9,7 +9,7 @@
 }
 @media screen and (max-width: 768px) {
 
-    .nav-menu {
+.nav-menu {
     position: fixed;
     top: -100%;
     background-color: #EEEFF4;
@@ -21,10 +21,20 @@
     top: 104px;
     right: 0;
     width: 90vw;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-.nav-list {
-    padding: 20px;
+.nav-links {
+    padding-bottom: 20px;
+}
+.nav-list-dropped {
+    display: none;
+}
+.nav-items {
+    padding: 10px;
+}
+.nav-items.active {
+    margin-left: 10px;
 }

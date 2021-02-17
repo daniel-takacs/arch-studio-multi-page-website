@@ -31,7 +31,7 @@ export const NavMenu = styled.ul `
     
 `;
 export const NavItems = styled.li `
-    padding: 0 10px;
+    
 `;
 export const NavLogoDesktop = styled.img `
     cursor: pointer;

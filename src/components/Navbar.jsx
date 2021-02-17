@@ -25,14 +25,14 @@ function Navbar() {
         <NavbarContainer>
             <NavLinks to="/"><NavLogoDesktop  src={NavLogo}/></NavLinks>
             <NavMenu className={sidebar ? "nav-menu active" : "nav-menu"}>
-                <NavItems className="nav-list" >
-                    <NavLinks  to="/Portfolio" >Portfolio</NavLinks>
+                <NavItems className={sidebar ? "nav-items active" : "nav-items"}>
+                    <NavLinks className="nav-links"  to="/Portfolio" >Portfolio</NavLinks>
                 </NavItems>
-                <NavItems>
-                    <NavLinks  to="/About" >About Us</NavLinks>
+                <NavItems className={sidebar ? "nav-items active" : "nav-items"}>
+                    <NavLinks className="nav-links" to="/About" >About Us</NavLinks>
                 </NavItems>
-                <NavItems>
-                    <NavLinks to="/Contact" >Contact</NavLinks>
+                <NavItems className={sidebar ? "nav-items active" : "nav-items"}>
+                    <NavLinks className="nav-links" to="/Contact" >Contact</NavLinks>
                 </NavItems>
             </NavMenu>
             <HamburgerIconWrapper className={sidebar ? "hamburger active" : "hamburger"}>

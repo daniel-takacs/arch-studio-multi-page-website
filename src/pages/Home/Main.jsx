@@ -61,9 +61,9 @@ function Main() {
                 
                 <FeaturedImages>
                     <FeaturedImageContainer>
-                      <FeaturedImage className="imgfilter" src={DelSolMobile}/>
-                      <FeaturedImage className="imgfilter" src={DelSolTablet}/>
-                      <FeaturedImage className="imgfilter no-filter" src={DelSolDesktop}/>
+                      <FeaturedImage src={DelSolMobile}/>
+                      <FeaturedImage src={DelSolTablet}/>
+                      <FeaturedImage src={DelSolDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>Project De Sol</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    
@@ -71,9 +71,9 @@ function Main() {
                     </FeaturedImageContainer>
 
                     <FeaturedImageContainer>
-                      <FeaturedImage className="imgfilter" src={TowerMobile}/>
-                      <FeaturedImage className="imgfilter" src={TowerTablet}/>
-                      <FeaturedImage className="imgfilter no-filter" src={TowerDesktop}/>
+                      <FeaturedImage src={TowerMobile}/>
+                      <FeaturedImage src={TowerTablet}/>
+                      <FeaturedImage src={TowerDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>228B Tower</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    
@@ -81,9 +81,9 @@ function Main() {
                     </FeaturedImageContainer>
 
                     <FeaturedImageContainer>
-                      <FeaturedImage className="imgfilter" src={PrototypeMobile}/>
-                      <FeaturedImage className="imgfilter" src={PrototypeTablet}/>
-                      <FeaturedImage className="imgfilter" src={PrototypeDesktop}/>
+                      <FeaturedImage src={PrototypeMobile}/>
+                      <FeaturedImage src={PrototypeTablet}/>
+                      <FeaturedImage src={PrototypeDesktop}/>
                       <FeaturedTextContainer>
                         <FeaturedH3>Le Prototype</FeaturedH3>
                         <FeaturedButton>View All Projects</FeaturedButton>    

@@ -46,10 +46,7 @@ export const NavLinks = styled(LinkS) `
     color: #7D828F;
     font-weight:700;
     font-size: 0.84rem;
-    &:hover {
-        color: black;
     
-    }
         @media ${device.mobileM} {
             margin-left:10px;
             cursor: pointer;

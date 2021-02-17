@@ -6,21 +6,68 @@ export const PortfolioContainer = styled.div `
     margin: 50px auto 100px;
     position: relative;
         @media ${device.tablet} {
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
+            padding: 0 97.5px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            flex-direction: column;
             margin: 0 auto; 
-            max-width: 800px;
             justify-content:center;
-            }
-            @media ${device.laptopL} {
+            max-width: 1110px;
+
+                &:after {
+                    position: absolute;
+                    content: 'PORTFOLIO';
+                    font-size: 1rem;
+                    color: #C8CCD8;
+                    text-transform: uppercase;
+                    letter-spacing: 10px;
+                    top: 86px;
+                    left: -51px;
+                    transform: rotate(90deg);
+            
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 104px;
+                    height: 1px;
+                    background-color: #C8CCD8;
+                    top: -93px;
+                    left: -5px;
+                    transform: rotate(90deg)
+                }
+
+
+        }
+        @media ${device.laptopL} {
             max-width: 1110px;
             padding: 0;
             margin-bottom: 100px;
-        }
 
+                &:after {
+                    position: absolute;
+                    content: 'PORTFOLIO';
+                    font-size: 1rem;
+                    color: #C8CCD8;
+                    text-transform: uppercase;
+                    letter-spacing: 10px;
+                    top: 86px;
+                    left: -172px;
+                    transform: rotate(90deg);
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 104px;
+                    height: 1px;
+                    background-color: #C8CCD8;
+                    top: -106px;
+                    left: -122px;
+                    transform: rotate(90deg)
+                }
+        }
 `
-             
+           
 export const Portfolio = styled.div `
     position: relative;
     margin-bottom: 20px;
@@ -28,7 +75,7 @@ export const Portfolio = styled.div `
    
 `
 export const PortfolioImage = styled.img `
-        width: 100%;
+        max-width: 100%;
         &:hover {
         opacity: 0.5;
     }

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../../device';
 import { Link as LinkS } from 'react-router-dom';
-
+import * as palette from '../../AfterTextVariables';
 
 export const NavLinks = styled(LinkS) `
     text-decoration: none;
@@ -13,10 +13,55 @@ export const HeroContainer = styled.div `
         max-width: 1110px;
         margin-bottom: 210px;
         padding: 0 97.5px;
+
+        &:after {
+            position: absolute;
+            content: 'HOME';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 38px;
+            left: -5px;
+            transform: rotate(90deg);
+            
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 104px;
+            height: 1px;
+            background-color: #C8CCD8;
+            top: -93px;
+            left: -5px;
+            transform: rotate(90deg)
+        }
+
      
     }
     @media ${device.laptopL} {
-  
+        &:after {
+            position: absolute;
+            content: 'HOME';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 36px;
+            left: -120px;
+            transform: rotate(90deg);
+            
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: ${palette.variables.width};
+            height: 1px;
+            background-color: #C8CCD8;
+            top: -106px;
+            left: -122px;
+            transform: rotate(90deg)
+        }
         padding: 0;
     }
 `;

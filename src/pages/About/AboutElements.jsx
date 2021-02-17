@@ -3,15 +3,66 @@ import { device } from '../../device';
 
 
 export const AboutContainer = styled.div `
+    position: relative;
     margin-bottom: 50px;
         @media ${device.tablet} {
             padding: 0 97.5px;
             margin: 0 auto; 
             max-width: 1110px;
+
+            &:after {
+            position: absolute;
+            content: 'ABOUT US';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 74px;
+            left: -40px;
+            transform: rotate(90deg);
+            
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 104px;
+            height: 1px;
+            background-color: #C8CCD8;
+            top: -93px;
+            left: -5px;
+            transform: rotate(90deg)
+        }
+
         }
         @media ${device.laptopL} {
         padding: 0;
+
+        &:after {
+            position: absolute;
+            content: 'ABOUT US';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 76px;
+            left: -160px;
+            transform: rotate(90deg);
+            
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 104px;
+            height: 1px;
+            background-color: #C8CCD8;
+            top: -106px;
+            left: -122px;
+            transform: rotate(90deg)
+        }
+
     }
+
+    
 `
 export const AboutHeroImgContainer = styled.div `
     position: relative;

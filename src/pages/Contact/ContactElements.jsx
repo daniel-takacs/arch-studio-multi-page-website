@@ -4,13 +4,61 @@ import { device } from '../../device';
 
 export const ContactContainer = styled.div `
     margin-bottom: 50px;
+    position: relative;
         @media ${device.tablet} {
-            padding: 0 97.5px;
             margin: 0 auto; 
             max-width: 1110px;
+            padding: 0 97.5px;
+
+            &:after {
+            position: absolute;
+            content: 'CONTACT';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 64px;
+            left: -34px;
+            transform: rotate(90deg);
+            
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 104px;
+            height: 1px;
+            background-color: #C8CCD8;
+            top: -93px;
+            left: -5px;
+            transform: rotate(90deg)
+        }
+
         }
         @media ${device.laptopL} {
         padding: 0;
+        &:after {
+            position: absolute;
+            content: 'CONTACT';
+            font-size: 1rem;
+            color: #C8CCD8;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            top: 70px;
+            left: -153px;
+            transform: rotate(90deg);
+            
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 104px;
+            height: 1px;
+            background-color: #C8CCD8;
+            top: -106px;
+            left: -122px;
+            transform: rotate(90deg)
+        }
+
     }
 `
 export const ContactHeroImgContainer = styled.div `
@@ -20,7 +68,7 @@ export const ContactHeroImgContainer = styled.div `
     }
 `
 export const ContactHeroImg = styled.img `    
-    &:first-child {
+        &:first-child {
             clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 83%, 86% 83%, 91% 83%, 91% 100%, 0 100%, 100% 100%, 100% 0%);
             width: 100%;
         }
@@ -122,16 +170,7 @@ export const ContactIntroH2 = styled.h2`
             font-size: 11rem;
             color:#EEEFF4;
             font-weight: 700;
-        }
-        /*&:after {
-            content: '';
-            width: 65px;
-            height: 2px;
-            background-color: #C8CCD8;
-            position: absolute;
-            top: -10px;
-            left: 0;
-        }*/
+            }
         }
 
     
@@ -202,7 +241,6 @@ export const DetailsButton = styled.div `
     @media ${device.laptopL} {
             align-self: flex-end;
             justify-content:center;
-            
         }
     
     

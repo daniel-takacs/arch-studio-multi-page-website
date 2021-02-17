@@ -10,6 +10,8 @@ import CloseIconImg from '../assets/images/icons/icon-close.svg';
 import { NavbarContainer, NavLogoDesktop, NavMenu, NavItems, NavLinks, 
     HamburgerIconWrapper, MenuIcon, CloseIcon } from './NavbarElements';
 
+
+
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
 

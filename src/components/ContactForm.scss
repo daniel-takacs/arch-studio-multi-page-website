@@ -5,6 +5,11 @@ form input, textarea {
     border-bottom: 2px solid #C8CCD8;
     resize: none;
 }
+@media screen and (min-width: 1240px){
+    form input, textarea {
+        width: 800px;
+    }
+}
 input, textarea {
     padding: 20px;
 }

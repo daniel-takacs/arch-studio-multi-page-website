@@ -19,36 +19,29 @@ const ContactButtonWrapper = styled.div `
 const initialState = {
     name: "",
     email: "",
-    text: "",
     nameError: "",
     emailError: "",
-    textError: "",
 }
 export default class  ContactForm extends React.Component {
   state = initialState;
 
-  handleChange = (e) => {
-    const isCheckbox = e.target.type === "checkbox";
+  handleChange = event => {
+    const isCheckbox = event.target.type === "checkbox";
     this.setState({
-      [e.target.name]: isCheckbox
-      ? e.target.checked
-      : e.target.value
+      [event.target.name]: isCheckbox
+      ? event.target.checked
+      : event.target.value
     });
 };
 
 validate = () => {
   let nameError= "";
   let emailError= "";
-  let textError= "";
 
   //name error
 
   if(!this.state.name ) {
     nameError = "Can't be empty";
-  }
-  if (nameError) {
-    this.setState ({ nameError });
-    return false;
   }
 
 //email error
@@ -58,23 +51,10 @@ validate = () => {
     ;
   }
 
-  if (emailError) {
-    this.setState({ emailError });
+  if (nameError || emailError) {
+    this.setState({ nameError, emailError });
     return false;
   }
-
-//text error
-
-  if (!this.state.text) {
-    textError = "Can't be empty";
-  }
-
-  if(textError) {
-    this.setState({ textError });
-    return false;
-  }
-
-
   return true;
 }
 
@@ -83,7 +63,6 @@ handleSubmit = event => {
   event.preventDefault();
   const isValid = this.validate();
   if(isValid) {
-    console.log(this.state);
     this.setState(initialState)
   }
 }
@@ -91,34 +70,38 @@ handleSubmit = event => {
   render() {
     return (
         <form onSubmit={this.handleSubmit}>
-          <label>
+          <div className="name">
             <input 
                 name="name" 
                 placeholder="Name" 
                 value={this.state.name} 
                 onChange={this.handleChange}
                 />
-                <div style={{ color: 'red'}}>{this.state.nameError}</div>
-          </label>
-          <label>  
+          </div>
+            <span style={{ color: 'red'}}>{this.state.nameError}</span>
+         <div className="email">
             <input 
                 name="email" 
                 placeholder="Email" 
                 value={this.state.email} 
                 onChange={this.handleChange}/>
-                <div style={{ color: 'red'}}>{this.state.emailError}</div>
-          </label>
-          <textarea name="" 
+                
+          </div>
+            <span style={{ color: 'red'}}>{this.state.emailError}</span>
+          <div className="textarea">
+            <textarea name="" 
+                    id=""
                     cols="30" 
                     rows="5" 
                     placeholder="Message"
-                    value={this.state.text} 
-                    onChange={this.handleChange}>
-          </textarea>
-          <div style={{ color: 'red'}}>{this.state.textError}</div>
-          <ContactButtonWrapper><Button><ArrowForwardOutlinedIcon /></Button></ContactButtonWrapper>     
+                    required>
+            </textarea>
+          </div>
+            <span style={{ color: 'red'}}>{this.state.textError}</span>
+            <ContactButtonWrapper >
+            <Button type="submit"><ArrowForwardOutlinedIcon /></Button>
+            </ContactButtonWrapper>
         </form>
     )
   }
 }
-

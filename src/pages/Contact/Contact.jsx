@@ -50,7 +50,7 @@ function Contact() {
                             <DetailsP>Phone: 123-456-3451</DetailsP>
                         </ContactDetailsContent>
                         <DetailsButton>
-                            <Button onClick={() => { alert('clicked') }}>View on Map<ArrowForwardOutlinedIcon /></Button>
+                            <Button>View on Map<ArrowForwardOutlinedIcon /></Button>
                         </DetailsButton>
                     </ContactDetails>
                     <ContactDetails>
@@ -61,7 +61,7 @@ function Contact() {
                             <DetailsP>Phone: 832-123-4321</DetailsP>
                         </ContactDetailsContent>
                         <DetailsButton>
-                                <Button onClick={() => { alert('clicked') }}>View on Map<ArrowForwardOutlinedIcon /></Button>
+                                <Button>View on Map<ArrowForwardOutlinedIcon /></Button>
                         </DetailsButton>
                     </ContactDetails>   
                 </ContactDetailsContainer>

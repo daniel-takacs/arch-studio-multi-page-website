@@ -203,8 +203,8 @@ export const ContactDetails = styled.div `
     line-height: 2rem;
         @media ${device.tablet} {
             display: flex;
-            justify-content: space-between;
-            
+            flex-direction: column;
+            margin: 0 10px;
         }
         
 `
@@ -225,6 +225,9 @@ export const DetailsH2 = styled.h2 `
     @media ${device.mobileM} {
         font-size: 3rem;
         }
+    @media ${device.laptopL} {
+        width: 30%;
+    }
 `
 export const DetailsH4  = styled.h4 `
 
@@ -239,7 +242,7 @@ export const DetailsButton = styled.div `
     align-items: center;
     
     @media ${device.laptopL} {
-            align-self: flex-end;
+            align-self: flex-start;
             justify-content:center;
         }
     
@@ -254,6 +257,23 @@ export const Button = styled.button `
     align-items: center;
     cursor: pointer;
     font-weight: 700;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: black;
+        opacity: 0.6;
+        transition: width 0.3s ease 0s, opacity 0.3s ease 0s
+    }
+    &:hover:after {
+        color: black;
+        width: 80%;
+        opacity: 0.9
+    }
 `
 export const ContactMapImg = styled.img `
     max-width: 100%;

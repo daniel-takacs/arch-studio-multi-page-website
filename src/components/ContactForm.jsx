@@ -10,6 +10,10 @@ const Button = styled.button`
     outline: none;
     border: none;
     cursor: pointer;
+   
+    &:hover {
+        background-color: #60636D;
+    }
 `;
 const ContactButtonWrapper = styled.div `
   display: flex;

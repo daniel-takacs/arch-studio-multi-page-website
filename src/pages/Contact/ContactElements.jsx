@@ -110,8 +110,9 @@ export const ContactHeroContainer = styled.div `
     }
 `
 export const ContactText = styled.div `
+    padding: 0 32px;
+    margin-top: 50px;
    @media ${device.mobileM} {
-        padding-top: 70px;
     }
     @media ${device.tablet} {
         margin-left: -570px;

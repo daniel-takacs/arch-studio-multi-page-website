@@ -13,9 +13,6 @@ export const NavbarContainer = styled.div `
             max-width: 1110px;
             padding: 50px 97.5px;
             justify-content: start;
-
-        
-    
             }
         @media ${device.laptopL} {
             

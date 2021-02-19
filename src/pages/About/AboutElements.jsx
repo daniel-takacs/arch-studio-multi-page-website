@@ -245,12 +245,11 @@ export const AboutLeadersContainer = styled.div `
     flex-wrap: wrap;
     margin-bottom: 100px;
         @media ${device.tablet} {
-        flex-direction: column;
+        
         
         }
         @media ${device.laptopL} {
-            display: flex;
-            justify-content: flex-end;
+            
         }
 `
 export const AboutLeaderH2 = styled.h2 `
@@ -261,32 +260,58 @@ export const AboutLeaderH2 = styled.h2 `
         margin-bottom: 40px;
         }
 `
+export const AboutLeaderImg = styled.img `
+    
+    margin-bottom: 25px;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+`
+
+export const AboutSocial = styled.div `
+     @media ${device.laptopL} {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 38%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+   }
+`
+
 export const AboutLeader = styled.div `
     margin-bottom: 30px;
     @media ${device.mobileM} {
         padding: 15px;
-     
         }
         @media ${device.tablet} {
-            
-        
+
         }
         @media ${device.laptopL} {
         position: relative;
-        opacity: 1;
-        
+        &:hover {
+            ${AboutLeaderImg} { 
+            opacity: 0.3;
+            }
+            ${AboutSocial} {
+            opacity:1;
+            }
+        }
     }
 `
 export const AboutLeaders = styled.div`
     @media ${device.laptopL} {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 `
-export const AboutLeaderImg = styled.img `
-    max-width: 100%;
-    margin-bottom: 25px;
-    
-`
+
 export const AboutLeaderH4 = styled.h4 `
     font-size: 1.2rem;
     margin: 10px 0;
@@ -294,16 +319,7 @@ export const AboutLeaderH4 = styled.h4 `
 export const AboutLeaderP = styled.p `
     margin-bottom: 10px;
 `
-export const AboutSocial = styled.div `
-     @media ${device.laptopL} {
-       position: absolute;
-       top: 40%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       opacity: 1;
-  transition: .5s ease;
-   }
-`
+
 export const AboutSocialIcon = styled.img `
     padding-right: 25px;
     height: 32px;

@@ -26,13 +26,13 @@ function Navbar() {
             <NavLinks to="/"><NavLogoDesktop  src={NavLogo}/></NavLinks>
             <NavMenu className={sidebar ? "nav-menu active" : "nav-menu"}>
                 <NavItems className={sidebar ? "nav-items active" : "nav-items"}>
-                    <NavLinks className="nav-links"  to="/Portfolio" onClick={clickHandler}>Portfolio</NavLinks>
+                    <NavLinks className="nav-links"  to="/Portfolio" >Portfolio</NavLinks>
                 </NavItems>
                 <NavItems className={sidebar ? "nav-items active" : "nav-items"}>
-                    <NavLinks className="nav-links" to="/About" onClick={clickHandler}>About Us</NavLinks>
+                    <NavLinks className="nav-links" to="/About" >About Us</NavLinks>
                 </NavItems>
                 <NavItems className={sidebar ? "nav-items active" : "nav-items"}>
-                    <NavLinks className="nav-links" to="/Contact" onClick={clickHandler}>Contact</NavLinks>
+                    <NavLinks className="nav-links" to="/Contact" >Contact</NavLinks>
                 </NavItems>
             </NavMenu>
             <HamburgerIconWrapper className={sidebar ? "hamburger active" : "hamburger"}>

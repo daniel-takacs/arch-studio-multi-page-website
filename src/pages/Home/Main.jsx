@@ -15,7 +15,6 @@ import { SmallTeamMobile, SmallTeamTablet, SmallTeamDesktop, DelSolMobile, Tower
   from '../../assets/images/images';
   import { Button } from '../../components/Buttons';
 
-
 function Main() {
     return (
         <>

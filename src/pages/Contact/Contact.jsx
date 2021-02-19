@@ -1,20 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
+
 import { ContactContainer, ContactHeroImgContainer, ContactHeroImg, ContactMainContainer,
-            ContactIntroContainer, ContactText, ContactIntroH2, ContactIntroP,  ContactDetailsContainer,
+         ContactText, ContactIntroH2, ContactIntroP,  ContactDetailsContainer,
         ContactDetails, ContactDetailsContent, DetailsH2, DetailsH4, DetailsP, DetailsButton, 
-     ContactFormContainer, ContactFormWrapper, ContactFormH2, Button, ContactHeroContainer} from './ContactElements';
+        ContactFormContainer, ContactFormWrapper, ContactFormH2, Button, ContactHeroContainer} from './ContactElements';
 import ContactImgMobile from '../../assets/images/contact/mobile/image-hero.jpg';
 import ContactImgTablet from '../../assets/images/contact/tablet/image-hero.jpg';
 import ContactImgDesktop from '../../assets/images/contact/desktop/image-hero.jpg';
-import ContactMapImage from '../../assets/images/contact/mobile/image-map.png';
-import ContactMapImageTablet from '../../assets/images/contact/tablet/image-map.png';
-import ContactMapImageDesktop from '../../assets/images/contact/desktop/image-map.png';
-
 import ContactForm from '../../components/ContactForm';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
-
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 

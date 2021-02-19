@@ -1,14 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
 import AboutIntroImg from '../../assets/images/about/mobile/image-hero.jpg';
 import AboutTabIntroImg from '../../assets/images/about/tablet/image-hero.jpg';
 import AboutDeskIntroImg from '../../assets/images/about/desktop/image-hero.jpg';
-
 import { AboutContainer, AboutHeroContainer, AboutMainContainer, AboutHeroImgContainer, AboutHeroImg, AboutText, AboutIntroH2,
         AboutIntroP, AboutMainSection, AboutMainText, AboutMainImgContainer, AboutMainImg, AboutMainP, AboutMainH2,
-        AboutLeadersContainer, AboutLeaderH2, AboutLeader, AboutLeaders, AboutLeaderImg, AboutLeaderH4, AboutLeaderP,
-        AboutSocial, AboutSocialIcon  } from './AboutElements';
+        AboutLeadersContainer, AboutLeaderH2, AboutLeader, AboutLeaders, AboutLeaderH2Box, AboutLeaderImgBox, AboutLeaderImg, 
+        AboutLeaderH4, AboutLeaderP,AboutSocial, AboutSocialIcon  } from './AboutElements';
 import AboutJake from '../../assets/images/about/desktop/avatar-jake.jpg';
 import AboutThompson from '../../assets/images/about/desktop/avatar-thompson.jpg';
 import AboutJackson from '../../assets/images/about/desktop/avatar-jackson.jpg';
@@ -61,55 +58,49 @@ function About() {
                         </AboutMainImgContainer>  
                 </AboutMainSection>   
                 <AboutLeadersContainer>
+                    <AboutLeaderH2Box>
                     <AboutLeaderH2>The Leaders</AboutLeaderH2>
+                    </AboutLeaderH2Box>
                     <AboutLeaders>
                     <AboutLeader>
-                        <AboutLeaderImg src={AboutJake} />
-                        <AboutLeaderH4>
-                        Jake Richards
-                        </AboutLeaderH4>
-                        <AboutLeaderP>
-                        Chief Architect
-                        </AboutLeaderP>
+                        <AboutLeaderImgBox>
+                            <AboutLeaderImg src={AboutJake} />
+                        </AboutLeaderImgBox>
+                        <AboutLeaderH4>Jake Richards</AboutLeaderH4>
+                        <AboutLeaderP>Chief Architect</AboutLeaderP>
                         <AboutSocial>
                             <AboutSocialIcon src={IconLinkedin} />
                             <AboutSocialIcon src={IconTwitter} />
                         </AboutSocial>
                     </AboutLeader>
                     <AboutLeader>
-                        <AboutLeaderImg src={AboutThompson} />
-                        <AboutLeaderH4>
-                        Thompson Smith
-                        </AboutLeaderH4>
-                        <AboutLeaderP>
-                        Head of Finance
-                        </AboutLeaderP>
+                        <AboutLeaderImgBox>
+                            <AboutLeaderImg src={AboutThompson} />
+                        </AboutLeaderImgBox>
+                        <AboutLeaderH4>Thompson Smith</AboutLeaderH4>
+                        <AboutLeaderP>Head of Finance</AboutLeaderP>
                         <AboutSocial>
                             <AboutSocialIcon src={IconLinkedin} />
                             <AboutSocialIcon src={IconTwitter} />
                         </AboutSocial>
                     </AboutLeader>
                     <AboutLeader>
-                        <AboutLeaderImg src={AboutJackson} />
-                        <AboutLeaderH4>
-                        Jackson Rourke
-                        </AboutLeaderH4>
-                        <AboutLeaderP>
-                        Lead Designer
-                        </AboutLeaderP>
+                        <AboutLeaderImgBox>
+                            <AboutLeaderImg src={AboutJackson} />
+                        </AboutLeaderImgBox>
+                        <AboutLeaderH4>Jackson Rourke</AboutLeaderH4>
+                        <AboutLeaderP>Lead Designer</AboutLeaderP>
                         <AboutSocial>
                             <AboutSocialIcon src={IconLinkedin} />
                             <AboutSocialIcon src={IconTwitter} />
                         </AboutSocial>
                     </AboutLeader>
                     <AboutLeader>
-                        <AboutLeaderImg src={AboutMaria} />
-                        <AboutLeaderH4>
-                        Maria Simpson
-                        </AboutLeaderH4>
-                        <AboutLeaderP>
-                        Senior Architect
-                        </AboutLeaderP>
+                        <AboutLeaderImgBox>
+                            <AboutLeaderImg src={AboutMaria} />
+                        </AboutLeaderImgBox>
+                        <AboutLeaderH4>Maria Simpson</AboutLeaderH4>
+                        <AboutLeaderP>Senior Architect</AboutLeaderP>
                         <AboutSocial>
                             <AboutSocialIcon src={IconLinkedin} />
                             <AboutSocialIcon src={IconTwitter} />

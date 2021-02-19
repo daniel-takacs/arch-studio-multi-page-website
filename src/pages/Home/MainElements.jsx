@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../../device';
 
-
 export const MainContainer = styled.div `
     padding: 0 32px;
     margin-bottom: 180px;
@@ -9,14 +8,13 @@ export const MainContainer = styled.div `
         margin: 0 auto; 
         max-width: 1110px;
         padding: 0 97.5px;
-    }
-    @media ${device.laptopL} {
+      }
+      @media ${device.laptopL} {
         padding: 0;
-    }
+      }
 
 `;
 export const WelcomeTextContentWrapper = styled.div `
-   
     @media ${device.tablet} {
         display: flex;
         margin-bottom: 150px;
@@ -35,7 +33,6 @@ export const WelcomeImgContainer = styled.div `
     display: none;
         @media ${device.laptopL} {
             display: block;
-            
     }
 `
 export const WelcomeMainImg = styled.img `

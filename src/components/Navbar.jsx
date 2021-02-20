@@ -13,29 +13,31 @@ import { NavbarContainer, NavLogoDesktop, NavMenu, NavItems, NavLinks,
 
 
 function Navbar() {
-    const [sidebar, setSidebar] = useState(false);
+    const [Showsidebar, setSidebar] = useState(false);
 
     const clickHandler = () => {
-        setSidebar(!sidebar)
+        setSidebar(!Showsidebar)
     }
 
-   
+   const closeSidebar = () => {
+       setSidebar(false)
+   }
 
     return (
         <NavbarContainer>
             <NavLinks to="/"><NavLogoDesktop  src={NavLogo}/></NavLinks>
-            <NavMenu className={sidebar ? "nav-menu active" : "nav-menu"}>
-                <NavItems className={sidebar ? "nav-items active" : "nav-items"}>
-                    <NavLinks className="nav-links"  to="/Portfolio" >Portfolio</NavLinks>
+            <NavMenu className={Showsidebar ? "nav-menu active" : "nav-menu"}>
+                <NavItems className={Showsidebar ? "nav-items active" : "nav-items"}>
+                    <NavLinks className="nav-links"  to="/Portfolio" onClick={closeSidebar}>Portfolio</NavLinks>
                 </NavItems>
-                <NavItems className={sidebar ? "nav-items active" : "nav-items"}>
-                    <NavLinks className="nav-links" to="/About" >About Us</NavLinks>
+                <NavItems className={Showsidebar ? "nav-items active" : "nav-items"}>
+                    <NavLinks className="nav-links" to="/About" onClick={closeSidebar}>About Us</NavLinks>
                 </NavItems>
-                <NavItems className={sidebar ? "nav-items active" : "nav-items"}>
-                    <NavLinks className="nav-links" to="/Contact" >Contact</NavLinks>
+                <NavItems className={Showsidebar ? "nav-items active" : "nav-items"}>
+                    <NavLinks className="nav-links" to="/Contact" onClick={closeSidebar}>Contact</NavLinks>
                 </NavItems>
             </NavMenu>
-            <HamburgerIconWrapper className={sidebar ? "hamburger active" : "hamburger"}>
+            <HamburgerIconWrapper className={Showsidebar ? "hamburger active" : "hamburger"}>
                 <MenuIcon className="hamburger-icon"onClick={clickHandler} src={HambIconImg}/>
                 <CloseIcon className="close-icon" onClick={clickHandler} src={CloseIconImg}/>
             </HamburgerIconWrapper>

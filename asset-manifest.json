@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/arch-studio-multi-page-website/static/css/main.7aa833d0.chunk.css",
-    "main.js": "/arch-studio-multi-page-website/static/js/main.6b471d83.chunk.js",
-    "main.js.map": "/arch-studio-multi-page-website/static/js/main.6b471d83.chunk.js.map",
+    "main.css": "/arch-studio-multi-page-website/static/css/main.3f5bf168.chunk.css",
+    "main.js": "/arch-studio-multi-page-website/static/js/main.50f83a7d.chunk.js",
+    "main.js.map": "/arch-studio-multi-page-website/static/js/main.50f83a7d.chunk.js.map",
     "runtime-main.js": "/arch-studio-multi-page-website/static/js/runtime-main.2abeb836.js",
     "runtime-main.js.map": "/arch-studio-multi-page-website/static/js/runtime-main.2abeb836.js.map",
-    "static/js/2.a9d72ad4.chunk.js": "/arch-studio-multi-page-website/static/js/2.a9d72ad4.chunk.js",
-    "static/js/2.a9d72ad4.chunk.js.map": "/arch-studio-multi-page-website/static/js/2.a9d72ad4.chunk.js.map",
+    "static/js/2.41c9d5d6.chunk.js": "/arch-studio-multi-page-website/static/js/2.41c9d5d6.chunk.js",
+    "static/js/2.41c9d5d6.chunk.js.map": "/arch-studio-multi-page-website/static/js/2.41c9d5d6.chunk.js.map",
     "index.html": "/arch-studio-multi-page-website/index.html",
-    "static/css/main.7aa833d0.chunk.css.map": "/arch-studio-multi-page-website/static/css/main.7aa833d0.chunk.css.map",
-    "static/js/2.a9d72ad4.chunk.js.LICENSE.txt": "/arch-studio-multi-page-website/static/js/2.a9d72ad4.chunk.js.LICENSE.txt",
+    "static/css/main.3f5bf168.chunk.css.map": "/arch-studio-multi-page-website/static/css/main.3f5bf168.chunk.css.map",
+    "static/js/2.41c9d5d6.chunk.js.LICENSE.txt": "/arch-studio-multi-page-website/static/js/2.41c9d5d6.chunk.js.LICENSE.txt",
     "static/media/avatar-jackson.8d7b6c2e.jpg": "/arch-studio-multi-page-website/static/media/avatar-jackson.8d7b6c2e.jpg",
     "static/media/avatar-jake.853a6796.jpg": "/arch-studio-multi-page-website/static/media/avatar-jake.853a6796.jpg",
     "static/media/avatar-maria.4676df09.jpg": "/arch-studio-multi-page-website/static/media/avatar-maria.4676df09.jpg",
@@ -76,8 +76,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2abeb836.js",
-    "static/js/2.a9d72ad4.chunk.js",
-    "static/css/main.7aa833d0.chunk.css",
-    "static/js/main.6b471d83.chunk.js"
+    "static/js/2.41c9d5d6.chunk.js",
+    "static/css/main.3f5bf168.chunk.css",
+    "static/js/main.50f83a7d.chunk.js"
   ]
 }

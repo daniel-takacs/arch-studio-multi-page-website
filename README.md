@@ -1,6 +1,8 @@
 # Frontend Mentor Challange - Arch Studio multi-page website
 <br>
+<br>
 LIVE: https://daniel-takacs.github.io/arch-studio-multi-page-website
+<br>
 <br>
 I built a Frontend Mentor challange multiple pages website. I used React, Styled Components and Sass for styling. React hooks for 
 navigation bar. Implemented a location map
